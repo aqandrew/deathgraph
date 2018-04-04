@@ -48,7 +48,7 @@ def main():
 
 
   # Write cleaned data to a new file
-  with open(output_filename, 'w') as output_file:
+  with open(join(directory, output_filename), 'w') as output_file:
     csv_writer = csv.writer(output_file)
 
     for data_line in output_lines:
