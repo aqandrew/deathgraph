@@ -19,6 +19,7 @@ def main():
 
     # Assume no subsubdirectories...
     subdirectory_files = sorted(listdir(join(directory, subdirectory_name)))
+    current_location_death = ()
 
     # Open all files within each subdirectory
     for subfile_index, subdirectory_filename in enumerate([n for n in subdirectory_files if n != '.DS_Store']):
@@ -32,11 +33,18 @@ def main():
           # Write header line to output file
           if subdirectory_index == 0 and subfile_index == 0 and line_index == 0:
             output_lines.append(trim_row(row))
-          
+
           # Skip header row
           # We only want data for both genders
           if line_index != 0 and int(row[5]) == 3:
-            output_lines.append(trim_row(row))
+            location_death = (row[2], row[3])
+          
+            # Write first 4 columns only once for each location/COD, to reduce filesize < 100 MB
+            if location_death != current_location_death:
+              output_lines.append(trim_row(row))
+              current_location_death = location_death
+            else:
+              output_lines.append([''] * 4 + row[7:9])
 
 
   # Write cleaned data to a new file
