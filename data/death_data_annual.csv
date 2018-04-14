@@ -1,841 +1,841 @@
 year,cause_of_death,mortality_rate
-2002,Other non-communicable diseases,6.7272322286679005
-1990,Injuries,65.3638220626059
+1980,Cardiovascular diseases,475.1684818411236
+1981,Cardiovascular diseases,465.0065166677534
+1982,Cardiovascular diseases,453.35430226439695
+1983,Cardiovascular diseases,450.24184314973843
+1984,Cardiovascular diseases,443.80295525731214
+1985,Cardiovascular diseases,439.7302481791369
+1986,Cardiovascular diseases,431.2398394990657
+1987,Cardiovascular diseases,422.10065604554586
+1988,Cardiovascular diseases,414.10584060435616
+1989,Cardiovascular diseases,398.65311028037985
+1990,Cardiovascular diseases,386.04536601810025
+1991,Cardiovascular diseases,377.3138353652347
+1992,Cardiovascular diseases,367.8380406601059
+1993,Cardiovascular diseases,369.5243171656035
+1994,Cardiovascular diseases,365.14883918344333
+1995,Cardiovascular diseases,363.3129868741009
+1996,Cardiovascular diseases,355.1563221414755
+1997,Cardiovascular diseases,346.3019474889308
+1998,Cardiovascular diseases,340.28170106794846
+1999,Cardiovascular diseases,337.98691961860925
+2000,Cardiovascular diseases,333.0509616064316
+2001,Cardiovascular diseases,326.1889876179926
+2002,Cardiovascular diseases,318.7271099939391
+2003,Cardiovascular diseases,308.31400502478505
+2004,Cardiovascular diseases,292.9767386259716
+2005,Cardiovascular diseases,285.84749004370696
+2006,Cardiovascular diseases,275.7486936343211
+2007,Cardiovascular diseases,265.74461899442207
+2008,Cardiovascular diseases,259.7099244485346
+2009,Cardiovascular diseases,253.33474944159354
+2010,Cardiovascular diseases,247.7005692823761
+2011,Cardiovascular diseases,246.51724462815415
+2012,Cardiovascular diseases,243.12308421169575
+2013,Cardiovascular diseases,243.16310357459903
+2014,Cardiovascular diseases,245.46209026905635
+1980,Chronic respiratory diseases,42.00922057933685
+1981,Chronic respiratory diseases,41.716002822193786
+1982,Chronic respiratory diseases,41.57937536018396
+1983,Chronic respiratory diseases,42.40904193913956
+1984,Chronic respiratory diseases,43.05996102088588
+1985,Chronic respiratory diseases,44.1628068039885
+1986,Chronic respiratory diseases,44.76896819534575
+1987,Chronic respiratory diseases,45.35707911805659
+1988,Chronic respiratory diseases,46.210900284762296
+1989,Chronic respiratory diseases,46.220625580211106
+1990,Chronic respiratory diseases,46.09863250243481
+1991,Chronic respiratory diseases,46.8796849299804
+1992,Chronic respiratory diseases,47.224225296317286
+1993,Chronic respiratory diseases,49.19855170482341
+1994,Chronic respiratory diseases,50.00322416333678
+1995,Chronic respiratory diseases,51.289177471403924
+1996,Chronic respiratory diseases,51.65988132015509
+1997,Chronic respiratory diseases,52.14286897842068
+1998,Chronic respiratory diseases,53.24323417719177
+1999,Chronic respiratory diseases,55.22854061731754
+2000,Chronic respiratory diseases,56.117832341115914
+2001,Chronic respiratory diseases,56.7610632443983
+2002,Chronic respiratory diseases,57.150674465858465
+2003,Chronic respiratory diseases,56.9125618131368
+2004,Chronic respiratory diseases,55.764176332782846
+2005,Chronic respiratory diseases,56.37144318984591
+2006,Chronic respiratory diseases,55.92907976175345
+2007,Chronic respiratory diseases,55.318346252335054
+2008,Chronic respiratory diseases,55.71305596498915
+2009,Chronic respiratory diseases,55.237173926860564
+2010,Chronic respiratory diseases,54.73776428588611
+2011,Chronic respiratory diseases,55.06938288356493
+2012,Chronic respiratory diseases,54.66259448444428
+2013,Chronic respiratory diseases,54.67922887703731
+2014,Chronic respiratory diseases,55.14401285889197
+1980,Cirrhosis and other chronic liver diseases,17.936957473181433
+1981,Cirrhosis and other chronic liver diseases,17.66324572068483
+1982,Cirrhosis and other chronic liver diseases,17.25119501701989
+1983,Cirrhosis and other chronic liver diseases,17.16853617585252
+1984,Cirrhosis and other chronic liver diseases,16.96794422258745
+1985,Cirrhosis and other chronic liver diseases,16.927159911930207
+1986,Cirrhosis and other chronic liver diseases,16.777800817387664
+1987,Cirrhosis and other chronic liver diseases,16.539504051047672
+1988,Cirrhosis and other chronic liver diseases,16.383283028437212
+1989,Cirrhosis and other chronic liver diseases,16.076374804951012
+1990,Cirrhosis and other chronic liver diseases,15.613192312357405
+1991,Cirrhosis and other chronic liver diseases,15.374992231557478
+1992,Cirrhosis and other chronic liver diseases,15.041780241309183
+1993,Cirrhosis and other chronic liver diseases,15.106614911067535
+1994,Cirrhosis and other chronic liver diseases,14.935015194818407
+1995,Cirrhosis and other chronic liver diseases,14.956157491301825
+1996,Cirrhosis and other chronic liver diseases,14.63046099187542
+1997,Cirrhosis and other chronic liver diseases,14.395264525873682
+1998,Cirrhosis and other chronic liver diseases,14.396579106615397
 1999,Cirrhosis and other chronic liver diseases,14.691841907651794
-2008,Musculoskeletal disorders,3.3090274179062145
-2004,HIV/AIDS and tuberculosis,3.6719438430823113
+2000,Cirrhosis and other chronic liver diseases,14.931345659451607
+2001,Cirrhosis and other chronic liver diseases,15.202596245289218
+2002,Cirrhosis and other chronic liver diseases,15.466805854461274
+2003,Cirrhosis and other chronic liver diseases,15.59716618878454
+2004,Cirrhosis and other chronic liver diseases,15.501512587370817
+2005,Cirrhosis and other chronic liver diseases,15.975366344589203
+2006,Cirrhosis and other chronic liver diseases,16.253654789057066
+2007,Cirrhosis and other chronic liver diseases,16.35685470512
+2008,Cirrhosis and other chronic liver diseases,16.532375941984967
+2009,Cirrhosis and other chronic liver diseases,16.68313481865552
+2010,Cirrhosis and other chronic liver diseases,16.640561842547047
+2011,Cirrhosis and other chronic liver diseases,16.89996278735901
+2012,Cirrhosis and other chronic liver diseases,16.96204401103651
+2013,Cirrhosis and other chronic liver diseases,17.02219265316304
+2014,Cirrhosis and other chronic liver diseases,16.81875029770626
+1980,"Communicable, maternal, neonatal, and nutritional diseases",51.194311494751624
+1981,"Communicable, maternal, neonatal, and nutritional diseases",50.43679066076959
+1982,"Communicable, maternal, neonatal, and nutritional diseases",49.22004638603657
+1983,"Communicable, maternal, neonatal, and nutritional diseases",49.292703144518526
+1984,"Communicable, maternal, neonatal, and nutritional diseases",49.2895220452115
+1985,"Communicable, maternal, neonatal, and nutritional diseases",50.360843783763826
+1986,"Communicable, maternal, neonatal, and nutritional diseases",51.20026223847629
+1987,"Communicable, maternal, neonatal, and nutritional diseases",52.79685695206561
+1988,"Communicable, maternal, neonatal, and nutritional diseases",54.16892395343186
+1989,"Communicable, maternal, neonatal, and nutritional diseases",54.99483591558627
+1990,"Communicable, maternal, neonatal, and nutritional diseases",55.52264978661441
+1991,"Communicable, maternal, neonatal, and nutritional diseases",56.65171220493663
+1992,"Communicable, maternal, neonatal, and nutritional diseases",56.969362705107656
+1993,"Communicable, maternal, neonatal, and nutritional diseases",58.758715645790396
+1994,"Communicable, maternal, neonatal, and nutritional diseases",59.72491136557986
+1995,"Communicable, maternal, neonatal, and nutritional diseases",59.685788754561266
+1996,"Communicable, maternal, neonatal, and nutritional diseases",55.71548063594736
+1997,"Communicable, maternal, neonatal, and nutritional diseases",51.33363323979259
+1998,"Communicable, maternal, neonatal, and nutritional diseases",50.06405309608889
+1999,"Communicable, maternal, neonatal, and nutritional diseases",50.72693401134331
+2000,"Communicable, maternal, neonatal, and nutritional diseases",49.3645394121837
+2001,"Communicable, maternal, neonatal, and nutritional diseases",48.522898441774494
+2002,"Communicable, maternal, neonatal, and nutritional diseases",48.017485939358274
+2003,"Communicable, maternal, neonatal, and nutritional diseases",46.93352971416984
+2004,"Communicable, maternal, neonatal, and nutritional diseases",44.71270719441951
+2005,"Communicable, maternal, neonatal, and nutritional diseases",44.06903633008064
+2006,"Communicable, maternal, neonatal, and nutritional diseases",42.8840687987236
+2007,"Communicable, maternal, neonatal, and nutritional diseases",41.821792141475655
+2008,"Communicable, maternal, neonatal, and nutritional diseases",40.9275813200005
+2009,"Communicable, maternal, neonatal, and nutritional diseases",39.947206985608794
+2010,"Communicable, maternal, neonatal, and nutritional diseases",38.55574900335903
+2011,"Communicable, maternal, neonatal, and nutritional diseases",38.300549880584214
+2012,"Communicable, maternal, neonatal, and nutritional diseases",37.810928379118444
+2013,"Communicable, maternal, neonatal, and nutritional diseases",37.65139067136505
+2014,"Communicable, maternal, neonatal, and nutritional diseases",37.65227138718353
+1980,"Diabetes, urogenital, blood, and endocrine diseases",44.37416259549854
+1981,"Diabetes, urogenital, blood, and endocrine diseases",44.02294401156264
+1982,"Diabetes, urogenital, blood, and endocrine diseases",43.75480827854366
+1983,"Diabetes, urogenital, blood, and endocrine diseases",44.264851163636024
+1984,"Diabetes, urogenital, blood, and endocrine diseases",44.718956369006264
+1985,"Diabetes, urogenital, blood, and endocrine diseases",45.54188672871292
+1986,"Diabetes, urogenital, blood, and endocrine diseases",45.92383325432675
+1987,"Diabetes, urogenital, blood, and endocrine diseases",46.43186106402242
+1988,"Diabetes, urogenital, blood, and endocrine diseases",47.211352681368396
+1989,"Diabetes, urogenital, blood, and endocrine diseases",47.37695256620173
+1990,"Diabetes, urogenital, blood, and endocrine diseases",47.35435198558395
 1991,"Diabetes, urogenital, blood, and endocrine diseases",47.99962661759023
 1992,"Diabetes, urogenital, blood, and endocrine diseases",48.26775468053638
-1993,Self-harm and interpersonal violence,22.213620034819883
-2001,Non-communicable diseases,800.9008558279511
-2014,Maternal disorders,0.3198200223016742
-2011,"Forces of nature, war, and legal intervention",0.40955426764277886
-2002,Neonatal disorders,4.263145538453102
-1997,Digestive diseases,17.37404921335359
-1997,Mental and substance use disorders,6.280937617396987
-1996,"Communicable, maternal, neonatal, and nutritional diseases",55.71548063594736
-2014,Nutritional deficiencies,1.3038012102965184
-2004,"Other communicable, maternal, neonatal, and nutritional diseases",2.1829177516112668
-1980,Neonatal disorders,8.59207297118757
-2001,Chronic respiratory diseases,56.7610632443983
-2007,Mental and substance use disorders,11.888911159396047
-2005,"Diarrhea, lower respiratory, and other common infectious diseases",32.52554286614608
-1981,Neoplasms,226.43518441870853
-1982,Digestive diseases,19.135820204888535
-1980,Non-communicable diseases,931.6258431221493
-2011,Neglected tropical diseases and malaria,0.0593797516654726
-1984,Nutritional deficiencies,1.8797970863450957
-1992,Musculoskeletal disorders,3.1285664777100957
-1989,Neurological disorders,87.63659545087985
-2003,Neoplasms,208.41349365338465
-1986,Unintentional injuries,22.291533880717346
-2006,"Forces of nature, war, and legal intervention",0.42869153807464905
-1988,Transport injuries,23.0408981345555
-1984,Neurological disorders,87.16157054004752
-1995,Other non-communicable diseases,7.405830315008143
-2008,Unintentional injuries,21.252124410994597
-1990,Cirrhosis and other chronic liver diseases,15.613192312357405
-1982,"Diarrhea, lower respiratory, and other common infectious diseases",36.64261993212245
-1981,Maternal disorders,0.21435617204326973
-2007,Cardiovascular diseases,265.74461899442207
-1982,Transport injuries,24.367396966188302
-1995,Unintentional injuries,20.2821007008079
-2012,Cirrhosis and other chronic liver diseases,16.96204401103651
-1994,Non-communicable diseases,828.036491315936
-2002,Transport injuries,19.66130103516793
-1991,Maternal disorders,0.24298995337801862
-1981,Neurological disorders,86.4872253949277
-1990,Cardiovascular diseases,386.04536601810025
-2011,Neonatal disorders,3.4628659791752914
-2006,Digestive diseases,16.09383637606933
-1982,Other non-communicable diseases,9.098846591914432
-2002,Cardiovascular diseases,318.7271099939391
-1989,Neonatal disorders,5.882895155386874
-2006,Chronic respiratory diseases,55.92907976175345
-1983,Neoplasms,224.30639384246786
-1982,HIV/AIDS and tuberculosis,1.284330793444826
-2009,"Communicable, maternal, neonatal, and nutritional diseases",39.947206985608794
-1999,Other non-communicable diseases,6.837389790053599
-1985,Injuries,68.4306425372479
-1982,Self-harm and interpersonal violence,22.234694333382173
-2012,Neglected tropical diseases and malaria,0.06588261215779503
-1995,Nutritional deficiencies,1.9975209667110239
-1996,Injuries,61.453765782343915
-2002,Self-harm and interpersonal violence,19.98657289642782
-1992,Neoplasms,221.39926440942875
-2000,Neurological disorders,95.17544586844991
-1990,Neglected tropical diseases and malaria,0.031763948324058405
-1998,"Forces of nature, war, and legal intervention",0.29526312416623346
-1999,Transport injuries,19.443548949813874
-1981,Cardiovascular diseases,465.0065166677534
-1996,Other non-communicable diseases,7.193117601025618
-2001,Unintentional injuries,20.511944530009565
-1990,HIV/AIDS and tuberculosis,7.820657466350004
-1990,"Diabetes, urogenital, blood, and endocrine diseases",47.35435198558395
-1992,Injuries,62.9379076606858
-2011,Cirrhosis and other chronic liver diseases,16.89996278735901
-1987,Non-communicable diseases,880.2274894533267
-2010,Musculoskeletal disorders,3.1531196306312994
-1992,Maternal disorders,0.23698836135929963
-2012,"Diabetes, urogenital, blood, and endocrine diseases",54.95327191612142
-1999,Self-harm and interpersonal violence,19.478981313319665
-2013,Self-harm and interpersonal violence,20.730887082047268
-1983,Mental and substance use disorders,4.21693647586252
-2013,Non-communicable diseases,694.4827326349217
-2002,Injuries,60.453319343791925
-2002,Maternal disorders,0.25382652435368097
-2009,"Forces of nature, war, and legal intervention",0.21325583979891538
-1990,"Other communicable, maternal, neonatal, and nutritional diseases",2.1867546924022605
-1998,Neonatal disorders,4.239657507168865
-1995,Neurological disorders,90.40485538202907
-1985,Mental and substance use disorders,4.419144984571784
-1991,"Diarrhea, lower respiratory, and other common infectious diseases",37.81509034500511
-1984,"Communicable, maternal, neonatal, and nutritional diseases",49.2895220452115
-2005,Neoplasms,202.20285515441913
-1996,Cardiovascular diseases,355.1563221414755
-1989,Chronic respiratory diseases,46.220625580211106
-2009,"Diarrhea, lower respiratory, and other common infectious diseases",30.370398988707628
-1985,Neoplasms,226.87348784159144
-1999,Neglected tropical diseases and malaria,0.02981908091597185
-1992,Neurological disorders,88.15232403592371
-1981,Nutritional deficiencies,1.895138835029397
-1984,Mental and substance use disorders,4.31634740717064
-1989,Other non-communicable diseases,8.524704721143559
-1998,Unintentional injuries,19.975378124240613
-2004,"Forces of nature, war, and legal intervention",0.4303436984006014
-1999,HIV/AIDS and tuberculosis,4.567023207858072
-1983,"Diabetes, urogenital, blood, and endocrine diseases",44.264851163636024
-1990,"Diarrhea, lower respiratory, and other common infectious diseases",37.78289496705892
-1987,Musculoskeletal disorders,2.974777509775535
-1995,Injuries,62.764856060176776
-2002,Cirrhosis and other chronic liver diseases,15.466805854461274
-2001,HIV/AIDS and tuberculosis,4.102399618941385
-2009,Cardiovascular diseases,253.33474944159354
-1997,Unintentional injuries,19.958378939027817
-1986,Transport injuries,23.444229132944347
-2008,Digestive diseases,15.5275200764477
-2006,Non-communicable diseases,739.9499957323743
-1980,Injuries,75.52782364596234
-2011,Maternal disorders,0.3398115708200934
-2010,Neurological disorders,96.5202124379259
-1993,"Other communicable, maternal, neonatal, and nutritional diseases",2.4791614206545987
-2007,Neonatal disorders,4.239418840594009
-1986,Digestive diseases,19.036624231787844
-1992,Mental and substance use disorders,5.160111373901083
-1995,"Communicable, maternal, neonatal, and nutritional diseases",59.685788754561266
-2005,Nutritional deficiencies,1.5146033582303287
-2003,"Other communicable, maternal, neonatal, and nutritional diseases",2.48142400140688
-1994,Chronic respiratory diseases,50.00322416333678
-2006,"Communicable, maternal, neonatal, and nutritional diseases",42.8840687987236
-2000,"Diarrhea, lower respiratory, and other common infectious diseases",35.70163951556243
-1990,Neoplasms,223.61858217103924
-2013,Injuries,56.94029684743393
-1980,Self-harm and interpersonal violence,23.32204571566174
-2000,Neglected tropical diseases and malaria,0.03396847190578372
-2001,Transport injuries,19.627481637116734
-2000,Self-harm and interpersonal violence,19.476208466917996
-2001,Injuries,61.08947234896541
-2012,Neoplasms,189.45117342406658
-2006,Neurological disorders,96.90274005171241
-2012,Injuries,57.10731300445373
-2011,Transport injuries,15.270109022017445
-2000,Other non-communicable diseases,6.7954378516541
-1991,Injuries,64.2700298803019
-1993,Cirrhosis and other chronic liver diseases,15.106614911067535
-2010,HIV/AIDS and tuberculosis,2.3074203298894753
-1994,"Diabetes, urogenital, blood, and endocrine diseases",50.60651732154515
-1980,"Forces of nature, war, and legal intervention",0.2872510277980458
-1980,Chronic respiratory diseases,42.00922057933685
-1985,Cardiovascular diseases,439.7302481791369
-1994,Injuries,63.057833009046526
-1999,Non-communicable diseases,805.7116137758195
-2012,Musculoskeletal disorders,3.096101863082422
-2012,Maternal disorders,0.32681869305042743
-1997,Self-harm and interpersonal violence,20.287147941971536
-2003,Cirrhosis and other chronic liver diseases,15.59716618878454
-2000,Neonatal disorders,4.262061031787456
-1995,Digestive diseases,17.822918415548926
-2012,Nutritional deficiencies,1.3091480474838415
-2010,"Other communicable, maternal, neonatal, and nutritional diseases",1.3097983148262429
-2003,Chronic respiratory diseases,56.9125618131368
-2005,Mental and substance use disorders,10.774076317558475
-1995,"Diarrhea, lower respiratory, and other common infectious diseases",38.15796436877316
-2004,"Communicable, maternal, neonatal, and nutritional diseases",44.71270719441951
-1980,Digestive diseases,19.6897448023739
-2009,Neglected tropical diseases and malaria,0.05842754433908982
-1990,Nutritional deficiencies,1.853808144125836
-1998,Cardiovascular diseases,340.28170106794846
-1982,"Communicable, maternal, neonatal, and nutritional diseases",49.22004638603657
-1987,Neglected tropical diseases and malaria,0.035191858471501095
-1998,Neurological disorders,92.61086646371265
-1985,Other non-communicable diseases,8.78756352563691
-1993,Other non-communicable diseases,7.808872298861031
-2010,Unintentional injuries,21.092441137158815
-1984,Cirrhosis and other chronic liver diseases,16.96794422258745
-1980,"Diarrhea, lower respiratory, and other common infectious diseases",37.54760806626531
-1987,HIV/AIDS and tuberculosis,4.6603737783847
-1987,"Diabetes, urogenital, blood, and endocrine diseases",46.43186106402242
-2014,Cirrhosis and other chronic liver diseases,16.81875029770626
-1992,Non-communicable diseases,821.9329203219476
-1989,Maternal disorders,0.2282686770334218
-2011,Cardiovascular diseases,246.51724462815415
-1983,Neurological disorders,86.8868229127185
-2009,Neonatal disorders,3.8386910800411034
-2004,Digestive diseases,16.31384158765902
-2009,"Diabetes, urogenital, blood, and endocrine diseases",55.55298696545212
-1980,Other non-communicable diseases,9.406807086525323
-2011,Neurological disorders,97.25046168225512
-1993,Musculoskeletal disorders,3.242318410993311
-2013,"Other communicable, maternal, neonatal, and nutritional diseases",1.2699828474516772
-1987,Neonatal disorders,6.017901115121569
-2008,Chronic respiratory diseases,55.71305596498915
-2012,Mental and substance use disorders,13.6727727027626
-1986,"Diarrhea, lower respiratory, and other common infectious diseases",38.12060827175634
-1994,Neurological disorders,89.75138376483056
-1993,Nutritional deficiencies,1.9159826405772842
-1985,Neurological disorders,87.50024606231521
-1994,Neoplasms,223.22045413462402
-1988,Neglected tropical diseases and malaria,0.035194987147070825
-2001,Musculoskeletal disorders,3.8061923261314816
-2003,Transport injuries,19.417106227022323
-1997,Transport injuries,19.60719081800232
-2006,Self-harm and interpersonal violence,20.46360006841689
-1986,Other non-communicable diseases,8.664942662673548
-2004,Neurological disorders,96.36023417937767
-1988,HIV/AIDS and tuberculosis,5.589586134737441
-1986,"Forces of nature, war, and legal intervention",0.20794209355768792
-2007,Transport injuries,17.626524867780805
-1991,Cardiovascular diseases,377.3138353652347
-2005,Cirrhosis and other chronic liver diseases,15.975366344589203
-1985,Non-communicable diseases,896.0435195031486
-1998,Maternal disorders,0.20683233586462696
-2014,"Diabetes, urogenital, blood, and endocrine diseases",55.38684923886322
-2013,HIV/AIDS and tuberculosis,1.9093175367555473
-1987,Cardiovascular diseases,422.10065604554586
-1995,Cardiovascular diseases,363.3129868741009
-2013,Digestive diseases,14.819194513228759
-1981,Mental and substance use disorders,4.361535446668999
-2011,Non-communicable diseases,699.399738491732
-2014,Musculoskeletal disorders,3.1354624091825793
-2000,Maternal disorders,0.2234055598452834
-1985,"Diabetes, urogenital, blood, and endocrine diseases",45.54188672871292
-1987,Self-harm and interpersonal violence,22.571079899580827
-1988,"Other communicable, maternal, neonatal, and nutritional diseases",2.06988067061933
-1996,Neonatal disorders,4.241435163934166
-1991,Digestive diseases,18.08851117360279
-1991,Mental and substance use disorders,5.129547809208653
-1989,"Diarrhea, lower respiratory, and other common infectious diseases",37.8147054029732
-1990,"Communicable, maternal, neonatal, and nutritional diseases",55.52264978661441
-2013,"Forces of nature, war, and legal intervention",0.10931483684029628
-2000,Nutritional deficiencies,1.9801937515725752
-1982,Musculoskeletal disorders,2.8081414767428816
-1991,Chronic respiratory diseases,46.8796849299804
-1987,Neoplasms,227.0197101358552
-1997,Neglected tropical diseases and malaria,0.02546925024596313
-2000,Cardiovascular diseases,333.0509616064316
-1981,Cirrhosis and other chronic liver diseases,17.66324572068483
-1984,Unintentional injuries,22.667102538883213
-2009,Neoplasms,193.07924320435842
-1992,Unintentional injuries,20.03301171812611
-1981,Transport injuries,25.756047875638174
-1997,HIV/AIDS and tuberculosis,5.185944306767947
-2014,Transport injuries,14.703307304787094
-1982,Neglected tropical diseases and malaria,0.04185918439504435
-2007,Unintentional injuries,21.136984420643582
-2013,Other non-communicable diseases,5.990237587662566
-1996,Cirrhosis and other chronic liver diseases,14.63046099187542
-2007,HIV/AIDS and tuberculosis,3.1337454972409966
-2007,"Diabetes, urogenital, blood, and endocrine diseases",56.620179956562865
-1980,Unintentional injuries,25.08318925057018
-2004,Non-communicable diseases,757.4370416099962
-2009,Maternal disorders,0.34949987808980326
-2013,Cardiovascular diseases,243.16310357459903
-1990,Transport injuries,21.995216854797718
-1999,"Other communicable, maternal, neonatal, and nutritional diseases",2.92990764829297
-2005,Neonatal disorders,4.241095123033497
-1984,Digestive diseases,19.07592150187708
-1998,Mental and substance use disorders,6.543985719425373
-1993,"Communicable, maternal, neonatal, and nutritional diseases",58.758715645790396
-2009,Neurological disorders,96.63144514192187
-2011,Nutritional deficiencies,1.3136838474406993
-2001,"Other communicable, maternal, neonatal, and nutritional diseases",2.824908621417158
-1983,Neonatal disorders,7.0216026289375835
-1996,Chronic respiratory diseases,51.65988132015509
-2000,Mental and substance use disorders,7.665496400328877
-2006,"Diarrhea, lower respiratory, and other common infectious diseases",31.851418892606766
-2003,"Communicable, maternal, neonatal, and nutritional diseases",46.93352971416984
-1983,Non-communicable diseases,900.3250082321131
-2006,Neglected tropical diseases and malaria,0.0649446202640835
-1988,Musculoskeletal disorders,3.035300118582831
-2014,Neoplasms,190.83340376316264
-2005,Other non-communicable diseases,6.530985756809133
-2003,Musculoskeletal disorders,3.7358333322100377
-2009,Transport injuries,16.175144288062224
-2004,Self-harm and interpersonal violence,19.847184043008752
-1996,Neurological disorders,91.00864978720763
-2006,Other non-communicable diseases,6.478211324917702
-1995,Cirrhosis and other chronic liver diseases,14.956157491301825
-2008,HIV/AIDS and tuberculosis,2.860990717728169
-1984,"Forces of nature, war, and legal intervention",0.31247582882211755
-1996,"Diabetes, urogenital, blood, and endocrine diseases",52.513519412224205
-1982,"Forces of nature, war, and legal intervention",0.27457154004993356
-1982,Chronic respiratory diseases,41.57937536018396
-2009,Self-harm and interpersonal violence,20.359771994703845
-1997,Non-communicable diseases,807.4485787099923
-1986,Maternal disorders,0.20877331724037157
-1989,Cardiovascular diseases,398.65311028037985
-2014,Neonatal disorders,3.1919600364565586
-1993,Digestive diseases,17.920872662615153
-1984,Musculoskeletal disorders,2.8752390849202043
-1985,Self-harm and interpersonal violence,22.23400364416221
-2008,"Other communicable, maternal, neonatal, and nutritional diseases",1.4289792818269063
-2005,Chronic respiratory diseases,56.37144318984591
-2011,Mental and substance use disorders,13.402114031718023
-1993,"Diarrhea, lower respiratory, and other common infectious diseases",38.140426410898655
-2010,"Communicable, maternal, neonatal, and nutritional diseases",38.55574900335903
-2003,"Forces of nature, war, and legal intervention",0.28343658724589993
-1992,"Forces of nature, war, and legal intervention",0.223769287633852
-1988,Nutritional deficiencies,1.8934125219315057
-1980,"Communicable, maternal, neonatal, and nutritional diseases",51.194311494751624
-1985,Neglected tropical diseases and malaria,0.04053744071048324
-1984,Transport injuries,23.33544451196439
-1997,Musculoskeletal disorders,3.506987857767154
-2004,Unintentional injuries,20.69564489831317
-1986,Cirrhosis and other chronic liver diseases,16.777800817387664
-1985,HIV/AIDS and tuberculosis,2.1168948854128757
-1989,"Diabetes, urogenital, blood, and endocrine diseases",47.37695256620173
-2014,Mental and substance use disorders,13.953437611668432
-2008,Cirrhosis and other chronic liver diseases,16.532375941984967
-1990,Non-communicable diseases,841.0125813228865
-1995,Maternal disorders,0.22923209243217088
-2011,"Diabetes, urogenital, blood, and endocrine diseases",55.3494083744428
-1996,"Diarrhea, lower respiratory, and other common infectious diseases",37.44576392555248
-2002,Digestive diseases,17.032858627451034
-2006,Injuries,60.465097614828586
-2009,Unintentional injuries,21.116010175953267
-1989,Self-harm and interpersonal violence,22.473695874985005
-2003,Unintentional injuries,20.86301316328071
-1987,"Other communicable, maternal, neonatal, and nutritional diseases",1.9900715516444436
-1985,Neonatal disorders,6.4548874624038515
-2010,Chronic respiratory diseases,54.73776428588611
-1986,Mental and substance use disorders,4.4935934842978735
-1984,"Diarrhea, lower respiratory, and other common infectious diseases",37.179859579203274
-2013,"Communicable, maternal, neonatal, and nutritional diseases",37.65139067136505
-1999,Nutritional deficiencies,2.03337826433567
-1995,"Forces of nature, war, and legal intervention",0.2128349680688539
-1984,Chronic respiratory diseases,43.05996102088588
-2010,"Diarrhea, lower respiratory, and other common infectious diseases",29.672086845701944
-1996,Neoplasms,219.97835342519593
-1994,Neglected tropical diseases and malaria,0.02791030669574576
-1995,Transport injuries,20.470528544724687
-1982,Nutritional deficiencies,1.870644783715717
-1984,Other non-communicable diseases,8.833302811701737
-1987,Injuries,67.78240898409938
-2005,Musculoskeletal disorders,3.5725657180517474
-1994,HIV/AIDS and tuberculosis,12.142350681752113
-2005,Transport injuries,18.69314082311104
-1994,Self-harm and interpersonal violence,22.056952911691976
-1994,Cirrhosis and other chronic liver diseases,14.935015194818407
-2010,Other non-communicable diseases,6.07733216098471
-2007,Cirrhosis and other chronic liver diseases,16.35685470512
-1996,Maternal disorders,0.2184673010516288
-1990,"Forces of nature, war, and legal intervention",0.24892758216425273
-2000,"Diabetes, urogenital, blood, and endocrine diseases",56.71161373213447
-2011,Digestive diseases,15.08953068751673
-2009,Non-communicable diseases,707.9401889309448
-1983,Injuries,68.97212159345568
-2006,Maternal disorders,0.3217214474351856
-1990,Neurological disorders,87.60942248024605
-1994,"Other communicable, maternal, neonatal, and nutritional diseases",2.605007950645919
-1994,Neonatal disorders,4.6319303752389756
-1989,Digestive diseases,18.56928362736089
-1989,Mental and substance use disorders,4.944645317994056
-1988,"Communicable, maternal, neonatal, and nutritional diseases",54.16892395343186
-2013,Neurological disorders,97.77984793601081
-2006,Nutritional deficiencies,1.432222627480001
-1980,Musculoskeletal disorders,2.8278095400486403
-1993,Chronic respiratory diseases,49.19855170482341
-2013,"Diarrhea, lower respiratory, and other common infectious diseases",29.436602327582268
-1989,Neoplasms,226.0572962619946
-2001,"Forces of nature, war, and legal intervention",1.0938375329165693
-2003,Neglected tropical diseases and malaria,0.05685655596652755
-1992,Cardiovascular diseases,367.8380406601059
-1983,Cirrhosis and other chronic liver diseases,17.16853617585252
-1983,"Other communicable, maternal, neonatal, and nutritional diseases",1.66937858371244
-2011,Neoplasms,190.6446297304674
-1994,Unintentional injuries,20.18737839302175
-2004,Cardiovascular diseases,292.9767386259716
-1980,Neglected tropical diseases and malaria,0.04680079774042778
-1999,Musculoskeletal disorders,3.7174252530471654
-1998,Cirrhosis and other chronic liver diseases,14.396579106615397
-2005,HIV/AIDS and tuberculosis,3.51939746295501
 1993,"Diabetes, urogenital, blood, and endocrine diseases",49.81369650842145
-1998,Injuries,59.43023615235848
-1982,Unintentional injuries,23.42591712060691
-2002,Non-communicable diseases,794.3454344551832
-1983,HIV/AIDS and tuberculosis,1.3837133291473371
-1997,"Other communicable, maternal, neonatal, and nutritional diseases",2.8603498117197543
-2003,Neonatal disorders,4.254322333975787
-1998,Digestive diseases,17.176216086245915
-1996,Mental and substance use disorders,6.062272064850094
-1999,"Communicable, maternal, neonatal, and nutritional diseases",50.72693401134331
-2008,Injuries,58.76075814568274
-2009,Nutritional deficiencies,1.3226143716681613
-2007,"Other communicable, maternal, neonatal, and nutritional diseases",1.5154931314005478
-1981,Neonatal disorders,8.065730304908463
-1998,Chronic respiratory diseases,53.24323417719177
-2006,Mental and substance use disorders,11.44502865279003
-2004,"Diarrhea, lower respiratory, and other common infectious diseases",32.73111724849869
-2001,"Communicable, maternal, neonatal, and nutritional diseases",48.522898441774494
-1983,Digestive diseases,19.04508694928889
-1981,Non-communicable diseases,917.1521544803646
-2004,Neglected tropical diseases and malaria,0.05982151545997549
-1987,Nutritional deficiencies,1.8917538722587561
-2001,Self-harm and interpersonal violence,19.856208648922557
-1993,Cardiovascular diseases,369.5243171656035
-2000,Neoplasms,212.91666457286377
-1987,Unintentional injuries,21.916594156587553
-1991,Transport injuries,21.431051612950693
-2004,Other non-communicable diseases,6.546676443325729
-1989,Injuries,66.56675199207322
-1989,Cirrhosis and other chronic liver diseases,16.076374804951012
-1982,Maternal disorders,0.19849037963038826
-1998,"Diabetes, urogenital, blood, and endocrine diseases",53.8952820189897
-1992,Self-harm and interpersonal violence,21.934699715309886
-1995,Non-communicable diseases,830.7720912826916
-1984,Maternal disorders,0.20124852485333955
-1988,"Forces of nature, war, and legal intervention",0.19332557232955
-2012,Neonatal disorders,3.4030972902561603
-2007,Digestive diseases,15.698780795854685
-1983,Other non-communicable diseases,8.94062600025522
-1981,"Communicable, maternal, neonatal, and nutritional diseases",50.43679066076959
-1989,Musculoskeletal disorders,3.070317322169951
-2014,"Other communicable, maternal, neonatal, and nutritional diseases",1.2932898339268806
-1990,Neonatal disorders,5.616782012709647
-2007,Chronic respiratory diseases,55.318346252335054
-2009,Mental and substance use disorders,12.659205058565307
-1999,"Diarrhea, lower respiratory, and other common infectious diseases",36.66446621508446
-2008,"Communicable, maternal, neonatal, and nutritional diseases",40.9275813200005
+1994,"Diabetes, urogenital, blood, and endocrine diseases",50.60651732154515
 1995,"Diabetes, urogenital, blood, and endocrine diseases",52.00471920194438
-2013,Neglected tropical diseases and malaria,0.06766536692181725
-1994,Nutritional deficiencies,1.9352156685750532
-1997,Neurological disorders,91.53183093614888
-1993,Neoplasms,223.98302963268384
-2007,"Forces of nature, war, and legal intervention",0.4476007861069654
-1991,Neglected tropical diseases and malaria,0.03190885349400385
-1998,Transport injuries,19.3980329978243
-1982,Cardiovascular diseases,453.35430226439695
-1997,Other non-communicable diseases,7.063181286580393
-2006,Unintentional injuries,21.168292694847946
-1991,HIV/AIDS and tuberculosis,9.087283440626692
-2006,Cardiovascular diseases,275.7486936343211
-2010,Cirrhosis and other chronic liver diseases,16.640561842547047
-1988,Non-communicable diseases,874.9217027376575
-1993,Maternal disorders,0.24841057198737945
-2013,"Diabetes, urogenital, blood, and endocrine diseases",55.21185764054303
-2003,Injuries,60.61249098368016
-2000,Digestive diseases,17.133165673720523
-1982,Mental and substance use disorders,4.19445310750941
-2014,Non-communicable diseases,699.7324713654511
-2003,Maternal disorders,0.2747123360680274
-1985,"Other communicable, maternal, neonatal, and nutritional diseases",1.8146837249904841
-1999,Neonatal disorders,4.2894244642956725
-2012,Chronic respiratory diseases,54.66259448444428
-1982,Neoplasms,223.9506860920236
-2013,Maternal disorders,0.33656188197184495
-1987,"Communicable, maternal, neonatal, and nutritional diseases",52.79685695206561
-2010,Injuries,57.09337079505571
-1997,Nutritional deficiencies,2.03394227215323
-2012,Transport injuries,15.000421973101027
-1986,Chronic respiratory diseases,44.76896819534575
-2008,"Diarrhea, lower respiratory, and other common infectious diseases",30.807063421988218
-1998,Neoplasms,213.8033327278827
-2003,Neurological disorders,96.8064358270853
-1992,Neglected tropical diseases and malaria,0.02922103541473961
-1999,"Forces of nature, war, and legal intervention",0.32478653145200737
-1993,Transport injuries,20.733598063325857
-1980,Nutritional deficiencies,1.905702059591856
-1990,Other non-communicable diseases,8.358320903817118
-1999,Unintentional injuries,20.019221145505732
-1992,HIV/AIDS and tuberculosis,10.065613115196994
-1980,"Diabetes, urogenital, blood, and endocrine diseases",44.37416259549854
-2008,Other non-communicable diseases,6.307362883441904
-2003,Other non-communicable diseases,6.668639149369323
-2001,Cirrhosis and other chronic liver diseases,15.202596245289218
-1993,Unintentional injuries,20.225652680712077
-2009,Musculoskeletal disorders,3.2304903067044832
-2002,HIV/AIDS and tuberculosis,4.056374015025727
-2002,"Diabetes, urogenital, blood, and endocrine diseases",58.64016408586395
-1998,Self-harm and interpersonal violence,19.76156190612735
-1990,Self-harm and interpersonal violence,22.329279772944158
-2009,Digestive diseases,15.339179836985865
-2007,Non-communicable diseases,724.7387493274273
-1981,Injuries,73.1740608681047
-2004,Maternal disorders,0.2876403898529304
-2010,"Forces of nature, war, and legal intervention",0.27386281828801035
-1992,"Other communicable, maternal, neonatal, and nutritional diseases",2.3375601673998423
-1992,Neonatal disorders,5.032891926883416
-1987,Digestive diseases,18.98244531992268
-1995,Mental and substance use disorders,5.929717581666265
-1994,"Communicable, maternal, neonatal, and nutritional diseases",59.72491136557986
-2004,Nutritional deficiencies,1.56890876728061
-2002,"Other communicable, maternal, neonatal, and nutritional diseases",2.7007459170539194
-1995,Chronic respiratory diseases,51.289177471403924
-2003,"Diarrhea, lower respiratory, and other common infectious diseases",34.252992671850755
-1991,Neoplasms,223.57800960666412
-2001,Neglected tropical diseases and malaria,0.039381949560270794
-1981,"Other communicable, maternal, neonatal, and nutritional diseases",1.6277492044710593
-2013,Neoplasms,188.78784720580632
-1988,Unintentional injuries,21.803732683956152
-2005,"Forces of nature, war, and legal intervention",1.4398553943361028
-1995,Musculoskeletal disorders,3.414029933205853
-2010,Transport injuries,15.494922448602779
-1991,Neurological disorders,88.0017219918957
-2001,Other non-communicable diseases,6.779928973486567
-1992,Cirrhosis and other chronic liver diseases,15.041780241309183
-2011,HIV/AIDS and tuberculosis,2.1187331324460463
-2008,Cardiovascular diseases,259.7099244485346
-1981,Chronic respiratory diseases,41.716002822193786
-1987,Transport injuries,23.045417032331834
-2000,Non-communicable diseases,804.2644876539365
-1981,HIV/AIDS and tuberculosis,1.3115849234029044
-2004,Mental and substance use disorders,10.104521120688185
-2001,Neonatal disorders,4.242047373451376
-1996,Digestive diseases,17.525610394180962
-1997,"Communicable, maternal, neonatal, and nutritional diseases",51.33363323979259
-2002,Nutritional deficiencies,1.814789433326565
-2005,"Other communicable, maternal, neonatal, and nutritional diseases",1.8963233142934819
-2000,Chronic respiratory diseases,56.117832341115914
-2007,"Communicable, maternal, neonatal, and nutritional diseases",41.821792141475655
-1994,"Diarrhea, lower respiratory, and other common infectious diseases",38.12759254944003
-1980,Neoplasms,228.80722670150664
-1981,Digestive diseases,19.40528056356863
-1986,Neurological disorders,87.76867598637881
-1983,Self-harm and interpersonal violence,21.972393096861868
-2010,Neglected tropical diseases and malaria,0.06045761930584076
-1985,Nutritional deficiencies,1.9110487926978117
-2005,Unintentional injuries,20.987664880401642
-2003,Self-harm and interpersonal violence,20.048935006131227
-2002,Neoplasms,211.12167300255987
-2001,Neurological disorders,95.75088183168121
-1997,"Forces of nature, war, and legal intervention",0.2462431306177863
-1989,Transport injuries,22.474411040627572
-1999,Injuries,59.26653794009129
-1994,Other non-communicable diseases,7.576191970856933
-2011,Unintentional injuries,21.357462425781392
-1991,Cirrhosis and other chronic liver diseases,15.374992231557478
-1983,"Diarrhea, lower respiratory, and other common infectious diseases",37.111759101582045
-1980,Maternal disorders,0.22402865413693177
-1984,"Diabetes, urogenital, blood, and endocrine diseases",44.718956369006264
-1984,Cardiovascular diseases,443.80295525731214
-1993,Injuries,63.395309665120394
-2013,Cirrhosis and other chronic liver diseases,17.02219265316304
-1993,Non-communicable diseases,831.2194613691688
-2011,Musculoskeletal disorders,3.1404018814565884
-1990,Maternal disorders,0.2299885556436777
-1980,Neurological disorders,86.94720619353393
-1996,Self-harm and interpersonal violence,21.06840047640066
-2010,Neonatal disorders,3.5805957361977883
-2005,Digestive diseases,16.279118276887452
-2011,Self-harm and interpersonal violence,20.52169157698599
-1981,Other non-communicable diseases,9.231159229023937
-2014,Self-harm and interpersonal violence,20.79785613452777
-2008,"Forces of nature, war, and legal intervention",0.2709345102746447
-2012,"Other communicable, maternal, neonatal, and nutritional diseases",1.2799133513192855
-1988,Neonatal disorders,5.956188148124479
-2009,Chronic respiratory diseases,55.237173926860564
-1997,"Diarrhea, lower respiratory, and other common infectious diseases",36.82252325838018
-2014,"Communicable, maternal, neonatal, and nutritional diseases",37.65227138718353
-2011,Injuries,57.5588172924276
-1992,Nutritional deficiencies,1.8488749262290949
-1997,Cardiovascular diseases,346.3019474889308
-1997,Injuries,60.09896082961949
-1995,Neoplasms,224.23169861648185
-1989,Neglected tropical diseases and malaria,0.032959076861595625
-1993,Neurological disorders,89.20787697514066
-1996,Transport injuries,20.00519297933909
-1980,Cardiovascular diseases,475.1684818411236
-1987,Other non-communicable diseases,8.595141910124214
-2000,Unintentional injuries,20.19186526919213
-1989,HIV/AIDS and tuberculosis,7.018798192631986
-2006,Transport injuries,18.4045133134891
-1991,Musculoskeletal disorders,3.1232693261960867
-2004,Cirrhosis and other chronic liver diseases,15.501512587370817
-1986,Non-communicable diseases,888.7044098238208
-1999,Maternal disorders,0.21291513056050357
-2010,Cardiovascular diseases,247.7005692823761
-1990,Musculoskeletal disorders,3.0820785921850162
-2014,Digestive diseases,14.874485585959146
-1980,Mental and substance use disorders,4.458226309020548
-2012,Non-communicable diseases,694.3159513310769
-2001,Maternal disorders,0.23814918059688667
-1991,"Other communicable, maternal, neonatal, and nutritional diseases",2.2627360918934105
-1997,Neonatal disorders,4.196086556386983
-2014,Chronic respiratory diseases,55.14401285889197
-1990,Mental and substance use disorders,5.034313783553841
-1988,"Diarrhea, lower respiratory, and other common infectious diseases",38.398802441913965
-1985,"Communicable, maternal, neonatal, and nutritional diseases",50.360843783763826
-1985,Musculoskeletal disorders,2.9172712180778455
-2003,Nutritional deficiencies,1.7030694013544068
-1983,Musculoskeletal disorders,2.8448696231533894
-1988,Chronic respiratory diseases,46.210900284762296
-2014,"Diarrhea, lower respiratory, and other common infectious diseases",29.546204950782894
-1984,Neoplasms,225.09810912891575
-2014,Injuries,56.66814444193766
-1981,Self-harm and interpersonal violence,22.894325851128464
-1998,Neglected tropical diseases and malaria,0.02724478352202661
-2000,Musculoskeletal disorders,3.7665239477857515
-2000,Transport injuries,19.514364494759295
-1980,Cirrhosis and other chronic liver diseases,17.936957473181433
-1988,Other non-communicable diseases,8.552533111928986
-2007,Neurological disorders,97.03771088122733
-1998,HIV/AIDS and tuberculosis,4.279695958778866
-1987,"Forces of nature, war, and legal intervention",0.24931789559918452
-1982,"Diabetes, urogenital, blood, and endocrine diseases",43.75480827854366
-1983,Neglected tropical diseases and malaria,0.039282443181594
-2004,Injuries,59.84714825364341
-2014,Other non-communicable diseases,6.016333575478232
-2004,Neoplasms,202.60068933875417
-2000,HIV/AIDS and tuberculosis,4.281609450475044
-2004,"Diabetes, urogenital, blood, and endocrine diseases",57.66529491930469
-2012,HIV/AIDS and tuberculosis,1.9965785778523444
-1986,Cardiovascular diseases,431.2398394990657
-1981,Unintentional injuries,24.266807663066775
-2005,Non-communicable diseases,752.5993801162739
-2013,Musculoskeletal disorders,3.0798813728416725
-2010,Maternal disorders,0.32594202402274425
-1986,Self-harm and interpersonal violence,22.663218295033275
-1998,"Other communicable, maternal, neonatal, and nutritional diseases",2.905783588544252
-2006,Neonatal disorders,4.221567359562577
-1985,Digestive diseases,19.18370424718649
-1993,Mental and substance use disorders,5.413311098959002
-1992,"Communicable, maternal, neonatal, and nutritional diseases",56.969362705107656
-2014,"Forces of nature, war, and legal intervention",0.06380797135843959
-2010,Nutritional deficiencies,1.2994481334149879
-2000,"Other communicable, maternal, neonatal, and nutritional diseases",2.8816616310351164
-1997,Chronic respiratory diseases,52.14286897842068
-2003,Mental and substance use disorders,9.645307119345281
-2001,"Diarrhea, lower respiratory, and other common infectious diseases",35.162027896991376
-2002,"Communicable, maternal, neonatal, and nutritional diseases",48.017485939358274
-2007,Neglected tropical diseases and malaria,0.06239385912351105
-1996,"Forces of nature, war, and legal intervention",0.24355105500636748
-1999,Cardiovascular diseases,337.98691961860925
-2008,"Diabetes, urogenital, blood, and endocrine diseases",56.171169900289044
-1994,Musculoskeletal disorders,3.316200678273639
-1990,Unintentional injuries,20.790397852699787
-2005,"Diabetes, urogenital, blood, and endocrine diseases",58.01467076901027
-1999,Neurological disorders,93.68409155665665
-2008,Transport injuries,16.865241456946002
-1991,Self-harm and interpersonal violence,22.222022194221253
-2007,Other non-communicable diseases,6.405066800835089
-2012,Unintentional injuries,21.291615724659124
-2007,Neoplasms,196.29078881758977
-2009,HIV/AIDS and tuberculosis,2.637676203177949
+1996,"Diabetes, urogenital, blood, and endocrine diseases",52.513519412224205
 1997,"Diabetes, urogenital, blood, and endocrine diseases",52.81482181419793
-1981,"Forces of nature, war, and legal intervention",0.2568794782712565
-1983,Chronic respiratory diseases,42.40904193913956
-1998,Non-communicable diseases,802.485887794375
-1987,Maternal disorders,0.216579085461362
-2012,Cardiovascular diseases,243.12308421169575
-2007,Musculoskeletal disorders,3.3774909640843473
-1994,Digestive diseases,17.78548078788829
-2010,Self-harm and interpersonal violence,20.2321443910061
-2008,Neurological disorders,96.86530515348306
-2013,Nutritional deficiencies,1.2901785871286489
-2011,"Other communicable, maternal, neonatal, and nutritional diseases",1.2973492332473
-2002,Chronic respiratory diseases,57.150674465858465
-2010,Mental and substance use disorders,12.946696574163926
-1992,"Diarrhea, lower respiratory, and other common infectious diseases",37.41821317262427
-2005,"Communicable, maternal, neonatal, and nutritional diseases",44.06903633008064
-2008,Neglected tropical diseases and malaria,0.06176794343210838
-1991,Nutritional deficiencies,1.8574702458507226
-1983,"Communicable, maternal, neonatal, and nutritional diseases",49.292703144518526
-1984,Injuries,68.29719249688301
-1986,Neglected tropical diseases and malaria,0.03617222645644905
-2002,Musculoskeletal disorders,3.795366730343067
-1981,"Diabetes, urogenital, blood, and endocrine diseases",44.02294401156264
-1988,Neurological disorders,87.9959931335241
-2007,Self-harm and interpersonal violence,20.39150684808634
-1992,Other non-communicable diseases,7.9390395076466
-2005,Neurological disorders,97.03080854539598
-1985,Cirrhosis and other chronic liver diseases,16.927159911930207
-1981,"Diarrhea, lower respiratory, and other common infectious diseases",37.27327150149324
-1986,HIV/AIDS and tuberculosis,2.866095917769828
-1985,"Forces of nature, war, and legal intervention",0.31689101349003895
-1986,"Diabetes, urogenital, blood, and endocrine diseases",45.92383325432675
-1991,Non-communicable diseases,833.6739062470526
-1988,Maternal disorders,0.2258590489580637
-1994,Cardiovascular diseases,365.14883918344333
-2014,HIV/AIDS and tuberculosis,1.936845511291148
-1982,Neurological disorders,86.28807298479735
-1988,Cardiovascular diseases,414.10584060435616
-2008,Neonatal disorders,4.092911773050434
-2003,Digestive diseases,16.829377765401105
-1984,Self-harm and interpersonal violence,21.982169617213298
-1986,"Other communicable, maternal, neonatal, and nutritional diseases",1.886563466164016
-1986,Neonatal disorders,6.195904237216722
-2011,Chronic respiratory diseases,55.06938288356493
-2013,Mental and substance use disorders,13.949341274029
-1987,"Diarrhea, lower respiratory, and other common infectious diseases",37.984985690723256
-2012,"Communicable, maternal, neonatal, and nutritional diseases",37.810928379118444
-2012,"Forces of nature, war, and legal intervention",0.19079084060282964
-1998,Nutritional deficiencies,2.0302081901648523
-1985,Chronic respiratory diseases,44.1628068039885
-1997,Neoplasms,216.03668899132262
-1995,Neglected tropical diseases and malaria,0.02608590878159902
-2001,Cardiovascular diseases,326.1889876179926
-1994,Transport injuries,20.563520132506408
-1996,Musculoskeletal disorders,3.452897463499916
-2002,Unintentional injuries,20.72886704580709
-1980,Transport injuries,26.835337651932388
-1995,HIV/AIDS and tuberculosis,12.160869621563554
-2004,Transport injuries,18.87397561392089
-1993,"Forces of nature, war, and legal intervention",0.22243888626258668
-2011,Other non-communicable diseases,6.036601804797503
-2008,Self-harm and interpersonal violence,20.37245776746751
-2006,Cirrhosis and other chronic liver diseases,16.253654789057066
-1984,Non-communicable diseases,895.9103073444247
-1997,Maternal disorders,0.20931778413852442
-2001,"Diabetes, urogenital, blood, and endocrine diseases",57.81675547785359
-2012,Digestive diseases,14.932803454213294
-2010,Non-communicable diseases,698.5563058333245
-2007,Maternal disorders,0.32902281092504565
-2014,Cardiovascular diseases,245.46209026905635
-1989,"Other communicable, maternal, neonatal, and nutritional diseases",2.135814174595252
-1995,Neonatal disorders,4.383022909339042
-1990,Digestive diseases,18.198320573568925
-1988,Mental and substance use disorders,4.7573677427749
-1991,"Communicable, maternal, neonatal, and nutritional diseases",56.65171220493663
-2014,Neurological disorders,98.10764575548235
-2001,Nutritional deficiencies,1.9139838008160601
-2002,Mental and substance use disorders,8.975184124681451
-1981,Musculoskeletal disorders,2.8230602052721623
-1990,Chronic respiratory diseases,46.09863250243481
-2012,"Diarrhea, lower respiratory, and other common infectious diseases",29.42948980699857
-1986,Neoplasms,227.09474903167697
-1996,Neglected tropical diseases and malaria,0.02685619506170578
-1982,Cirrhosis and other chronic liver diseases,17.25119501701989
-1982,"Other communicable, maternal, neonatal, and nutritional diseases",1.637699380858662
-2008,Neoplasms,194.66827710688383
-1986,Injuries,68.60692340225263
-2004,Musculoskeletal disorders,3.603356474761174
-1996,HIV/AIDS and tuberculosis,8.96884717183228
-1981,Neglected tropical diseases and malaria,0.04895971942123551
-2005,Self-harm and interpersonal violence,20.234034282555182
-2012,Other non-communicable diseases,6.0171878268558805
-1997,Cirrhosis and other chronic liver diseases,14.395264525873682
-2006,HIV/AIDS and tuberculosis,3.3345945418058154
-1991,"Forces of nature, war, and legal intervention",0.18757177659008267
-2006,"Diabetes, urogenital, blood, and endocrine diseases",57.47050817273053
-1987,Neurological disorders,87.56097460383236
-1983,Unintentional injuries,23.040588824171046
-2003,Non-communicable diseases,781.5681821424315
-2008,Maternal disorders,0.329981258359063
-1983,Transport injuries,23.705657157934656
-1996,"Other communicable, maternal, neonatal, and nutritional diseases",2.8042861734667066
-2004,Neonatal disorders,4.210357678633719
-1999,Digestive diseases,17.226818282512692
-1999,Mental and substance use disorders,7.059961955366183
-1998,"Communicable, maternal, neonatal, and nutritional diseases",50.06405309608889
-2008,Nutritional deficiencies,1.3458869236156052
-2006,"Other communicable, maternal, neonatal, and nutritional diseases",1.6575993095691604
-1982,Neonatal disorders,7.54440193186948
-1999,Chronic respiratory diseases,55.22854061731754
-2001,Mental and substance use disorders,8.417059436065507
-2007,"Diarrhea, lower respiratory, and other common infectious diseases",31.158799490942197
-2000,"Communicable, maternal, neonatal, and nutritional diseases",49.3645394121837
-2002,"Forces of nature, war, and legal intervention",0.07657836638906465
-1982,Non-communicable diseases,901.4157013780209
-2005,Neglected tropical diseases and malaria,0.06271572175271817
-1986,Nutritional deficiencies,1.8861448018725882
-2005,Injuries,61.35469538040396
-2001,Neoplasms,212.9542591143338
-2000,Injuries,59.41199305684906
-2003,Cardiovascular diseases,308.31400502478505
-1991,Unintentional injuries,20.42938429653989
-1998,Musculoskeletal disorders,3.5706538306501927
-2014,Unintentional injuries,21.103173031264376
-1988,Cirrhosis and other chronic liver diseases,16.383283028437212
-1983,Maternal disorders,0.20108993619131493
+1998,"Diabetes, urogenital, blood, and endocrine diseases",53.8952820189897
 1999,"Diabetes, urogenital, blood, and endocrine diseases",55.22721772564833
-1983,"Forces of nature, war, and legal intervention",0.2534825144881176
-1996,Non-communicable diseases,819.1810846016899
-1985,Maternal disorders,0.20031520274744088
-2013,Neonatal disorders,3.3410821235532393
-1992,Digestive diseases,17.781813639068417
-2007,Injuries,59.602616922617706
-2009,"Other communicable, maternal, neonatal, and nutritional diseases",1.3698989195850506
-1991,Neonatal disorders,5.354233274688666
-2004,Chronic respiratory diseases,55.764176332782846
-2008,Mental and substance use disorders,12.402729892930836
-1998,"Diarrhea, lower respiratory, and other common infectious diseases",36.37463073204538
-2011,"Communicable, maternal, neonatal, and nutritional diseases",38.300549880584214
-2012,Neurological disorders,97.44491743679801
-2014,Neglected tropical diseases and malaria,0.060349822127849964
-1989,Nutritional deficiencies,1.8813952361039397
-1994,"Forces of nature, war, and legal intervention",0.24998157182640812
-1988,Self-harm and interpersonal violence,22.59225906988297
-2006,Neoplasms,200.13617130654745
-1984,Neglected tropical diseases and malaria,0.04232320224100153
-1985,Transport injuries,23.32136714912722
-1983,Cardiovascular diseases,450.24184314973843
-1998,Other non-communicable diseases,6.964036595713124
-1988,Injuries,67.6302154607242
-1987,Cirrhosis and other chronic liver diseases,16.539504051047672
-2006,Musculoskeletal disorders,3.4920716624753014
-1984,HIV/AIDS and tuberculosis,1.6429411873911839
-2013,Unintentional injuries,21.334892168323528
-1988,"Diabetes, urogenital, blood, and endocrine diseases",47.211352681368396
-1995,Self-harm and interpersonal violence,21.79939184657535
-2009,Cirrhosis and other chronic liver diseases,16.68313481865552
-1989,Non-communicable diseases,857.1299059332866
-1994,Maternal disorders,0.2549038332320582
-1989,"Forces of nature, war, and legal intervention",0.30248448030271924
-2010,"Diabetes, urogenital, blood, and endocrine diseases",54.98328616727293
-1986,Musculoskeletal disorders,2.9353826608799607
-2001,Digestive diseases,17.223131560718546
-1984,"Other communicable, maternal, neonatal, and nutritional diseases",1.7346950334606481
-1984,Neonatal disorders,6.608657431716948
-2013,Chronic respiratory diseases,54.67922887703731
-1987,Mental and substance use disorders,4.665339695143875
-1985,"Diarrhea, lower respiratory, and other common infectious diseases",37.822476274800884
-1986,"Communicable, maternal, neonatal, and nutritional diseases",51.20026223847629
-1996,Nutritional deficiencies,2.009824705048399
-1987,Chronic respiratory diseases,45.35707911805659
-2011,"Diarrhea, lower respiratory, and other common infectious diseases",29.708726365789342
-1999,Neoplasms,214.05140706895625
-2000,"Forces of nature, war, and legal intervention",0.22955482597962568
-1993,Neglected tropical diseases and malaria,0.028044027086867828
-1992,Transport injuries,20.746426939615944
-1983,Nutritional deficiencies,1.8658771217661962
-1991,Other non-communicable diseases,8.184707195122577
-1996,Unintentional injuries,20.13662127159776
-1993,HIV/AIDS and tuberculosis,11.08109740462379
-2005,Cardiovascular diseases,285.84749004370696
-2009,Other non-communicable diseases,6.192580229847089
-2000,Cirrhosis and other chronic liver diseases,14.931345659451607
-2003,HIV/AIDS and tuberculosis,3.9101524135474417
+2000,"Diabetes, urogenital, blood, and endocrine diseases",56.71161373213447
+2001,"Diabetes, urogenital, blood, and endocrine diseases",57.81675547785359
+2002,"Diabetes, urogenital, blood, and endocrine diseases",58.64016408586395
 2003,"Diabetes, urogenital, blood, and endocrine diseases",58.64536226892957
-2010,Digestive diseases,15.120296356976384
-2008,Non-communicable diseases,717.2067487868915
-1982,Injuries,70.30257996022729
-2005,Maternal disorders,0.30935848366952123
-1995,"Other communicable, maternal, neonatal, and nutritional diseases",2.7310928869607074
-1993,Neonatal disorders,4.865593169961795
-1988,Digestive diseases,18.912558904465662
-1994,Mental and substance use disorders,5.693184116319098
-1980,HIV/AIDS and tuberculosis,1.2564651133414837
-1989,"Communicable, maternal, neonatal, and nutritional diseases",54.99483591558627
-2009,Injuries,57.86418229851827
-2007,Nutritional deficiencies,1.3829185112493676
-1992,Chronic respiratory diseases,47.224225296317286
-2012,Self-harm and interpersonal violence,20.62448446609076
+2004,"Diabetes, urogenital, blood, and endocrine diseases",57.66529491930469
+2005,"Diabetes, urogenital, blood, and endocrine diseases",58.01467076901027
+2006,"Diabetes, urogenital, blood, and endocrine diseases",57.47050817273053
+2007,"Diabetes, urogenital, blood, and endocrine diseases",56.620179956562865
+2008,"Diabetes, urogenital, blood, and endocrine diseases",56.171169900289044
+2009,"Diabetes, urogenital, blood, and endocrine diseases",55.55298696545212
+2010,"Diabetes, urogenital, blood, and endocrine diseases",54.98328616727293
+2011,"Diabetes, urogenital, blood, and endocrine diseases",55.3494083744428
+2012,"Diabetes, urogenital, blood, and endocrine diseases",54.95327191612142
+2013,"Diabetes, urogenital, blood, and endocrine diseases",55.21185764054303
+2014,"Diabetes, urogenital, blood, and endocrine diseases",55.38684923886322
+1980,"Diarrhea, lower respiratory, and other common infectious diseases",37.54760806626531
+1981,"Diarrhea, lower respiratory, and other common infectious diseases",37.27327150149324
+1982,"Diarrhea, lower respiratory, and other common infectious diseases",36.64261993212245
+1983,"Diarrhea, lower respiratory, and other common infectious diseases",37.111759101582045
+1984,"Diarrhea, lower respiratory, and other common infectious diseases",37.179859579203274
+1985,"Diarrhea, lower respiratory, and other common infectious diseases",37.822476274800884
+1986,"Diarrhea, lower respiratory, and other common infectious diseases",38.12060827175634
+1987,"Diarrhea, lower respiratory, and other common infectious diseases",37.984985690723256
+1988,"Diarrhea, lower respiratory, and other common infectious diseases",38.398802441913965
+1989,"Diarrhea, lower respiratory, and other common infectious diseases",37.8147054029732
+1990,"Diarrhea, lower respiratory, and other common infectious diseases",37.78289496705892
+1991,"Diarrhea, lower respiratory, and other common infectious diseases",37.81509034500511
+1992,"Diarrhea, lower respiratory, and other common infectious diseases",37.41821317262427
+1993,"Diarrhea, lower respiratory, and other common infectious diseases",38.140426410898655
+1994,"Diarrhea, lower respiratory, and other common infectious diseases",38.12759254944003
+1995,"Diarrhea, lower respiratory, and other common infectious diseases",38.15796436877316
+1996,"Diarrhea, lower respiratory, and other common infectious diseases",37.44576392555248
+1997,"Diarrhea, lower respiratory, and other common infectious diseases",36.82252325838018
+1998,"Diarrhea, lower respiratory, and other common infectious diseases",36.37463073204538
+1999,"Diarrhea, lower respiratory, and other common infectious diseases",36.66446621508446
+2000,"Diarrhea, lower respiratory, and other common infectious diseases",35.70163951556243
+2001,"Diarrhea, lower respiratory, and other common infectious diseases",35.162027896991376
 2002,"Diarrhea, lower respiratory, and other common infectious diseases",34.877111601127304
-1988,Neoplasms,227.75657312745705
-2002,Neurological disorders,96.70836534135734
+2003,"Diarrhea, lower respiratory, and other common infectious diseases",34.252992671850755
+2004,"Diarrhea, lower respiratory, and other common infectious diseases",32.73111724849869
+2005,"Diarrhea, lower respiratory, and other common infectious diseases",32.52554286614608
+2006,"Diarrhea, lower respiratory, and other common infectious diseases",31.851418892606766
+2007,"Diarrhea, lower respiratory, and other common infectious diseases",31.158799490942197
+2008,"Diarrhea, lower respiratory, and other common infectious diseases",30.807063421988218
+2009,"Diarrhea, lower respiratory, and other common infectious diseases",30.370398988707628
+2010,"Diarrhea, lower respiratory, and other common infectious diseases",29.672086845701944
+2011,"Diarrhea, lower respiratory, and other common infectious diseases",29.708726365789342
+2012,"Diarrhea, lower respiratory, and other common infectious diseases",29.42948980699857
+2013,"Diarrhea, lower respiratory, and other common infectious diseases",29.436602327582268
+2014,"Diarrhea, lower respiratory, and other common infectious diseases",29.546204950782894
+1980,Digestive diseases,19.6897448023739
+1981,Digestive diseases,19.40528056356863
+1982,Digestive diseases,19.135820204888535
+1983,Digestive diseases,19.04508694928889
+1984,Digestive diseases,19.07592150187708
+1985,Digestive diseases,19.18370424718649
+1986,Digestive diseases,19.036624231787844
+1987,Digestive diseases,18.98244531992268
+1988,Digestive diseases,18.912558904465662
+1989,Digestive diseases,18.56928362736089
+1990,Digestive diseases,18.198320573568925
+1991,Digestive diseases,18.08851117360279
+1992,Digestive diseases,17.781813639068417
+1993,Digestive diseases,17.920872662615153
+1994,Digestive diseases,17.78548078788829
+1995,Digestive diseases,17.822918415548926
+1996,Digestive diseases,17.525610394180962
+1997,Digestive diseases,17.37404921335359
+1998,Digestive diseases,17.176216086245915
+1999,Digestive diseases,17.226818282512692
+2000,Digestive diseases,17.133165673720523
+2001,Digestive diseases,17.223131560718546
+2002,Digestive diseases,17.032858627451034
+2003,Digestive diseases,16.829377765401105
+2004,Digestive diseases,16.31384158765902
+2005,Digestive diseases,16.279118276887452
+2006,Digestive diseases,16.09383637606933
+2007,Digestive diseases,15.698780795854685
+2008,Digestive diseases,15.5275200764477
+2009,Digestive diseases,15.339179836985865
+2010,Digestive diseases,15.120296356976384
+2011,Digestive diseases,15.08953068751673
+2012,Digestive diseases,14.932803454213294
+2013,Digestive diseases,14.819194513228759
+2014,Digestive diseases,14.874485585959146
+1980,"Forces of nature, war, and legal intervention",0.2872510277980458
+1981,"Forces of nature, war, and legal intervention",0.2568794782712565
+1982,"Forces of nature, war, and legal intervention",0.27457154004993356
+1983,"Forces of nature, war, and legal intervention",0.2534825144881176
+1984,"Forces of nature, war, and legal intervention",0.31247582882211755
+1985,"Forces of nature, war, and legal intervention",0.31689101349003895
+1986,"Forces of nature, war, and legal intervention",0.20794209355768792
+1987,"Forces of nature, war, and legal intervention",0.24931789559918452
+1988,"Forces of nature, war, and legal intervention",0.19332557232955
+1989,"Forces of nature, war, and legal intervention",0.30248448030271924
+1990,"Forces of nature, war, and legal intervention",0.24892758216425273
+1991,"Forces of nature, war, and legal intervention",0.18757177659008267
+1992,"Forces of nature, war, and legal intervention",0.223769287633852
+1993,"Forces of nature, war, and legal intervention",0.22243888626258668
+1994,"Forces of nature, war, and legal intervention",0.24998157182640812
+1995,"Forces of nature, war, and legal intervention",0.2128349680688539
+1996,"Forces of nature, war, and legal intervention",0.24355105500636748
+1997,"Forces of nature, war, and legal intervention",0.2462431306177863
+1998,"Forces of nature, war, and legal intervention",0.29526312416623346
+1999,"Forces of nature, war, and legal intervention",0.32478653145200737
+2000,"Forces of nature, war, and legal intervention",0.22955482597962568
+2001,"Forces of nature, war, and legal intervention",1.0938375329165693
+2002,"Forces of nature, war, and legal intervention",0.07657836638906465
+2003,"Forces of nature, war, and legal intervention",0.28343658724589993
+2004,"Forces of nature, war, and legal intervention",0.4303436984006014
+2005,"Forces of nature, war, and legal intervention",1.4398553943361028
+2006,"Forces of nature, war, and legal intervention",0.42869153807464905
+2007,"Forces of nature, war, and legal intervention",0.4476007861069654
+2008,"Forces of nature, war, and legal intervention",0.2709345102746447
+2009,"Forces of nature, war, and legal intervention",0.21325583979891538
+2010,"Forces of nature, war, and legal intervention",0.27386281828801035
+2011,"Forces of nature, war, and legal intervention",0.40955426764277886
+2012,"Forces of nature, war, and legal intervention",0.19079084060282964
+2013,"Forces of nature, war, and legal intervention",0.10931483684029628
+2014,"Forces of nature, war, and legal intervention",0.06380797135843959
+1980,HIV/AIDS and tuberculosis,1.2564651133414837
+1981,HIV/AIDS and tuberculosis,1.3115849234029044
+1982,HIV/AIDS and tuberculosis,1.284330793444826
+1983,HIV/AIDS and tuberculosis,1.3837133291473371
+1984,HIV/AIDS and tuberculosis,1.6429411873911839
+1985,HIV/AIDS and tuberculosis,2.1168948854128757
+1986,HIV/AIDS and tuberculosis,2.866095917769828
+1987,HIV/AIDS and tuberculosis,4.6603737783847
+1988,HIV/AIDS and tuberculosis,5.589586134737441
+1989,HIV/AIDS and tuberculosis,7.018798192631986
+1990,HIV/AIDS and tuberculosis,7.820657466350004
+1991,HIV/AIDS and tuberculosis,9.087283440626692
+1992,HIV/AIDS and tuberculosis,10.065613115196994
+1993,HIV/AIDS and tuberculosis,11.08109740462379
+1994,HIV/AIDS and tuberculosis,12.142350681752113
+1995,HIV/AIDS and tuberculosis,12.160869621563554
+1996,HIV/AIDS and tuberculosis,8.96884717183228
+1997,HIV/AIDS and tuberculosis,5.185944306767947
+1998,HIV/AIDS and tuberculosis,4.279695958778866
+1999,HIV/AIDS and tuberculosis,4.567023207858072
+2000,HIV/AIDS and tuberculosis,4.281609450475044
+2001,HIV/AIDS and tuberculosis,4.102399618941385
+2002,HIV/AIDS and tuberculosis,4.056374015025727
+2003,HIV/AIDS and tuberculosis,3.9101524135474417
+2004,HIV/AIDS and tuberculosis,3.6719438430823113
+2005,HIV/AIDS and tuberculosis,3.51939746295501
+2006,HIV/AIDS and tuberculosis,3.3345945418058154
+2007,HIV/AIDS and tuberculosis,3.1337454972409966
+2008,HIV/AIDS and tuberculosis,2.860990717728169
+2009,HIV/AIDS and tuberculosis,2.637676203177949
+2010,HIV/AIDS and tuberculosis,2.3074203298894753
+2011,HIV/AIDS and tuberculosis,2.1187331324460463
+2012,HIV/AIDS and tuberculosis,1.9965785778523444
+2013,HIV/AIDS and tuberculosis,1.9093175367555473
+2014,HIV/AIDS and tuberculosis,1.936845511291148
+1980,Injuries,75.52782364596234
+1981,Injuries,73.1740608681047
+1982,Injuries,70.30257996022729
+1983,Injuries,68.97212159345568
+1984,Injuries,68.29719249688301
+1985,Injuries,68.4306425372479
+1986,Injuries,68.60692340225263
+1987,Injuries,67.78240898409938
+1988,Injuries,67.6302154607242
+1989,Injuries,66.56675199207322
+1990,Injuries,65.3638220626059
+1991,Injuries,64.2700298803019
+1992,Injuries,62.9379076606858
+1993,Injuries,63.395309665120394
+1994,Injuries,63.057833009046526
+1995,Injuries,62.764856060176776
+1996,Injuries,61.453765782343915
+1997,Injuries,60.09896082961949
+1998,Injuries,59.43023615235848
+1999,Injuries,59.26653794009129
+2000,Injuries,59.41199305684906
+2001,Injuries,61.08947234896541
+2002,Injuries,60.453319343791925
+2003,Injuries,60.61249098368016
+2004,Injuries,59.84714825364341
+2005,Injuries,61.35469538040396
+2006,Injuries,60.465097614828586
+2007,Injuries,59.602616922617706
+2008,Injuries,58.76075814568274
+2009,Injuries,57.86418229851827
+2010,Injuries,57.09337079505571
+2011,Injuries,57.5588172924276
+2012,Injuries,57.10731300445373
+2013,Injuries,56.94029684743393
+2014,Injuries,56.66814444193766
+1980,Maternal disorders,0.22402865413693177
+1981,Maternal disorders,0.21435617204326973
+1982,Maternal disorders,0.19849037963038826
+1983,Maternal disorders,0.20108993619131493
+1984,Maternal disorders,0.20124852485333955
+1985,Maternal disorders,0.20031520274744088
+1986,Maternal disorders,0.20877331724037157
+1987,Maternal disorders,0.216579085461362
+1988,Maternal disorders,0.2258590489580637
+1989,Maternal disorders,0.2282686770334218
+1990,Maternal disorders,0.2299885556436777
+1991,Maternal disorders,0.24298995337801862
+1992,Maternal disorders,0.23698836135929963
+1993,Maternal disorders,0.24841057198737945
+1994,Maternal disorders,0.2549038332320582
+1995,Maternal disorders,0.22923209243217088
+1996,Maternal disorders,0.2184673010516288
+1997,Maternal disorders,0.20931778413852442
+1998,Maternal disorders,0.20683233586462696
+1999,Maternal disorders,0.21291513056050357
+2000,Maternal disorders,0.2234055598452834
+2001,Maternal disorders,0.23814918059688667
+2002,Maternal disorders,0.25382652435368097
+2003,Maternal disorders,0.2747123360680274
+2004,Maternal disorders,0.2876403898529304
+2005,Maternal disorders,0.30935848366952123
+2006,Maternal disorders,0.3217214474351856
+2007,Maternal disorders,0.32902281092504565
+2008,Maternal disorders,0.329981258359063
+2009,Maternal disorders,0.34949987808980326
+2010,Maternal disorders,0.32594202402274425
+2011,Maternal disorders,0.3398115708200934
+2012,Maternal disorders,0.32681869305042743
+2013,Maternal disorders,0.33656188197184495
+2014,Maternal disorders,0.3198200223016742
+1980,Mental and substance use disorders,4.458226309020548
+1981,Mental and substance use disorders,4.361535446668999
+1982,Mental and substance use disorders,4.19445310750941
+1983,Mental and substance use disorders,4.21693647586252
+1984,Mental and substance use disorders,4.31634740717064
+1985,Mental and substance use disorders,4.419144984571784
+1986,Mental and substance use disorders,4.4935934842978735
+1987,Mental and substance use disorders,4.665339695143875
+1988,Mental and substance use disorders,4.7573677427749
+1989,Mental and substance use disorders,4.944645317994056
+1990,Mental and substance use disorders,5.034313783553841
+1991,Mental and substance use disorders,5.129547809208653
+1992,Mental and substance use disorders,5.160111373901083
+1993,Mental and substance use disorders,5.413311098959002
+1994,Mental and substance use disorders,5.693184116319098
+1995,Mental and substance use disorders,5.929717581666265
+1996,Mental and substance use disorders,6.062272064850094
+1997,Mental and substance use disorders,6.280937617396987
+1998,Mental and substance use disorders,6.543985719425373
+1999,Mental and substance use disorders,7.059961955366183
+2000,Mental and substance use disorders,7.665496400328877
+2001,Mental and substance use disorders,8.417059436065507
+2002,Mental and substance use disorders,8.975184124681451
+2003,Mental and substance use disorders,9.645307119345281
+2004,Mental and substance use disorders,10.104521120688185
+2005,Mental and substance use disorders,10.774076317558475
+2006,Mental and substance use disorders,11.44502865279003
+2007,Mental and substance use disorders,11.888911159396047
+2008,Mental and substance use disorders,12.402729892930836
+2009,Mental and substance use disorders,12.659205058565307
+2010,Mental and substance use disorders,12.946696574163926
+2011,Mental and substance use disorders,13.402114031718023
+2012,Mental and substance use disorders,13.6727727027626
+2013,Mental and substance use disorders,13.949341274029
+2014,Mental and substance use disorders,13.953437611668432
+1980,Musculoskeletal disorders,2.8278095400486403
+1981,Musculoskeletal disorders,2.8230602052721623
+1982,Musculoskeletal disorders,2.8081414767428816
+1983,Musculoskeletal disorders,2.8448696231533894
+1984,Musculoskeletal disorders,2.8752390849202043
+1985,Musculoskeletal disorders,2.9172712180778455
+1986,Musculoskeletal disorders,2.9353826608799607
+1987,Musculoskeletal disorders,2.974777509775535
+1988,Musculoskeletal disorders,3.035300118582831
+1989,Musculoskeletal disorders,3.070317322169951
+1990,Musculoskeletal disorders,3.0820785921850162
+1991,Musculoskeletal disorders,3.1232693261960867
+1992,Musculoskeletal disorders,3.1285664777100957
+1993,Musculoskeletal disorders,3.242318410993311
+1994,Musculoskeletal disorders,3.316200678273639
+1995,Musculoskeletal disorders,3.414029933205853
+1996,Musculoskeletal disorders,3.452897463499916
+1997,Musculoskeletal disorders,3.506987857767154
+1998,Musculoskeletal disorders,3.5706538306501927
+1999,Musculoskeletal disorders,3.7174252530471654
+2000,Musculoskeletal disorders,3.7665239477857515
+2001,Musculoskeletal disorders,3.8061923261314816
+2002,Musculoskeletal disorders,3.795366730343067
+2003,Musculoskeletal disorders,3.7358333322100377
+2004,Musculoskeletal disorders,3.603356474761174
+2005,Musculoskeletal disorders,3.5725657180517474
+2006,Musculoskeletal disorders,3.4920716624753014
+2007,Musculoskeletal disorders,3.3774909640843473
+2008,Musculoskeletal disorders,3.3090274179062145
+2009,Musculoskeletal disorders,3.2304903067044832
+2010,Musculoskeletal disorders,3.1531196306312994
+2011,Musculoskeletal disorders,3.1404018814565884
+2012,Musculoskeletal disorders,3.096101863082422
+2013,Musculoskeletal disorders,3.0798813728416725
+2014,Musculoskeletal disorders,3.1354624091825793
+1980,Neglected tropical diseases and malaria,0.04680079774042778
+1981,Neglected tropical diseases and malaria,0.04895971942123551
+1982,Neglected tropical diseases and malaria,0.04185918439504435
+1983,Neglected tropical diseases and malaria,0.039282443181594
+1984,Neglected tropical diseases and malaria,0.04232320224100153
+1985,Neglected tropical diseases and malaria,0.04053744071048324
+1986,Neglected tropical diseases and malaria,0.03617222645644905
+1987,Neglected tropical diseases and malaria,0.035191858471501095
+1988,Neglected tropical diseases and malaria,0.035194987147070825
+1989,Neglected tropical diseases and malaria,0.032959076861595625
+1990,Neglected tropical diseases and malaria,0.031763948324058405
+1991,Neglected tropical diseases and malaria,0.03190885349400385
+1992,Neglected tropical diseases and malaria,0.02922103541473961
+1993,Neglected tropical diseases and malaria,0.028044027086867828
+1994,Neglected tropical diseases and malaria,0.02791030669574576
+1995,Neglected tropical diseases and malaria,0.02608590878159902
+1996,Neglected tropical diseases and malaria,0.02685619506170578
+1997,Neglected tropical diseases and malaria,0.02546925024596313
+1998,Neglected tropical diseases and malaria,0.02724478352202661
+1999,Neglected tropical diseases and malaria,0.02981908091597185
+2000,Neglected tropical diseases and malaria,0.03396847190578372
+2001,Neglected tropical diseases and malaria,0.039381949560270794
 2002,Neglected tropical diseases and malaria,0.05149291001795182
-1985,Unintentional injuries,22.55838073046841
-1980,"Other communicable, maternal, neonatal, and nutritional diseases",1.6216338324880386
+2003,Neglected tropical diseases and malaria,0.05685655596652755
+2004,Neglected tropical diseases and malaria,0.05982151545997549
+2005,Neglected tropical diseases and malaria,0.06271572175271817
+2006,Neglected tropical diseases and malaria,0.0649446202640835
+2007,Neglected tropical diseases and malaria,0.06239385912351105
+2008,Neglected tropical diseases and malaria,0.06176794343210838
+2009,Neglected tropical diseases and malaria,0.05842754433908982
+2010,Neglected tropical diseases and malaria,0.06045761930584076
+2011,Neglected tropical diseases and malaria,0.0593797516654726
+2012,Neglected tropical diseases and malaria,0.06588261215779503
+2013,Neglected tropical diseases and malaria,0.06766536692181725
+2014,Neglected tropical diseases and malaria,0.060349822127849964
+1980,Neonatal disorders,8.59207297118757
+1981,Neonatal disorders,8.065730304908463
+1982,Neonatal disorders,7.54440193186948
+1983,Neonatal disorders,7.0216026289375835
+1984,Neonatal disorders,6.608657431716948
+1985,Neonatal disorders,6.4548874624038515
+1986,Neonatal disorders,6.195904237216722
+1987,Neonatal disorders,6.017901115121569
+1988,Neonatal disorders,5.956188148124479
+1989,Neonatal disorders,5.882895155386874
+1990,Neonatal disorders,5.616782012709647
+1991,Neonatal disorders,5.354233274688666
+1992,Neonatal disorders,5.032891926883416
+1993,Neonatal disorders,4.865593169961795
+1994,Neonatal disorders,4.6319303752389756
+1995,Neonatal disorders,4.383022909339042
+1996,Neonatal disorders,4.241435163934166
+1997,Neonatal disorders,4.196086556386983
+1998,Neonatal disorders,4.239657507168865
+1999,Neonatal disorders,4.2894244642956725
+2000,Neonatal disorders,4.262061031787456
+2001,Neonatal disorders,4.242047373451376
+2002,Neonatal disorders,4.263145538453102
+2003,Neonatal disorders,4.254322333975787
+2004,Neonatal disorders,4.210357678633719
+2005,Neonatal disorders,4.241095123033497
+2006,Neonatal disorders,4.221567359562577
+2007,Neonatal disorders,4.239418840594009
+2008,Neonatal disorders,4.092911773050434
+2009,Neonatal disorders,3.8386910800411034
+2010,Neonatal disorders,3.5805957361977883
+2011,Neonatal disorders,3.4628659791752914
+2012,Neonatal disorders,3.4030972902561603
+2013,Neonatal disorders,3.3410821235532393
+2014,Neonatal disorders,3.1919600364565586
+1980,Neoplasms,228.80722670150664
+1981,Neoplasms,226.43518441870853
+1982,Neoplasms,223.9506860920236
+1983,Neoplasms,224.30639384246786
+1984,Neoplasms,225.09810912891575
+1985,Neoplasms,226.87348784159144
+1986,Neoplasms,227.09474903167697
+1987,Neoplasms,227.0197101358552
+1988,Neoplasms,227.75657312745705
+1989,Neoplasms,226.0572962619946
+1990,Neoplasms,223.61858217103924
+1991,Neoplasms,223.57800960666412
+1992,Neoplasms,221.39926440942875
+1993,Neoplasms,223.98302963268384
+1994,Neoplasms,223.22045413462402
+1995,Neoplasms,224.23169861648185
+1996,Neoplasms,219.97835342519593
+1997,Neoplasms,216.03668899132262
+1998,Neoplasms,213.8033327278827
+1999,Neoplasms,214.05140706895625
+2000,Neoplasms,212.91666457286377
+2001,Neoplasms,212.9542591143338
+2002,Neoplasms,211.12167300255987
+2003,Neoplasms,208.41349365338465
+2004,Neoplasms,202.60068933875417
+2005,Neoplasms,202.20285515441913
+2006,Neoplasms,200.13617130654745
+2007,Neoplasms,196.29078881758977
+2008,Neoplasms,194.66827710688383
+2009,Neoplasms,193.07924320435842
 2010,Neoplasms,190.67646709455985
-1989,Unintentional injuries,21.316160596157932
+2011,Neoplasms,190.6446297304674
+2012,Neoplasms,189.45117342406658
+2013,Neoplasms,188.78784720580632
+2014,Neoplasms,190.83340376316264
+1980,Neurological disorders,86.94720619353393
+1981,Neurological disorders,86.4872253949277
+1982,Neurological disorders,86.28807298479735
+1983,Neurological disorders,86.8868229127185
+1984,Neurological disorders,87.16157054004752
+1985,Neurological disorders,87.50024606231521
+1986,Neurological disorders,87.76867598637881
+1987,Neurological disorders,87.56097460383236
+1988,Neurological disorders,87.9959931335241
+1989,Neurological disorders,87.63659545087985
+1990,Neurological disorders,87.60942248024605
+1991,Neurological disorders,88.0017219918957
+1992,Neurological disorders,88.15232403592371
+1993,Neurological disorders,89.20787697514066
+1994,Neurological disorders,89.75138376483056
+1995,Neurological disorders,90.40485538202907
+1996,Neurological disorders,91.00864978720763
+1997,Neurological disorders,91.53183093614888
+1998,Neurological disorders,92.61086646371265
+1999,Neurological disorders,93.68409155665665
+2000,Neurological disorders,95.17544586844991
+2001,Neurological disorders,95.75088183168121
+2002,Neurological disorders,96.70836534135734
+2003,Neurological disorders,96.8064358270853
+2004,Neurological disorders,96.36023417937767
+2005,Neurological disorders,97.03080854539598
+2006,Neurological disorders,96.90274005171241
+2007,Neurological disorders,97.03771088122733
+2008,Neurological disorders,96.86530515348306
+2009,Neurological disorders,96.63144514192187
+2010,Neurological disorders,96.5202124379259
+2011,Neurological disorders,97.25046168225512
+2012,Neurological disorders,97.44491743679801
+2013,Neurological disorders,97.77984793601081
+2014,Neurological disorders,98.10764575548235
+1980,Non-communicable diseases,931.6258431221493
+1981,Non-communicable diseases,917.1521544803646
+1982,Non-communicable diseases,901.4157013780209
+1983,Non-communicable diseases,900.3250082321131
+1984,Non-communicable diseases,895.9103073444247
+1985,Non-communicable diseases,896.0435195031486
+1986,Non-communicable diseases,888.7044098238208
+1987,Non-communicable diseases,880.2274894533267
+1988,Non-communicable diseases,874.9217027376575
+1989,Non-communicable diseases,857.1299059332866
+1990,Non-communicable diseases,841.0125813228865
+1991,Non-communicable diseases,833.6739062470526
+1992,Non-communicable diseases,821.9329203219476
+1993,Non-communicable diseases,831.2194613691688
+1994,Non-communicable diseases,828.036491315936
+1995,Non-communicable diseases,830.7720912826916
+1996,Non-communicable diseases,819.1810846016899
+1997,Non-communicable diseases,807.4485787099923
+1998,Non-communicable diseases,802.485887794375
+1999,Non-communicable diseases,805.7116137758195
+2000,Non-communicable diseases,804.2644876539365
+2001,Non-communicable diseases,800.9008558279511
+2002,Non-communicable diseases,794.3454344551832
+2003,Non-communicable diseases,781.5681821424315
+2004,Non-communicable diseases,757.4370416099962
+2005,Non-communicable diseases,752.5993801162739
+2006,Non-communicable diseases,739.9499957323743
+2007,Non-communicable diseases,724.7387493274273
+2008,Non-communicable diseases,717.2067487868915
+2009,Non-communicable diseases,707.9401889309448
+2010,Non-communicable diseases,698.5563058333245
+2011,Non-communicable diseases,699.399738491732
+2012,Non-communicable diseases,694.3159513310769
+2013,Non-communicable diseases,694.4827326349217
+2014,Non-communicable diseases,699.7324713654511
+1980,Nutritional deficiencies,1.905702059591856
+1981,Nutritional deficiencies,1.895138835029397
+1982,Nutritional deficiencies,1.870644783715717
+1983,Nutritional deficiencies,1.8658771217661962
+1984,Nutritional deficiencies,1.8797970863450957
+1985,Nutritional deficiencies,1.9110487926978117
+1986,Nutritional deficiencies,1.8861448018725882
+1987,Nutritional deficiencies,1.8917538722587561
+1988,Nutritional deficiencies,1.8934125219315057
+1989,Nutritional deficiencies,1.8813952361039397
+1990,Nutritional deficiencies,1.853808144125836
+1991,Nutritional deficiencies,1.8574702458507226
+1992,Nutritional deficiencies,1.8488749262290949
+1993,Nutritional deficiencies,1.9159826405772842
+1994,Nutritional deficiencies,1.9352156685750532
+1995,Nutritional deficiencies,1.9975209667110239
+1996,Nutritional deficiencies,2.009824705048399
+1997,Nutritional deficiencies,2.03394227215323
+1998,Nutritional deficiencies,2.0302081901648523
+1999,Nutritional deficiencies,2.03337826433567
+2000,Nutritional deficiencies,1.9801937515725752
+2001,Nutritional deficiencies,1.9139838008160601
+2002,Nutritional deficiencies,1.814789433326565
+2003,Nutritional deficiencies,1.7030694013544068
+2004,Nutritional deficiencies,1.56890876728061
+2005,Nutritional deficiencies,1.5146033582303287
+2006,Nutritional deficiencies,1.432222627480001
+2007,Nutritional deficiencies,1.3829185112493676
+2008,Nutritional deficiencies,1.3458869236156052
+2009,Nutritional deficiencies,1.3226143716681613
+2010,Nutritional deficiencies,1.2994481334149879
+2011,Nutritional deficiencies,1.3136838474406993
+2012,Nutritional deficiencies,1.3091480474838415
+2013,Nutritional deficiencies,1.2901785871286489
+2014,Nutritional deficiencies,1.3038012102965184
+1980,"Other communicable, maternal, neonatal, and nutritional diseases",1.6216338324880386
+1981,"Other communicable, maternal, neonatal, and nutritional diseases",1.6277492044710593
+1982,"Other communicable, maternal, neonatal, and nutritional diseases",1.637699380858662
+1983,"Other communicable, maternal, neonatal, and nutritional diseases",1.66937858371244
+1984,"Other communicable, maternal, neonatal, and nutritional diseases",1.7346950334606481
+1985,"Other communicable, maternal, neonatal, and nutritional diseases",1.8146837249904841
+1986,"Other communicable, maternal, neonatal, and nutritional diseases",1.886563466164016
+1987,"Other communicable, maternal, neonatal, and nutritional diseases",1.9900715516444436
+1988,"Other communicable, maternal, neonatal, and nutritional diseases",2.06988067061933
+1989,"Other communicable, maternal, neonatal, and nutritional diseases",2.135814174595252
+1990,"Other communicable, maternal, neonatal, and nutritional diseases",2.1867546924022605
+1991,"Other communicable, maternal, neonatal, and nutritional diseases",2.2627360918934105
+1992,"Other communicable, maternal, neonatal, and nutritional diseases",2.3375601673998423
+1993,"Other communicable, maternal, neonatal, and nutritional diseases",2.4791614206545987
+1994,"Other communicable, maternal, neonatal, and nutritional diseases",2.605007950645919
+1995,"Other communicable, maternal, neonatal, and nutritional diseases",2.7310928869607074
+1996,"Other communicable, maternal, neonatal, and nutritional diseases",2.8042861734667066
+1997,"Other communicable, maternal, neonatal, and nutritional diseases",2.8603498117197543
+1998,"Other communicable, maternal, neonatal, and nutritional diseases",2.905783588544252
+1999,"Other communicable, maternal, neonatal, and nutritional diseases",2.92990764829297
+2000,"Other communicable, maternal, neonatal, and nutritional diseases",2.8816616310351164
+2001,"Other communicable, maternal, neonatal, and nutritional diseases",2.824908621417158
+2002,"Other communicable, maternal, neonatal, and nutritional diseases",2.7007459170539194
+2003,"Other communicable, maternal, neonatal, and nutritional diseases",2.48142400140688
+2004,"Other communicable, maternal, neonatal, and nutritional diseases",2.1829177516112668
+2005,"Other communicable, maternal, neonatal, and nutritional diseases",1.8963233142934819
+2006,"Other communicable, maternal, neonatal, and nutritional diseases",1.6575993095691604
+2007,"Other communicable, maternal, neonatal, and nutritional diseases",1.5154931314005478
+2008,"Other communicable, maternal, neonatal, and nutritional diseases",1.4289792818269063
+2009,"Other communicable, maternal, neonatal, and nutritional diseases",1.3698989195850506
+2010,"Other communicable, maternal, neonatal, and nutritional diseases",1.3097983148262429
+2011,"Other communicable, maternal, neonatal, and nutritional diseases",1.2973492332473
+2012,"Other communicable, maternal, neonatal, and nutritional diseases",1.2799133513192855
+2013,"Other communicable, maternal, neonatal, and nutritional diseases",1.2699828474516772
+2014,"Other communicable, maternal, neonatal, and nutritional diseases",1.2932898339268806
+1980,Other non-communicable diseases,9.406807086525323
+1981,Other non-communicable diseases,9.231159229023937
+1982,Other non-communicable diseases,9.098846591914432
+1983,Other non-communicable diseases,8.94062600025522
+1984,Other non-communicable diseases,8.833302811701737
+1985,Other non-communicable diseases,8.78756352563691
+1986,Other non-communicable diseases,8.664942662673548
+1987,Other non-communicable diseases,8.595141910124214
+1988,Other non-communicable diseases,8.552533111928986
+1989,Other non-communicable diseases,8.524704721143559
+1990,Other non-communicable diseases,8.358320903817118
+1991,Other non-communicable diseases,8.184707195122577
+1992,Other non-communicable diseases,7.9390395076466
+1993,Other non-communicable diseases,7.808872298861031
+1994,Other non-communicable diseases,7.576191970856933
+1995,Other non-communicable diseases,7.405830315008143
+1996,Other non-communicable diseases,7.193117601025618
+1997,Other non-communicable diseases,7.063181286580393
+1998,Other non-communicable diseases,6.964036595713124
+1999,Other non-communicable diseases,6.837389790053599
+2000,Other non-communicable diseases,6.7954378516541
+2001,Other non-communicable diseases,6.779928973486567
+2002,Other non-communicable diseases,6.7272322286679005
+2003,Other non-communicable diseases,6.668639149369323
+2004,Other non-communicable diseases,6.546676443325729
+2005,Other non-communicable diseases,6.530985756809133
+2006,Other non-communicable diseases,6.478211324917702
+2007,Other non-communicable diseases,6.405066800835089
+2008,Other non-communicable diseases,6.307362883441904
+2009,Other non-communicable diseases,6.192580229847089
+2010,Other non-communicable diseases,6.07733216098471
+2011,Other non-communicable diseases,6.036601804797503
+2012,Other non-communicable diseases,6.0171878268558805
+2013,Other non-communicable diseases,5.990237587662566
+2014,Other non-communicable diseases,6.016333575478232
+1980,Self-harm and interpersonal violence,23.32204571566174
+1981,Self-harm and interpersonal violence,22.894325851128464
+1982,Self-harm and interpersonal violence,22.234694333382173
+1983,Self-harm and interpersonal violence,21.972393096861868
+1984,Self-harm and interpersonal violence,21.982169617213298
+1985,Self-harm and interpersonal violence,22.23400364416221
+1986,Self-harm and interpersonal violence,22.663218295033275
+1987,Self-harm and interpersonal violence,22.571079899580827
+1988,Self-harm and interpersonal violence,22.59225906988297
+1989,Self-harm and interpersonal violence,22.473695874985005
+1990,Self-harm and interpersonal violence,22.329279772944158
+1991,Self-harm and interpersonal violence,22.222022194221253
+1992,Self-harm and interpersonal violence,21.934699715309886
+1993,Self-harm and interpersonal violence,22.213620034819883
+1994,Self-harm and interpersonal violence,22.056952911691976
+1995,Self-harm and interpersonal violence,21.79939184657535
+1996,Self-harm and interpersonal violence,21.06840047640066
+1997,Self-harm and interpersonal violence,20.287147941971536
+1998,Self-harm and interpersonal violence,19.76156190612735
+1999,Self-harm and interpersonal violence,19.478981313319665
+2000,Self-harm and interpersonal violence,19.476208466917996
+2001,Self-harm and interpersonal violence,19.856208648922557
+2002,Self-harm and interpersonal violence,19.98657289642782
+2003,Self-harm and interpersonal violence,20.048935006131227
+2004,Self-harm and interpersonal violence,19.847184043008752
+2005,Self-harm and interpersonal violence,20.234034282555182
+2006,Self-harm and interpersonal violence,20.46360006841689
+2007,Self-harm and interpersonal violence,20.39150684808634
+2008,Self-harm and interpersonal violence,20.37245776746751
+2009,Self-harm and interpersonal violence,20.359771994703845
+2010,Self-harm and interpersonal violence,20.2321443910061
+2011,Self-harm and interpersonal violence,20.52169157698599
+2012,Self-harm and interpersonal violence,20.62448446609076
+2013,Self-harm and interpersonal violence,20.730887082047268
+2014,Self-harm and interpersonal violence,20.79785613452777
+1980,Transport injuries,26.835337651932388
+1981,Transport injuries,25.756047875638174
+1982,Transport injuries,24.367396966188302
+1983,Transport injuries,23.705657157934656
+1984,Transport injuries,23.33544451196439
+1985,Transport injuries,23.32136714912722
+1986,Transport injuries,23.444229132944347
+1987,Transport injuries,23.045417032331834
+1988,Transport injuries,23.0408981345555
+1989,Transport injuries,22.474411040627572
+1990,Transport injuries,21.995216854797718
+1991,Transport injuries,21.431051612950693
+1992,Transport injuries,20.746426939615944
+1993,Transport injuries,20.733598063325857
+1994,Transport injuries,20.563520132506408
+1995,Transport injuries,20.470528544724687
+1996,Transport injuries,20.00519297933909
+1997,Transport injuries,19.60719081800232
+1998,Transport injuries,19.3980329978243
+1999,Transport injuries,19.443548949813874
+2000,Transport injuries,19.514364494759295
+2001,Transport injuries,19.627481637116734
+2002,Transport injuries,19.66130103516793
+2003,Transport injuries,19.417106227022323
+2004,Transport injuries,18.87397561392089
+2005,Transport injuries,18.69314082311104
+2006,Transport injuries,18.4045133134891
+2007,Transport injuries,17.626524867780805
+2008,Transport injuries,16.865241456946002
+2009,Transport injuries,16.175144288062224
+2010,Transport injuries,15.494922448602779
+2011,Transport injuries,15.270109022017445
+2012,Transport injuries,15.000421973101027
 2013,Transport injuries,14.765202760222834
+2014,Transport injuries,14.703307304787094
+1980,Unintentional injuries,25.08318925057018
+1981,Unintentional injuries,24.266807663066775
+1982,Unintentional injuries,23.42591712060691
+1983,Unintentional injuries,23.040588824171046
+1984,Unintentional injuries,22.667102538883213
+1985,Unintentional injuries,22.55838073046841
+1986,Unintentional injuries,22.291533880717346
+1987,Unintentional injuries,21.916594156587553
+1988,Unintentional injuries,21.803732683956152
+1989,Unintentional injuries,21.316160596157932
+1990,Unintentional injuries,20.790397852699787
+1991,Unintentional injuries,20.42938429653989
+1992,Unintentional injuries,20.03301171812611
+1993,Unintentional injuries,20.225652680712077
+1994,Unintentional injuries,20.18737839302175
+1995,Unintentional injuries,20.2821007008079
+1996,Unintentional injuries,20.13662127159776
+1997,Unintentional injuries,19.958378939027817
+1998,Unintentional injuries,19.975378124240613
+1999,Unintentional injuries,20.019221145505732
+2000,Unintentional injuries,20.19186526919213
+2001,Unintentional injuries,20.511944530009565
+2002,Unintentional injuries,20.72886704580709
+2003,Unintentional injuries,20.86301316328071
+2004,Unintentional injuries,20.69564489831317
+2005,Unintentional injuries,20.987664880401642
+2006,Unintentional injuries,21.168292694847946
+2007,Unintentional injuries,21.136984420643582
+2008,Unintentional injuries,21.252124410994597
+2009,Unintentional injuries,21.116010175953267
+2010,Unintentional injuries,21.092441137158815
+2011,Unintentional injuries,21.357462425781392
+2012,Unintentional injuries,21.291615724659124
+2013,Unintentional injuries,21.334892168323528
+2014,Unintentional injuries,21.103173031264376

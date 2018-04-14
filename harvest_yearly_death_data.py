@@ -44,8 +44,7 @@ def main():
     csv_writer.writerow(['year', 'cause_of_death', 'mortality_rate'])
 
     # Ensure data is listed in order of year, then alphabetically by cause of disease
-    # for cause_year in sorted(cause_year_values, key=operator.itemgetter(0, 1)):
-    for cause_year in cause_year_values:
+    for cause_year in sorted(cause_year_values, key=operator.itemgetter(0, 1)):
       csv_writer.writerow([cause_year[1], cause_year[0], cause_year_values[cause_year]])
 
 
