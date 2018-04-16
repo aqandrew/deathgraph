@@ -13,6 +13,11 @@ import operator
 directory = 'data'
 input_filename = 'death_data_states.csv'
 output_filename = 'death_data_annual.csv'
+grouped_cause_ids = [
+  295,  # Communicable, maternal, neonatal, and nutritional diseases
+  409,  # Non-communicable diseases
+  687   # Injuries
+]
 
 
 def main():
@@ -32,9 +37,10 @@ def main():
       # Keys are (cause_of_death, year)
       dict_key = (death_stat[3], int(death_stat[4]))
 
+      # Ignore causes of death which group together other causes
       if dict_key in cause_year_values:
         cause_year_values[dict_key] += adding_value
-      else:
+      elif int(death_stat[2]) not in grouped_cause_ids:
         cause_year_values[dict_key] = 0
 
   # Write cleaned data to a new file

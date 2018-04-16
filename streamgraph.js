@@ -7,8 +7,10 @@ var colorrange = [];
 
 function chart(csvpath) {
   colorrange = [];
-  // We have 24 causes of death
-  let numColors = 24;
+
+  // We have 21 causes of death
+  let numColors = 21;
+
   for (let i = 0; i < numColors; i++) {
     let newColor = d3.interpolateRainbow(1.0 * i / numColors);
     colorrange.push(newColor);
@@ -18,7 +20,7 @@ function chart(csvpath) {
   
   var format = d3.time.format('%Y');
   
-  var margin = {top: 20, right: 40, bottom: 30, left: 30};
+  var margin = {top: 20, right: 40, bottom: 30, left: 40};
   var width = document.body.clientWidth - margin.left - margin.right;
   var height = 400 - margin.top - margin.bottom;
   
