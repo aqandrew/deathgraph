@@ -21,8 +21,8 @@ function chart(csvpath) {
   var format = d3.time.format('%Y');
   
   var margin = {top: 20, right: 40, bottom: 30, left: 40};
-  var width = document.body.clientWidth - margin.left - margin.right;
-  var height = 400 - margin.top - margin.bottom;
+  var width = document.body.clientWidth / 2 - margin.left - margin.right;
+  var height = window.innerHeight / 2 - margin.top - margin.bottom;
   
   var tooltip = d3.select('body')
   .append('div')
@@ -74,10 +74,16 @@ function chart(csvpath) {
   .append('g')
   .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
   
+  // TODO initialize graph controls
+  // var graphControls
+  
   var graph = d3.csv(csvpath, function(data) {
     data.forEach(function(d) {
+      // Format the data
       d.year = format.parse(d.year);
       d.mortality_rate = +d.mortality_rate;
+
+      // TODO Create controls
     });
     
     var layers = stack(nest.entries(data));
@@ -96,7 +102,15 @@ function chart(csvpath) {
     svg.append('g')
     .attr('class', 'x axis')
     .attr('transform', 'translate(0,' + height + ')')
-    .call(xAxis);
+    .call(xAxis)
+    // Rotate axis labels
+    .selectAll("text")	
+    .style("text-anchor", "end")
+    .attr("dx", "-.8em")
+    .attr("dy", ".15em")
+    .attr("transform", function(d) {
+      return "rotate(-55)";
+    });
     
     svg.append('g')
     .attr('class', 'y axis')
