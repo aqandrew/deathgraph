@@ -68,22 +68,46 @@ function chart(csvpath) {
   .y0(function(d) { return y(d.y0); })
   .y1(function(d) { return y(d.y0 + d.y); });
   
-  var svg = d3.select('.chart').append('svg')
+  var svg = d3.select('#deathgraph').append('svg')
   .attr('width', width + margin.left + margin.right)
   .attr('height', height + margin.top + margin.bottom)
   .append('g')
   .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
   
-  // TODO initialize graph controls
-  // var graphControls
+  // Initialize graph controls
+  var graphControls = d3.select('#deathgraph-controls');
   
   var graph = d3.csv(csvpath, function(data) {
+    deathCauses = [];
+
     data.forEach(function(d) {
       // Format the data
       d.year = format.parse(d.year);
       d.mortality_rate = +d.mortality_rate;
 
-      // TODO Create controls
+      // Create controls
+      // console.log(d.);
+      let causeOfDeath = d.cause_of_death;
+
+      if (!deathCauses.includes(causeOfDeath)) {
+        let kebabCause = causeOfDeath.toLowerCase()
+        .replace(/,/g, '')
+        .replace(/ /g, '-');
+
+        let inputGroup = graphControls.append('div')
+        .attr('class', 'death-cause-control');
+
+        inputGroup.append('input')
+        .attr('type', 'checkbox')
+        .attr('id', 'select-' + kebabCause);
+
+        inputGroup.append('label')
+        .attr('for', kebabCause)
+        .text(causeOfDeath);
+
+        deathCauses.push(causeOfDeath);
+      }
+
     });
     
     var layers = stack(nest.entries(data));
@@ -161,7 +185,7 @@ function chart(csvpath) {
         .attr('stroke-width', '0px'), tooltip.html( '<p>' + d.cause_of_death + '<br>' + pro + '</p>' ).style('visibility', 'hidden');
       });
       
-      var vertical = d3.select('.chart')
+      var vertical = d3.select('#deathgraph')
         .append('div')
         .attr('class', 'remove')
         .style('position', 'absolute')
@@ -173,7 +197,7 @@ function chart(csvpath) {
         .style('left', '0px')
         .style('background', '#fff');
       
-      d3.select('.chart')
+      d3.select('#deathgraph')
       .on('mousemove', function(){  
         mousex = d3.mouse(this);
         mousex = mousex[0] + 5;

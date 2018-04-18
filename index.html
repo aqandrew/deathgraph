@@ -12,12 +12,24 @@
     text-align: center;
   }
 
-  #visualizations {
+  h2 {
+    display: inline;
+  }
+
+  #deathgraph-controls-header {
+    margin-bottom: 1em;
+  }
+
+  #deathgraph-container {
+    height: 50vh;
+  }
+
+  #deathgraph-container > div {
     width: 50%;
-    height: 90%;
+    float: left;
   }
   
-  .chart { 
+  #deathgraph { 
     background: #fff;
   }
   
@@ -31,6 +43,11 @@
     stroke-width: 2px;
     shape-rendering: crispEdges;
   }
+
+  .death-cause-control {
+    height: 2.15vh;
+    font-size: 1.6vh;
+  }
   
 </style>
 <body>
@@ -41,8 +58,19 @@
 
   <h1>U.S. Mortality Rates by Cause, 1980 - 2014</h1>
   
-  <div id="visualizations">
-    <div class="chart">
+  <div id="deathgraph-container">
+    <div id="deathgraph">
+    </div>
+    <div id="deathgraph-controls">
+      <div id="deathgraph-controls-header">
+        <h2>Causes of death</h2>
+        <button>
+          Select all
+        </button>
+        <button>
+          Clear all
+        </button>
+      </div>
     </div>
   </div>
 
