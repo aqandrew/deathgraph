@@ -4,6 +4,7 @@ chart('data/death_data_annual.csv');
 
 var datearray = [];
 var colorrange = [];
+var deathCauses = [];
 
 function chart(csvpath) {
   colorrange = [];
@@ -78,32 +79,28 @@ function chart(csvpath) {
   var graphControls = d3.select('#deathgraph-controls');
   
   var graph = d3.csv(csvpath, function(data) {
-    deathCauses = [];
-
     data.forEach(function(d) {
       // Format the data
       d.year = format.parse(d.year);
       d.mortality_rate = +d.mortality_rate;
 
       // Create controls
-      // console.log(d.);
-      let causeOfDeath = d.cause_of_death;
+      let causeOfDeath = d.cause_of_death.toLowerCase()
+      .replace(/,/g, '')
+      .replace(/ /g, '-');
 
       if (!deathCauses.includes(causeOfDeath)) {
-        let kebabCause = causeOfDeath.toLowerCase()
-        .replace(/,/g, '')
-        .replace(/ /g, '-');
 
         let inputGroup = graphControls.append('div')
         .attr('class', 'death-cause-control');
 
         inputGroup.append('input')
         .attr('type', 'checkbox')
-        .attr('id', 'select-' + kebabCause);
+        .attr('id', 'select-' + causeOfDeath);
 
         inputGroup.append('label')
-        .attr('for', kebabCause)
-        .text(causeOfDeath);
+        .attr('for', 'select-' +  causeOfDeath)
+        .text(d.cause_of_death);
 
         deathCauses.push(causeOfDeath);
       }
@@ -207,4 +204,16 @@ function chart(csvpath) {
           mousex = mousex[0] + 5;
           vertical.style('left', mousex + 'px')});
         });
+}
+
+function selectAllCauses() {
+  deathCauses.forEach((cause) => {
+    document.getElementById('select-' + cause).checked = true;
+  });
+}
+
+function clearAllCauses() {
+  deathCauses.forEach((cause) => {
+    document.getElementById('select-' + cause).checked = false;
+  });
 }
