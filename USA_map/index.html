@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+path {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.background {
+  fill: none;
+  stroke: #ddd;
+}
+
+.foreground {
+  fill: none;
+  pointer-events: all;
+}
+
+.state-button {
+  width: 38px;
+  height: 20px;
+  color: black;
+}
+
+.state-button-box{
+  width: 960px;
+  height: 60px;
+}
+
+.state-text{
+  height: 20px;
+}
+
+</style>
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+
+<script>
+
+stateIds = [
+  { name: 'AL', id: 1 },{ name: 'AK', id: 2 },{ name: 'AZ', id: 4 },
+  { name: 'AR', id: 5 },{ name: 'CA', id: 6 },{ name: 'CO', id: 8 },
+  { name: 'CT', id: 9 },{ name: 'DE', id: 10 },{ name: 'FL', id: 12 },
+  { name: 'GA', id: 13 },{ name: 'HI', id: 15 },{ name: 'ID', id: 16 },
+  { name: 'IL', id: 17 },{ name: 'IN', id: 18 },{ name: 'IA', id: 19 },
+  { name: 'KS', id: 20 },{ name: 'KY', id: 21 },{ name: 'LA', id: 22 },
+  { name: 'ME', id: 23 },{ name: 'MD', id: 24 },{ name: 'MA', id: 25 },
+  { name: 'MI', id: 26 },{ name: 'MN', id: 27 },{ name: 'MS', id: 28 },
+  { name: 'MO', id: 29 },{ name: 'MT', id: 30 },{ name: 'NE', id: 31 },
+  { name: 'NV', id: 32 },{ name: 'NH', id: 33 },{ name: 'NJ', id: 34 },
+  { name: 'NM', id: 35 },{ name: 'NY', id: 36 },{ name: 'NC', id: 37 },
+  { name: 'ND', id: 38 },{ name: 'OH', id: 39 },{ name: 'OK', id: 40 },
+  { name: 'OR', id: 41 },{ name: 'PA', id: 42 },{ name: 'RI', id: 44 },
+  { name: 'SC', id: 45 },{ name: 'SD', id: 46 },{ name: 'TN', id: 47 },
+  { name: 'TX', id: 48 },{ name: 'UT', id: 49 },{ name: 'VT', id: 50 },
+  { name: 'VA', id: 51 },{ name: 'WA', id: 53 }, { name: 'WV', id: 54 },
+  { name: 'WI', id: 55 }, { name: 'WY', id: 56 }
+]
+
+//maps width and height
+var width = 960,
+    height = 600,
+    extra = 800;
+
+//creates map of usa
+var projection = d3.geo.albersUsa()
+    .scale(1280)
+    .translate([width / 2, height / 2]);
+
+//creates path generator for map
+var path = d3.geo.path()
+    .projection(projection);
+
+
+var counties = d3.set();
+
+var color = d3.scale.ordinal().domain(d3.range(1)).range(["#d53e4f"]),
+    selectedColor = 0,
+    dragColor;
+
+var components = color.domain().map(function() { return []; });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var buttonBox1 = d3.select('body').append('div')
+    .attr('id', 'select-state-button-box')
+    .attr('class', 'state-button-box');
+
+var buttonBox2 = d3.select('body').append('div')
+    .attr('id', 'clear-state-button-box')
+    .attr('class', 'state-button-box');
+
+
+d3.json("us.json", function(error, us) {
+  if (error) throw error;
+
+  var bisectId = d3.bisector(function(d) { return d.id; }).left;
+
+  var features = topojson.feature(us, us.objects.counties).features;
+
+  svg.append("path")
+      .datum(topojson.mesh(us, us.objects.counties))
+      .attr("class", "background")
+      .attr("d", path);
+
+  var highlight = svg.append("g")
+      .attr("class", "highlight")
+    .selectAll("path")
+      .data(components)
+    .enter().append("path")
+      .style("fill", function(d, i) { return color(i); })
+      .style("stroke", function(d, i) { return d3.lab(color(i)).darker(); });
+
+  svg.append("g")
+      .attr("class", "foreground")
+      .style("cursor", "pointer")
+      .style("stroke-opacity", .5)
+    .selectAll("path")
+      .data(features)
+    .enter().append("path")
+      .attr("d", function(d) { d.color = null; return path(d); })
+      .on("mouseover", function() { this.style.stroke = "black"; })
+      .on("mouseout", function() { this.style.stroke = "none"; })
+      .call(d3.behavior.drag()
+        .on("dragstart", dragstart));
+
+  d3.select("#select-state-button-box").append("div")
+      .attr("class", "state-text")
+      .text("Select State");
+
+  stateIds.forEach(function(d){
+    d3.select("#select-state-button-box").append("input")
+        .attr("type", "button")
+        .attr("value", d.name)
+        .attr('class', 'state-button')
+        .on("click", function(){select_state(d.id);});
+  })
+
+  d3.select("#clear-state-button-box").append("div")
+      .attr("class", "state-text")
+      .text("Clear State");
+
+  stateIds.forEach(function(d){
+    d3.select("#clear-state-button-box").append("input")
+        .attr("type", "button")
+        .attr("value", d.name)
+        .attr('class', 'state-button')
+        .on("click", function(){clear_state(d.id);});
+  })
+
+  redraw();
+
+  function dragstart() {
+    var feature = d3.event.sourceEvent.target.__data__;
+
+    if (assign(feature, dragColor = feature.color === selectedColor ? null : selectedColor)) redraw();
+  }
+
+  function assign(feature, color) {
+    if (feature.color === color) return false;
+    if (feature.color !== null) {
+      var component = components[feature.color];
+      component.splice(bisectId(component, feature.id), 1);
+      feature.color = null;
+      counties.remove(feature.id)
+    }
+    if (color !== null) {
+      var component = components[color];
+      component.splice(bisectId(component, feature.id), 0, feature);
+      feature.color = color;
+      counties.add(feature.id);
+    }
+
+    return true;
+  }
+
+  function redraw() {
+    highlight.data(components).attr("d", function(d) { return path({type: "FeatureCollection", features: d}) || "M0,0"; });
+
+  }
+
+  function select_state(num) {  
+
+    features.forEach(function(d){
+      if(d.id >= num*1000 && d.id <(num+1)*1000){
+        assign(d, selectedColor);
+      }
+    });
+    redraw();
+  }
+
+  function clear_state(num) {  
+
+    features.forEach(function(d){
+      if(d.id >= num*1000 && d.id <(num+1)*1000){
+        assign(d, null);
+      }
+    });
+    redraw();
+  }
+
+});
+
+</script>
+</body>
