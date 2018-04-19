@@ -61,7 +61,7 @@ function chart(csvpath) {
   .scale(y);
 
   var stack = d3.layout.stack()
-  .offset('silhouette')
+  .offset('zero')
   .values(function(d) { return d.values; })
   .x(function(d) { return d.year; })
   .y(function(d) { return d.mortality_rate; });
