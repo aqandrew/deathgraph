@@ -16,6 +16,7 @@ function chart(csvpath) {
   colorrange = [];
 
   // We have 21 causes of death
+  // TODO change based on number of checked causes of death
   let numColors = 21;
 
   for (let i = 0; i < numColors; i++) {
@@ -214,12 +215,13 @@ function drawStreams(layers, svg, area, z) {
 function toKebabCase(someString) {
   return someString.toLowerCase()
   .replace(/,/g, '')
+  .replace(/\//g, '-')
   .replace(/ /g, '-');
 }
 
 function findAllCauses(csvpath) {
   return new Promise((resolve, reject) => {
-    var graphControls = d3.select('#deathgraph-controls');
+    var deathCheckboxContainer = d3.select('#death-checkbox-container');
 
     d3.csv(csvpath, function(data) {
       data.forEach(function(d) {
@@ -228,7 +230,7 @@ function findAllCauses(csvpath) {
   
         if (!deathCauses.includes(causeOfDeath)) {
   
-          let inputGroup = graphControls.append('div')
+          let inputGroup = deathCheckboxContainer.append('div')
           .attr('class', 'death-cause-control');
   
           inputGroup.append('input')
