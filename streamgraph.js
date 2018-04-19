@@ -1,10 +1,16 @@
 // <!-- http://bl.ocks.org/WillTurman/4631136 -->
 
-chart('data/death_data_annual.csv');
-
 var datearray = [];
 var colorrange = [];
 var deathCauses = [];
+var inputFilename = 'data/death_data_annual.csv';
+
+findAllCauses(inputFilename).then(() => {
+  selectAllCauses();
+  chart(inputFilename);
+});
+
+// TODO Set up an eventlistener for drawStreams
 
 function chart(csvpath) {
   colorrange = [];
@@ -75,36 +81,11 @@ function chart(csvpath) {
   .append('g')
   .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
   
-  // Initialize graph controls
-  var graphControls = d3.select('#deathgraph-controls');
-  
   var graph = d3.csv(csvpath, function(data) {
     data.forEach(function(d) {
       // Format the data
       d.year = format.parse(d.year);
       d.mortality_rate = +d.mortality_rate;
-
-      // Create controls
-      let causeOfDeath = d.cause_of_death.toLowerCase()
-      .replace(/,/g, '')
-      .replace(/ /g, '-');
-
-      if (!deathCauses.includes(causeOfDeath)) {
-
-        let inputGroup = graphControls.append('div')
-        .attr('class', 'death-cause-control');
-
-        inputGroup.append('input')
-        .attr('type', 'checkbox')
-        .attr('id', 'select-' + causeOfDeath);
-
-        inputGroup.append('label')
-        .attr('for', 'select-' +  causeOfDeath)
-        .text(d.cause_of_death);
-
-        deathCauses.push(causeOfDeath);
-      }
-
     });
     
     var layers = stack(nest.entries(data));
@@ -112,13 +93,7 @@ function chart(csvpath) {
     x.domain(d3.extent(data, function(d) { return d.year; }));
     y.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
     
-    svg.selectAll('.layer')
-    .data(layers)
-    .enter().append('path')
-    .attr('class', 'layer')
-    .attr('d', function(d) { return area(d.values); })
-    .style('fill', function(d, i) { return z(i); });
-    
+    drawStreams(layers, svg, area, z);
     
     svg.append('g')
     .attr('class', 'x axis')
@@ -204,6 +179,75 @@ function chart(csvpath) {
           mousex = mousex[0] + 5;
           vertical.style('left', mousex + 'px')});
         });
+}
+
+function drawStreams(layers, svg, area, z) {
+  let deathCheckboxes = document.getElementsByClassName('death-checkbox');
+  let selectedDeathCauses = [];
+  
+  // Filter layers based on checked boxes
+  for (let i = 0; i < deathCheckboxes.length; i++) {
+    let someCheckbox = deathCheckboxes[i];
+
+    if (someCheckbox.checked) {
+      selectedDeathCauses.push(someCheckbox.value);
+    }
+  }
+
+  layers.forEach((streamLayer, layerIndex) => {
+    let kebabCause = toKebabCase(streamLayer.key);
+
+    if (!selectedDeathCauses.includes(kebabCause)) {
+      layers.splice(layerIndex);
+    }
+  });
+
+  // Draw streams
+  svg.selectAll('.layer')
+  .data(layers)
+  .enter().append('path')
+  .attr('class', 'layer')
+  .attr('d', function(d) { return area(d.values); })
+  .style('fill', function(d, i) { return z(i); });
+}
+
+function toKebabCase(someString) {
+  return someString.toLowerCase()
+  .replace(/,/g, '')
+  .replace(/ /g, '-');
+}
+
+function findAllCauses(csvpath) {
+  return new Promise((resolve, reject) => {
+    var graphControls = d3.select('#deathgraph-controls');
+
+    d3.csv(csvpath, function(data) {
+      data.forEach(function(d) {
+        // Create controls
+        let causeOfDeath = toKebabCase(d.cause_of_death);
+  
+        if (!deathCauses.includes(causeOfDeath)) {
+  
+          let inputGroup = graphControls.append('div')
+          .attr('class', 'death-cause-control');
+  
+          inputGroup.append('input')
+          .attr('type', 'checkbox')
+          .attr('value', causeOfDeath)
+          .attr('id', 'select-' + causeOfDeath)
+          .attr('class', 'death-checkbox');
+  
+          inputGroup.append('label')
+          .attr('for', 'select-' +  causeOfDeath)
+          .text(d.cause_of_death);
+  
+          deathCauses.push(causeOfDeath);
+        }
+      });
+
+      resolve(deathCauses);
+    });
+  });
 }
 
 function selectAllCauses() {
