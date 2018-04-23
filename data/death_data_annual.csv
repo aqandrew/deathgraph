@@ -104,41 +104,6 @@ year,cause_of_death,mortality_rate
 2012,Cirrhosis and other chronic liver diseases,16.96204401103651
 2013,Cirrhosis and other chronic liver diseases,17.02219265316304
 2014,Cirrhosis and other chronic liver diseases,16.81875029770626
-1980,"Communicable, maternal, neonatal, and nutritional diseases",51.194311494751624
-1981,"Communicable, maternal, neonatal, and nutritional diseases",50.43679066076959
-1982,"Communicable, maternal, neonatal, and nutritional diseases",49.22004638603657
-1983,"Communicable, maternal, neonatal, and nutritional diseases",49.292703144518526
-1984,"Communicable, maternal, neonatal, and nutritional diseases",49.2895220452115
-1985,"Communicable, maternal, neonatal, and nutritional diseases",50.360843783763826
-1986,"Communicable, maternal, neonatal, and nutritional diseases",51.20026223847629
-1987,"Communicable, maternal, neonatal, and nutritional diseases",52.79685695206561
-1988,"Communicable, maternal, neonatal, and nutritional diseases",54.16892395343186
-1989,"Communicable, maternal, neonatal, and nutritional diseases",54.99483591558627
-1990,"Communicable, maternal, neonatal, and nutritional diseases",55.52264978661441
-1991,"Communicable, maternal, neonatal, and nutritional diseases",56.65171220493663
-1992,"Communicable, maternal, neonatal, and nutritional diseases",56.969362705107656
-1993,"Communicable, maternal, neonatal, and nutritional diseases",58.758715645790396
-1994,"Communicable, maternal, neonatal, and nutritional diseases",59.72491136557986
-1995,"Communicable, maternal, neonatal, and nutritional diseases",59.685788754561266
-1996,"Communicable, maternal, neonatal, and nutritional diseases",55.71548063594736
-1997,"Communicable, maternal, neonatal, and nutritional diseases",51.33363323979259
-1998,"Communicable, maternal, neonatal, and nutritional diseases",50.06405309608889
-1999,"Communicable, maternal, neonatal, and nutritional diseases",50.72693401134331
-2000,"Communicable, maternal, neonatal, and nutritional diseases",49.3645394121837
-2001,"Communicable, maternal, neonatal, and nutritional diseases",48.522898441774494
-2002,"Communicable, maternal, neonatal, and nutritional diseases",48.017485939358274
-2003,"Communicable, maternal, neonatal, and nutritional diseases",46.93352971416984
-2004,"Communicable, maternal, neonatal, and nutritional diseases",44.71270719441951
-2005,"Communicable, maternal, neonatal, and nutritional diseases",44.06903633008064
-2006,"Communicable, maternal, neonatal, and nutritional diseases",42.8840687987236
-2007,"Communicable, maternal, neonatal, and nutritional diseases",41.821792141475655
-2008,"Communicable, maternal, neonatal, and nutritional diseases",40.9275813200005
-2009,"Communicable, maternal, neonatal, and nutritional diseases",39.947206985608794
-2010,"Communicable, maternal, neonatal, and nutritional diseases",38.55574900335903
-2011,"Communicable, maternal, neonatal, and nutritional diseases",38.300549880584214
-2012,"Communicable, maternal, neonatal, and nutritional diseases",37.810928379118444
-2013,"Communicable, maternal, neonatal, and nutritional diseases",37.65139067136505
-2014,"Communicable, maternal, neonatal, and nutritional diseases",37.65227138718353
 1980,"Diabetes, urogenital, blood, and endocrine diseases",44.37416259549854
 1981,"Diabetes, urogenital, blood, and endocrine diseases",44.02294401156264
 1982,"Diabetes, urogenital, blood, and endocrine diseases",43.75480827854366
@@ -314,41 +279,6 @@ year,cause_of_death,mortality_rate
 2012,HIV/AIDS and tuberculosis,1.9965785778523444
 2013,HIV/AIDS and tuberculosis,1.9093175367555473
 2014,HIV/AIDS and tuberculosis,1.936845511291148
-1980,Injuries,75.52782364596234
-1981,Injuries,73.1740608681047
-1982,Injuries,70.30257996022729
-1983,Injuries,68.97212159345568
-1984,Injuries,68.29719249688301
-1985,Injuries,68.4306425372479
-1986,Injuries,68.60692340225263
-1987,Injuries,67.78240898409938
-1988,Injuries,67.6302154607242
-1989,Injuries,66.56675199207322
-1990,Injuries,65.3638220626059
-1991,Injuries,64.2700298803019
-1992,Injuries,62.9379076606858
-1993,Injuries,63.395309665120394
-1994,Injuries,63.057833009046526
-1995,Injuries,62.764856060176776
-1996,Injuries,61.453765782343915
-1997,Injuries,60.09896082961949
-1998,Injuries,59.43023615235848
-1999,Injuries,59.26653794009129
-2000,Injuries,59.41199305684906
-2001,Injuries,61.08947234896541
-2002,Injuries,60.453319343791925
-2003,Injuries,60.61249098368016
-2004,Injuries,59.84714825364341
-2005,Injuries,61.35469538040396
-2006,Injuries,60.465097614828586
-2007,Injuries,59.602616922617706
-2008,Injuries,58.76075814568274
-2009,Injuries,57.86418229851827
-2010,Injuries,57.09337079505571
-2011,Injuries,57.5588172924276
-2012,Injuries,57.10731300445373
-2013,Injuries,56.94029684743393
-2014,Injuries,56.66814444193766
 1980,Maternal disorders,0.22402865413693177
 1981,Maternal disorders,0.21435617204326973
 1982,Maternal disorders,0.19849037963038826
@@ -594,41 +524,6 @@ year,cause_of_death,mortality_rate
 2012,Neurological disorders,97.44491743679801
 2013,Neurological disorders,97.77984793601081
 2014,Neurological disorders,98.10764575548235
-1980,Non-communicable diseases,931.6258431221493
-1981,Non-communicable diseases,917.1521544803646
-1982,Non-communicable diseases,901.4157013780209
-1983,Non-communicable diseases,900.3250082321131
-1984,Non-communicable diseases,895.9103073444247
-1985,Non-communicable diseases,896.0435195031486
-1986,Non-communicable diseases,888.7044098238208
-1987,Non-communicable diseases,880.2274894533267
-1988,Non-communicable diseases,874.9217027376575
-1989,Non-communicable diseases,857.1299059332866
-1990,Non-communicable diseases,841.0125813228865
-1991,Non-communicable diseases,833.6739062470526
-1992,Non-communicable diseases,821.9329203219476
-1993,Non-communicable diseases,831.2194613691688
-1994,Non-communicable diseases,828.036491315936
-1995,Non-communicable diseases,830.7720912826916
-1996,Non-communicable diseases,819.1810846016899
-1997,Non-communicable diseases,807.4485787099923
-1998,Non-communicable diseases,802.485887794375
-1999,Non-communicable diseases,805.7116137758195
-2000,Non-communicable diseases,804.2644876539365
-2001,Non-communicable diseases,800.9008558279511
-2002,Non-communicable diseases,794.3454344551832
-2003,Non-communicable diseases,781.5681821424315
-2004,Non-communicable diseases,757.4370416099962
-2005,Non-communicable diseases,752.5993801162739
-2006,Non-communicable diseases,739.9499957323743
-2007,Non-communicable diseases,724.7387493274273
-2008,Non-communicable diseases,717.2067487868915
-2009,Non-communicable diseases,707.9401889309448
-2010,Non-communicable diseases,698.5563058333245
-2011,Non-communicable diseases,699.399738491732
-2012,Non-communicable diseases,694.3159513310769
-2013,Non-communicable diseases,694.4827326349217
-2014,Non-communicable diseases,699.7324713654511
 1980,Nutritional deficiencies,1.905702059591856
 1981,Nutritional deficiencies,1.895138835029397
 1982,Nutritional deficiencies,1.870644783715717
