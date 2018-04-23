@@ -62,6 +62,9 @@
     <div id="deathgraph">
     </div>
     <div id="deathgraph-controls">
+      <button>
+        Update streamgraph
+      </button>
       <div id="deathgraph-controls-header">
         <h2>Causes of death</h2>
         <button onclick="selectAllCauses()">
@@ -76,5 +79,50 @@
     </div>
   </div>
 
+  <script>
+    // Define global variables
+    var margin = {top: 20, right: 40, bottom: 30, left: 40};
+    var width = document.body.clientWidth / 2 - margin.left - margin.right;
+    var height = window.innerHeight / 2 - margin.top - margin.bottom;
+
+    var svg = d3.select('#deathgraph').append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom)
+    .append('g')
+    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+    var colorrange = [];
+    // We have 21 causes of death
+    // TODO change based on number of checked causes of death
+    let numColors = 21;
+
+    for (let i = 0; i < numColors; i++) {
+      let newColor = d3.interpolateRainbow(1.0 * i / numColors);
+      colorrange.push(newColor);
+    }
+
+    var x = d3.time.scale()
+    .range([0, width]);
+
+    var y = d3.scale.linear()
+    .range([height-10, 0]);
+
+    var z = d3.scale.ordinal()
+    .range(colorrange);
+
+    var area = d3.svg.area()
+    .interpolate('cardinal')
+    .x(function(d) { return x(d.year); })
+    .y0(function(d) { return y(d.y0); })
+    .y1(function(d) { return y(d.y0 + d.y); });
+  </script>
   <script src="streamgraph.js"></script>
+  <script>
+    // Initialize streamgraph
+    findAllCauses(inputFilename)
+    .then(selectAllCauses)
+    .then(() => {
+      chart(inputFilename);
+    });
+  </script>
 </body>

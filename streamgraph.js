@@ -1,36 +1,16 @@
 // <!-- http://bl.ocks.org/WillTurman/4631136 -->
 
 var datearray = [];
-var colorrange = [];
 var deathCauses = [];
 var inputFilename = 'data/death_data_annual.csv';
-
-findAllCauses(inputFilename).then(() => {
-  selectAllCauses();
-  chart(inputFilename);
-});
+var layers;
 
 // TODO Set up an eventlistener for drawStreams
 
 function chart(csvpath) {
-  colorrange = [];
-
-  // We have 21 causes of death
-  // TODO change based on number of checked causes of death
-  let numColors = 21;
-
-  for (let i = 0; i < numColors; i++) {
-    let newColor = d3.interpolateRainbow(1.0 * i / numColors);
-    colorrange.push(newColor);
-  }
-
-  strokecolor = colorrange[0];
+  var strokecolor = colorrange[0];
   
   var format = d3.time.format('%Y');
-  
-  var margin = {top: 20, right: 40, bottom: 30, left: 40};
-  var width = document.body.clientWidth / 2 - margin.left - margin.right;
-  var height = window.innerHeight / 2 - margin.top - margin.bottom;
   
   var tooltip = d3.select('body')
   .append('div')
@@ -40,15 +20,6 @@ function chart(csvpath) {
   .style('visibility', 'hidden')
   .style('top', '30px')
   .style('left', '55px');
-  
-  var x = d3.time.scale()
-  .range([0, width]);
-  
-  var y = d3.scale.linear()
-  .range([height-10, 0]);
-  
-  var z = d3.scale.ordinal()
-  .range(colorrange);
   
   var xAxis = d3.svg.axis()
   .scale(x)
@@ -70,18 +41,6 @@ function chart(csvpath) {
   var nest = d3.nest()
   .key(function(d) { return d.cause_of_death; });
   
-  var area = d3.svg.area()
-  .interpolate('cardinal')
-  .x(function(d) { return x(d.year); })
-  .y0(function(d) { return y(d.y0); })
-  .y1(function(d) { return y(d.y0 + d.y); });
-  
-  var svg = d3.select('#deathgraph').append('svg')
-  .attr('width', width + margin.left + margin.right)
-  .attr('height', height + margin.top + margin.bottom)
-  .append('g')
-  .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
-  
   var graph = d3.csv(csvpath, function(data) {
     data.forEach(function(d) {
       // Format the data
@@ -89,12 +48,12 @@ function chart(csvpath) {
       d.mortality_rate = +d.mortality_rate;
     });
     
-    var layers = stack(nest.entries(data));
+    layers = stack(nest.entries(data));
     
     x.domain(d3.extent(data, function(d) { return d.year; }));
     y.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
     
-    drawStreams(layers, svg, area, z);
+    drawStreams();
     
     svg.append('g')
     .attr('class', 'x axis')
@@ -182,7 +141,7 @@ function chart(csvpath) {
         });
 }
 
-function drawStreams(layers, svg, area, z) {
+function drawStreams() {
   let deathCheckboxes = document.getElementsByClassName('death-checkbox');
   let selectedDeathCauses = [];
   
