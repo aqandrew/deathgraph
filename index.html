@@ -7,23 +7,23 @@
   body {
     font: 10px sans-serif;
   }
-
+  
   h1 {
     text-align: center;
   }
-
+  
   h2 {
     display: inline;
   }
-
+  
   #deathgraph-controls-header {
     margin-bottom: 1em;
   }
-
+  
   #deathgraph-container {
     height: 50vh;
   }
-
+  
   #deathgraph-container > div {
     width: 50%;
     float: left;
@@ -43,7 +43,7 @@
     stroke-width: 2px;
     shape-rendering: crispEdges;
   }
-
+  
   .death-cause-control {
     height: 2.15vh;
     font-size: 1.6vh;
@@ -55,11 +55,14 @@
   <script src="https://d3js.org/d3-color.v1.min.js"></script>
   <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-
+  
   <h1>U.S. Mortality Rates by Cause, 1980 - 2014</h1>
   
   <div id="deathgraph-container">
     <div id="deathgraph">
+      <button onclick="transition()">
+        Update
+      </button>
     </div>
     <div id="deathgraph-controls">
       <div id="deathgraph-controls-header">
@@ -75,6 +78,37 @@
       </div>
     </div>
   </div>
+  
+  <!-- <script src="streamgraph.js"></script> -->
+  <script type="text/javascript" src="stream_layers.js"></script>
+  <script type="text/javascript" src="stream_chart.js"></script>
+  <script>
+    // http://bl.ocks.org/lgrammel/1935509
 
-  <script src="streamgraph.js"></script>
+    var n = 20, // number of layers
+    m = 200; // number of samples per layer
+    
+    var data1 = stream_layers(n, m);
+    var data0 = stream_layers(n, m);
+    var colors = d3.range(n).map(function() { return d3.interpolateRgb("#aad", "#556")(Math.random()); });
+    
+    var streamgraph = streamgraphChart()
+    .margin({top: 10, right: 10, bottom: 10, left: 10})
+    .color(function(d, i) { return colors[i]; }) // use same colors for both data sets
+    .transitionDuration(1500);
+    
+    d3.select("#deathgraph")
+    .datum(data0)
+    .call(streamgraph);
+    
+    function transition() {
+      d3.select("#deathgraph")
+      .datum(function() {
+        var d = data1;
+        data1 = data0;
+        return data0 = d;
+      })
+      .call(streamgraph);
+    }
+  </script>
 </body>

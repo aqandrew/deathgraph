@@ -1,4 +1,4 @@
-// <!-- http://bl.ocks.org/WillTurman/4631136 -->
+// http://bl.ocks.org/WillTurman/4631136
 
 var datearray = [];
 var colorrange = [];
