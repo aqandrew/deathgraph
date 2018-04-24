@@ -91,24 +91,11 @@
     .append('g')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-    var colorrange = [];
-    // We have 21 causes of death
-    // TODO change based on number of checked causes of death
-    let numColors = 21;
-
-    for (let i = 0; i < numColors; i++) {
-      let newColor = d3.interpolateRainbow(1.0 * i / numColors);
-      colorrange.push(newColor);
-    }
-
     var x = d3.time.scale()
     .range([0, width]);
 
     var y = d3.scale.linear()
     .range([height-10, 0]);
-
-    var z = d3.scale.ordinal()
-    .range(colorrange);
 
     var area = d3.svg.area()
     .interpolate('cardinal')

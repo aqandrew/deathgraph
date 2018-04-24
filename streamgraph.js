@@ -4,8 +4,14 @@ var datearray = [];
 var deathCauses = [];
 var inputFilename = 'data/death_data_annual.csv';
 var layers;
+var colorrange = [];
+var numColors = 21;
 
-// TODO Set up an eventlistener for drawStreams
+// Assign each of the 21 causes of death to a unique color
+for (let i = 0; i < numColors; i++) {
+  let newColor = d3.interpolateRainbow(1.0 * i / numColors);
+  colorrange.push(newColor);
+}
 
 function chart(csvpath) {
   var strokecolor = colorrange[0];
@@ -50,6 +56,12 @@ function chart(csvpath) {
     
     layers = stack(nest.entries(data));
     
+    // Associate each stream with a specific color
+    // (We don't want colors to change as we add/remove streams)
+    layers.forEach((layer, index) => {
+      layer['color'] = colorrange[index];
+    });
+
     x.domain(d3.extent(data, function(d) { return d.year; }));
     y.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
     
@@ -158,7 +170,7 @@ function drawStreams() {
     let kebabCause = toKebabCase(streamLayer.key);
 
     if (!selectedDeathCauses.includes(kebabCause)) {
-      layers.splice(layerIndex);
+      layers.splice(layerIndex, 1);
     }
   });
 
@@ -168,7 +180,7 @@ function drawStreams() {
   .enter().append('path')
   .attr('class', 'layer')
   .attr('d', function(d) { return area(d.values); })
-  .style('fill', function(d, i) { return z(i); });
+  .style('fill', function(d) { return d.color; });
 }
 
 function toKebabCase(someString) {
