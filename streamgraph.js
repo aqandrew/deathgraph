@@ -166,13 +166,15 @@ function drawStreams() {
     }
   }
 
-  layers.forEach((streamLayer, layerIndex) => {
-    let kebabCause = toKebabCase(streamLayer.key);
+  let layerIndex = layers.length;
+
+  while (layerIndex--) {
+    let kebabCause = toKebabCase(layers[layerIndex].key);
 
     if (!selectedDeathCauses.includes(kebabCause)) {
       layers.splice(layerIndex, 1);
     }
-  });
+  }
 
   // Draw streams
   svg.selectAll('.layer')
