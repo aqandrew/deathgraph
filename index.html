@@ -62,7 +62,7 @@
     <div id="deathgraph">
     </div>
     <div id="deathgraph-controls">
-      <button>
+      <button onclick="clearSvg(); chart(inputFilename)">
         Update streamgraph
       </button>
       <div id="deathgraph-controls-header">
@@ -115,6 +115,11 @@
     .x(function(d) { return x(d.year); })
     .y0(function(d) { return y(d.y0); })
     .y1(function(d) { return y(d.y0 + d.y); });
+
+    function clearSvg() {
+      svg.selectAll('*').remove();
+      d3.select('.remove').remove();
+    }
   </script>
   <script src="streamgraph.js"></script>
   <script>
