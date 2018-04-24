@@ -62,7 +62,7 @@
     <div id="deathgraph">
     </div>
     <div id="deathgraph-controls">
-      <button onclick="clearSvg(); chart(inputFilename)">
+      <button onclick="clearSvg(); chart(inputFilename); this.disabled = true" disabled="true" id="update-streamgraph-button">
         Update streamgraph
       </button>
       <div id="deathgraph-controls-header">
@@ -107,6 +107,13 @@
       svg.selectAll('*').remove();
       d3.select('.remove').remove();
     }
+
+    // Add event listeners
+    document.getElementById('deathgraph-controls').addEventListener('click', (event) => {
+      if (event.target.tagName == 'INPUT') {
+        document.getElementById('update-streamgraph-button').disabled = false;
+      }
+    });
   </script>
   <script src="streamgraph.js"></script>
   <script>

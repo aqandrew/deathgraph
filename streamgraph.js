@@ -48,6 +48,7 @@ function chart(csvpath) {
   .key(function(d) { return d.cause_of_death; });
   
   var graph = d3.csv(csvpath, function(data) {
+    // TODO manipulate data instead of layers, to make prettier streams when some are removed
     data.forEach(function(d) {
       // Format the data
       d.year = format.parse(d.year);
@@ -202,7 +203,6 @@ function findAllCauses(csvpath) {
         let causeOfDeath = toKebabCase(d.cause_of_death);
   
         if (!deathCauses.includes(causeOfDeath)) {
-  
           let inputGroup = deathCheckboxContainer.append('div')
           .attr('class', 'death-cause-control');
   
