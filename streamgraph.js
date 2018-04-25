@@ -4,14 +4,6 @@ var datearray = [];
 var deathCauses = [];
 var inputFilename = 'data/death_data_annual.csv';
 var layers;
-var colorrange = [];
-var numColors = 21;
-
-// Assign each of the 21 causes of death to a unique color
-for (let i = 0; i < numColors; i++) {
-  let newColor = d3.interpolateRainbow(1.0 * i / numColors);
-  colorrange.push(newColor);
-}
 
 function chart(csvpath) {
   var strokecolor = colorrange[0];
@@ -183,7 +175,7 @@ function drawStreams() {
   .enter().append('path')
   .attr('class', 'layer')
   .attr('d', function(d) { return area(d.values); })
-  .style('fill', function(d) { return d.color; });
+  .style('fill', function(d) { return colorrange[toKebabCase(d.key)]; });
 }
 
 function toKebabCase(someString) {
@@ -198,10 +190,14 @@ function findAllCauses(csvpath) {
     var deathCheckboxContainer = d3.select('#death-checkbox-container');
 
     d3.csv(csvpath, function(data) {
+      let colorIndex = 0;
+      let numColors = 21;
+
       data.forEach(function(d) {
         // Create controls
         let causeOfDeath = toKebabCase(d.cause_of_death);
   
+        // Parsing a a new cause
         if (!deathCauses.includes(causeOfDeath)) {
           let inputGroup = deathCheckboxContainer.append('div')
           .attr('class', 'death-cause-control');
@@ -217,6 +213,11 @@ function findAllCauses(csvpath) {
           .text(d.cause_of_death);
   
           deathCauses.push(causeOfDeath);
+
+          // Assign each of the 21 causes of death to a unique color
+          let newColor = d3.interpolateRainbow(1.0 * colorIndex / numColors);
+          colorrange[causeOfDeath] = newColor;
+          colorIndex++;
         }
       });
 
