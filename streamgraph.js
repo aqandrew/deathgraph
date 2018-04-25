@@ -154,7 +154,7 @@ function chart(csvpath) {
         .style('z-index', '19')
         .style('width', '1px')
         .style('height', '380px')
-        .style('top', '10px')
+        .style('top', '40px')
         .style('bottom', '30px')
         .style('left', '0px')
         .style('background', '#fff');
