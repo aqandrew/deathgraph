@@ -87,7 +87,7 @@ function chart(csvpath) {
     
     svg.append('g')
     .attr('class', 'x axis')
-    .attr('transform', 'translate(0,' + height + ')')
+    .attr('transform', 'translate(0,' + (height - 10) + ')')
     .call(xAxis)
     // Rotate axis labels
     .selectAll("text")	
