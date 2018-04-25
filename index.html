@@ -111,7 +111,7 @@
 
     // Add event listeners
     document.getElementById('deathgraph-controls').addEventListener('click', (event) => {
-      if (event.target.tagName == 'INPUT') {
+      if (event.target.tagName == 'INPUT' || event.target.innerText == 'Select all') {
         document.getElementById('update-streamgraph-button').disabled = false;
       }
     });

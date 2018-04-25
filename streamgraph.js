@@ -3,7 +3,6 @@
 var datearray = [];
 var deathCauses = [];
 var inputFilename = 'data/death_data_annual.csv';
-var layers;
 
 function chart(csvpath) {
   var strokecolor = colorrange[0];
@@ -40,14 +39,35 @@ function chart(csvpath) {
   .key(function(d) { return d.cause_of_death; });
   
   var graph = d3.csv(csvpath, function(data) {
-    // TODO manipulate data instead of layers, to make prettier streams when some are removed
+    // Filter drawn layers based on checked boxes
+    let deathCheckboxes = document.getElementsByClassName('death-checkbox');
+    let selectedDeathCauses = [];
+
+    for (let i = 0; i < deathCheckboxes.length; i++) {
+      let someCheckbox = deathCheckboxes[i];
+
+      if (someCheckbox.checked) {
+        selectedDeathCauses.push(someCheckbox.value);
+      }
+    }
+
+    let dataIndex = data.length;
+
+    while (dataIndex--) {
+      let kebabCause = toKebabCase(data[dataIndex].cause_of_death);
+
+      if (!selectedDeathCauses.includes(kebabCause)) {
+        data.splice(dataIndex, 1);
+      }
+    }
+
     data.forEach(function(d) {
       // Format the data
       d.year = format.parse(d.year);
       d.mortality_rate = +d.mortality_rate;
     });
     
-    layers = stack(nest.entries(data));
+    var layers = stack(nest.entries(data));
     
     // Associate each stream with a specific color
     // (We don't want colors to change as we add/remove streams)
@@ -58,7 +78,12 @@ function chart(csvpath) {
     x.domain(d3.extent(data, function(d) { return d.year; }));
     y.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
     
-    drawStreams();
+    svg.selectAll('.layer')
+    .data(layers)
+    .enter().append('path')
+    .attr('class', 'layer')
+    .attr('d', function(d) { return area(d.values); })
+    .style('fill', function(d) { return colorrange[toKebabCase(d.key)]; });
     
     svg.append('g')
     .attr('class', 'x axis')
@@ -144,38 +169,6 @@ function chart(csvpath) {
           mousex = mousex[0] + 5;
           vertical.style('left', mousex + 'px')});
         });
-}
-
-function drawStreams() {
-  let deathCheckboxes = document.getElementsByClassName('death-checkbox');
-  let selectedDeathCauses = [];
-  
-  // Filter layers based on checked boxes
-  for (let i = 0; i < deathCheckboxes.length; i++) {
-    let someCheckbox = deathCheckboxes[i];
-
-    if (someCheckbox.checked) {
-      selectedDeathCauses.push(someCheckbox.value);
-    }
-  }
-
-  let layerIndex = layers.length;
-
-  while (layerIndex--) {
-    let kebabCause = toKebabCase(layers[layerIndex].key);
-
-    if (!selectedDeathCauses.includes(kebabCause)) {
-      layers.splice(layerIndex, 1);
-    }
-  }
-
-  // Draw streams
-  svg.selectAll('.layer')
-  .data(layers)
-  .enter().append('path')
-  .attr('class', 'layer')
-  .attr('d', function(d) { return area(d.values); })
-  .style('fill', function(d) { return colorrange[toKebabCase(d.key)]; });
 }
 
 function toKebabCase(someString) {
