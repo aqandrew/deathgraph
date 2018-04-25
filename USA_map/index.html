@@ -39,7 +39,7 @@ path {
 
 <script>
 
-stateIds = [
+var stateIds = [
   { name: 'AL', id: 1 },{ name: 'AK', id: 2 },{ name: 'AZ', id: 4 },
   { name: 'AR', id: 5 },{ name: 'CA', id: 6 },{ name: 'CO', id: 8 },
   { name: 'CT', id: 9 },{ name: 'DE', id: 10 },{ name: 'FL', id: 12 },
@@ -58,6 +58,27 @@ stateIds = [
   { name: 'VA', id: 51 },{ name: 'WA', id: 53 }, { name: 'WV', id: 54 },
   { name: 'WI', id: 55 }, { name: 'WY', id: 56 }
 ]
+
+var info = [];
+
+function poop(){
+  return new Promise(function (resolve, reject) {
+    d3.tsv("info.tsv", function(data){
+      // do shit
+
+      info = data;
+      resolve(info);
+    });
+  });
+}
+
+poop().then(function (value) {
+  if (value == 'poop')
+    console.log('Promise was resolved');
+});
+
+
+////////////////////////////////////////////////////////
 
 //maps width and height
 var width = 960,
@@ -82,9 +103,14 @@ var color = d3.scale.ordinal().domain(d3.range(1)).range(["#d53e4f"]),
 
 var components = color.domain().map(function() { return []; });
 
+/////////////////////////////////////////////////////////////
+
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
+
+var buttonBox0 = d3.select('body').append('div')
+    .attr('id', 'all-button-box')
 
 var buttonBox1 = d3.select('body').append('div')
     .attr('id', 'select-state-button-box')
@@ -94,6 +120,12 @@ var buttonBox2 = d3.select('body').append('div')
     .attr('id', 'clear-state-button-box')
     .attr('class', 'state-button-box');
 
+var buttonBox3 = d3.select('body').append('div')
+    .attr('id', 'demo-button-box');
+
+var buttonBox4 = d3.select('body').append('div')
+    .attr('id', 'demo-button-box2');
+//////////////////////////////////////////////////////////
 
 d3.json("us.json", function(error, us) {
   if (error) throw error;
@@ -128,6 +160,18 @@ d3.json("us.json", function(error, us) {
       .call(d3.behavior.drag()
         .on("dragstart", dragstart));
 
+////////////////////////////////////////////////////////
+
+  d3.select("#all-button-box").append("input")
+    .attr("type", "button")
+    .attr("value", "Select All")
+    .on("click", function(){select_all();});
+
+  d3.select("#all-button-box").append("input")
+    .attr("type", "button")
+    .attr("value", "Clear All")
+    .on("click", function(){clear_all();});
+
   d3.select("#select-state-button-box").append("div")
       .attr("class", "state-text")
       .text("Select State");
@@ -151,6 +195,205 @@ d3.json("us.json", function(error, us) {
         .attr('class', 'state-button')
         .on("click", function(){clear_state(d.id);});
   })
+
+///////////////////////////////////////////////////////////
+
+d3.select("#demo-button-box").append("label")
+        .text("Minimum: ")
+
+d3.select("#demo-button-box").append("label")
+        .text("Black")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "black_min")
+        .attr("class", "demo-button")
+        .attr("value", 0)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box").append("label")
+          .text("White")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "white_min")
+        .attr("class", "demo-button")
+        .attr("value", 0)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box").append("label")
+          .text("Asian")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "asian-min")
+        .attr("class", "demo-button")
+        .attr("value", 0)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box").append("label")
+          .text("Native American")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "native-min")
+        .attr("class", "demo-button")
+        .attr("value", 0)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box").append("label")
+          .text("Urban")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "urban_min")
+        .attr("class", "demo-button")
+        .attr("value", 0)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box").append("label")
+        .text("High School")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "highschool_min")
+        .attr("class", "demo-button")
+        .attr("value", 0)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box").append("label")
+          .text("College")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "college_min")
+        .attr("class", "demo-button")
+        .attr("value", 0)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box").append("label")
+          .text("Income")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "income_min")
+        .attr("class", "demo-button")
+        .attr("value", 5000)
+        .attr("min", 5000)
+        .attr("max", 70);
+
+d3.select("#demo-button-box").append("label")
+          .text("Age")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "age_min")
+        .attr("class", "demo-button")
+        .attr("value", 20)
+        .attr("min", 20)
+        .attr("max", 50000);
+
+//////////////////////////////////////////////////////
+
+d3.select("#demo-button-box2").append("label")
+        .text("Maximum: ")
+
+d3.select("#demo-button-box2").append("label")
+        .text("Black")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "black_max")
+        .attr("class", "demo-button")
+        .attr("value", 100)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box2").append("label")
+          .text("White")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "white_max")
+        .attr("class", "demo-button")
+        .attr("value", 100)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box2").append("label")
+          .text("Asian")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "asian_max")
+        .attr("class", "demo-button")
+        .attr("value", 100)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box2").append("label")
+          .text("Native American")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "native_max")
+        .attr("class", "demo-button")
+        .attr("value", 100)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box2").append("label")
+          .text("Urban")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "urban_max")
+        .attr("class", "demo-button")
+        .attr("value", 100)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box2").append("label")
+        .text("High School")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "highschool_max")
+        .attr("class", "demo-button")
+        .attr("value", 100)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box2").append("label")
+          .text("College")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "college_max")
+        .attr("class", "demo-button")
+        .attr("value", 100)
+        .attr("min", 0)
+        .attr("max", 100);
+
+d3.select("#demo-button-box2").append("label")
+          .text("Income")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "income_max")
+        .attr("class", "demo-button")
+        .attr("value", 70000)
+        .attr("min", 5000)
+        .attr("max", 70000);
+
+d3.select("#demo-button-box2").append("label")
+          .text("Age")
+    .append("input")
+        .attr("type", "number")
+        .attr("id", "age_max")
+        .attr("class", "demo-button")
+        .attr("value", 70)
+        .attr("min", 20)
+        .attr("max", 70);
+
+
+d3.select("#demo-button-box2").append("input")
+    .attr("type", "button")
+    .attr("value", "Apply")
+    .on("click", function(){demo();});
+
+
+///////////////////////////////////////////////////////////
 
   redraw();
 
@@ -183,6 +426,20 @@ d3.json("us.json", function(error, us) {
 
   }
 
+  function select_all(){
+     features.forEach(function(d){
+          assign(d,selectedColor);
+     });
+     redraw();
+  }
+
+  function clear_all(){
+      features.forEach(function(d){
+          assign(d,null);
+     });
+      redraw();
+    }
+
   function select_state(num) {  
 
     features.forEach(function(d){
@@ -202,6 +459,56 @@ d3.json("us.json", function(error, us) {
     });
     redraw();
   }
+
+  function demo(){
+
+    var values = [];
+
+    d3.selectAll(".demo-button").each(function(d){
+        cb = d3.select(this);
+        values.push(cb.property("value"));
+    });
+      features.forEach(function(d){
+        info.forEach(function(e){
+          if(e.id == d.id){
+            if(parseFloat(e.black) >= parseFloat(values[0]) && parseFloat(e.white) >= parseFloat(values[1]) && parseFloat(e.asian) >= parseFloat(values[2]) && parseFloat(e.native) >= parseFloat(values[3]) && parseFloat(e.urban) >= parseFloat(values[4]) && parseFloat(e.highschool) >= parseFloat(values[5]) && parseFloat(e.college) >= parseFloat(values[6]) && parseFloat(e.income) >= parseFloat(values[7]) && parseFloat(e.age) >= parseFloat(values[8])){
+
+              if(parseFloat(e.black) <= parseFloat(values[9]) && parseFloat(e.white) <= parseFloat(values[10]) && parseFloat(e.asian) <= parseFloat(values[11]) && parseFloat(e.native) <= parseFloat(values[12]) && parseFloat(e.urban) <= parseFloat(values[13]) && parseFloat(e.highschool) <= parseFloat(values[14]) && parseFloat(e.college) <= parseFloat(values[15]) && parseFloat(e.income) <= parseFloat(values[16]) && parseFloat(e.age) <= parseFloat(values[17])){
+
+                    assign(d,selectedColor);
+                }
+                else{
+                  assign(d,null);
+                }
+
+            }
+            else{
+                assign(d,null);
+            }
+          }
+        });
+    });
+      redraw();
+  }
+
+  // function black_button() {
+
+  //   features.forEach(function(d){
+  //     info.forEach(function(e){
+  //         if(e.id == d.id){
+  //           if(e.black>= 50){
+  //             assign(d,selectedColor);
+  //           }
+  //           else{
+  //             assign(d,null);
+  //           }
+  //         }
+  //     });
+  //   });
+
+  //   redraw();
+
+  // }
 
 });
 
