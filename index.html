@@ -85,6 +85,8 @@
     var width = document.body.clientWidth / 2 - margin.left - margin.right;
     var height = window.innerHeight / 2 - margin.top - margin.bottom;
     var colorrange = {}; // mapping of causes of death to fill-colors
+    const NUM_CAUSES = 21;
+    const NUM_YEARS = 35;
 
     var svg = d3.select('#deathgraph').append('svg')
     .attr('width', width + margin.left + margin.right)

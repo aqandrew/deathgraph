@@ -2,7 +2,7 @@
 
 var datearray = [];
 var deathCauses = [];
-var inputFilename = 'data/death_data_annual.csv';
+var inputFilename = 'data/death_data_small.csv';
 
 function chart(csvpath) {
   var strokecolor = colorrange[0];
@@ -39,6 +39,10 @@ function chart(csvpath) {
   .key(function(d) { return d.cause_of_death; });
   
   var graph = d3.csv(csvpath, function(data) {
+    // TODO take into account which counties' checkboxes are checked
+
+    data = averageMortalityData(data);
+
     // Filter drawn layers based on checked boxes
     let deathCheckboxes = document.getElementsByClassName('death-checkbox');
     let selectedDeathCauses = [];
@@ -171,6 +175,83 @@ function chart(csvpath) {
         });
 }
 
+function averageMortalityData(data) {
+  // Average together all counties' mortality rates for each cause of death
+  let newData = [];
+  let annualData = {}; // Mapping of causes of death to yearly mortality rate averages
+  let lastSeenRow = {};
+  let deathCause = '';
+  let yearString = '';
+  let numCounties = 0;
+  var element;
+
+  // Build up annualData with averaged mortality rates
+  for (let i = 0; i < data.length; i++) {
+    element = data[i];
+    
+    // Keep track of trimmed column values...
+    if (element.location_name) {
+      if (element.location_name != lastSeenRow.location_name) {
+        numCounties++;
+      }
+      
+      lastSeenRow = element;
+    }
+    // To assign them to trimmed rows
+    else {
+      Object.defineProperties(data[i], {
+        location_name: { value: lastSeenRow.location_name },
+        FIPS: { value: lastSeenRow.FIPS },
+        cause_id: { value: lastSeenRow.cause_id },
+        cause_of_death: { value: lastSeenRow.cause_of_death }
+      });
+    }
+
+    deathCause = lastSeenRow.cause_of_death;
+    yearString = data[i].year.toString();
+
+    // Store the averages in annualData
+    if (!annualData.hasOwnProperty(deathCause)) {
+      annualData[deathCause] = {};
+    }
+
+    // Initialize a new sum for this cause and year
+    if (!annualData[deathCause].hasOwnProperty(yearString)) {
+      annualData[deathCause][yearString] = parseFloat(data[i].mortality_rate);
+    }
+    // Add to the sum
+    else {
+      annualData[deathCause][yearString] += parseFloat(data[i].mortality_rate);
+    }
+
+    // If this is the last county in the dataset, divide each sum by the number of counties
+    if (numCounties == data.length / (NUM_YEARS * NUM_CAUSES)) {
+      annualData[deathCause][yearString] /= numCounties;
+    }
+  }
+
+  // Assign annualData to newData, in the form of death_data_annual.csv
+  // I.e. one mortality rate entry-row for each year-COD pair
+  for (const cause in annualData) {
+    if (annualData.hasOwnProperty(cause)) {
+      element = annualData[cause];
+      
+      for (const year in element) {
+        if (element.hasOwnProperty(year)) {
+          const mortality_rate = element[year];
+          newData.push({
+            'year': year,
+            'cause_of_death': cause,
+            'mortality_rate': mortality_rate
+          });
+        }
+      }
+    }
+  }
+
+  return newData;
+}
+
 function toKebabCase(someString) {
   return someString.toLowerCase()
   .replace(/,/g, '')
@@ -184,33 +265,36 @@ function findAllCauses(csvpath) {
 
     d3.csv(csvpath, function(data) {
       let colorIndex = 0;
-      let numColors = 21;
 
+      // TODO ensure cause-checkboxes are alphabetized
+      // Right now they're ordered by increasing cause_id
       data.forEach(function(d) {
-        // Create controls
-        let causeOfDeath = toKebabCase(d.cause_of_death);
-  
-        // Parsing a a new cause
-        if (!deathCauses.includes(causeOfDeath)) {
-          let inputGroup = deathCheckboxContainer.append('div')
-          .attr('class', 'death-cause-control');
-  
-          inputGroup.append('input')
-          .attr('type', 'checkbox')
-          .attr('value', causeOfDeath)
-          .attr('id', 'select-' + causeOfDeath)
-          .attr('class', 'death-checkbox');
-  
-          inputGroup.append('label')
-          .attr('for', 'select-' +  causeOfDeath)
-          .text(d.cause_of_death);
-  
-          deathCauses.push(causeOfDeath);
+        if (d.cause_of_death) {
+          // Create controls
+          let causeOfDeath = toKebabCase(d.cause_of_death);
+    
+          // Parsing a a new cause
+          if (!deathCauses.includes(causeOfDeath)) {
+            let inputGroup = deathCheckboxContainer.append('div')
+            .attr('class', 'death-cause-control');
+    
+            inputGroup.append('input')
+            .attr('type', 'checkbox')
+            .attr('value', causeOfDeath)
+            .attr('id', 'select-' + causeOfDeath)
+            .attr('class', 'death-checkbox');
+    
+            inputGroup.append('label')
+            .attr('for', 'select-' +  causeOfDeath)
+            .text(d.cause_of_death);
+    
+            deathCauses.push(causeOfDeath);
 
-          // Assign each of the 21 causes of death to a unique color
-          let newColor = d3.interpolateRainbow(1.0 * colorIndex / numColors);
-          colorrange[causeOfDeath] = newColor;
-          colorIndex++;
+            // Assign each of the 21 causes of death to a unique color
+            let newColor = d3.interpolateRainbow(1.0 * colorIndex / NUM_CAUSES);
+            colorrange[causeOfDeath] = newColor;
+            colorIndex++;
+          }
         }
       });
 
