@@ -12,6 +12,7 @@ def main():
   directory = 'data'
   directory_files = sorted(listdir(directory))
   grouped_cause_ids = [
+    '294',  # All causes
     '295',  # Communicable, maternal, neonatal, and nutritional diseases
     '409',  # Non-communicable diseases
     '687'   # Injuries
