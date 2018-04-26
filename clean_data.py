@@ -10,7 +10,64 @@ import csv
 def main():
   output_filename = 'death_data.csv'
   directory = 'data'
-  directory_files = sorted(listdir(directory))  
+  directory_files = sorted(listdir(directory))
+  grouped_cause_ids = [
+    '295',  # Communicable, maternal, neonatal, and nutritional diseases
+    '409',  # Non-communicable diseases
+    '687'   # Injuries
+  ]
+  states = [
+    'Alabama',
+    'Alaska',
+    'Arizona',
+    'Arkansas',
+    'California',
+    'Colorado',
+    'Connecticut',
+    'Delaware',
+    'Florida',
+    'Georgia',
+    'Hawaii',
+    'Idaho',
+    'Illinois',
+    'Indiana',
+    'Iowa',
+    'Kansas',
+    'Kentucky',
+    'Louisiana',
+    'Maine',
+    'Maryland',
+    'Massachusetts',
+    'Michigan',
+    'Minnesota',
+    'Mississippi',
+    'Missouri',
+    'Montana',
+    'Nebraska',
+    'Nevada',
+    'New Hampshire',
+    'New Jersey',
+    'New Mexico',
+    'New York',
+    'North Carolina',
+    'North Dakota',
+    'Ohio',
+    'Oklahoma',
+    'Oregon',
+    'Pennsylvania',
+    'Rhode Island',
+    'South Carolina',
+    'South Dakota',
+    'Tennessee',
+    'Texas',
+    'Utah',
+    'Vermont',
+    'Virginia',
+    'Washington',
+    'West Virginia',
+    'Wisconsin',
+    'Wyoming'
+  ]
   output_lines = []
 
   # Open all subdirectories
@@ -36,7 +93,8 @@ def main():
 
           # Skip header row
           # We only want data for both genders
-          if line_index != 0 and int(row[5]) == 3:
+          # Ignore grouped causes of death
+          if line_index != 0 and int(row[5]) == 3 and row[3] not in grouped_cause_ids and row[1] not in states:
             location_death = (row[2], row[3])
           
             # Write first 4 columns only once for each location/COD, to reduce filesize < 100 MB
