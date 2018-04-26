@@ -5,8 +5,6 @@ var deathCauses = [];
 var inputFilename = 'data/death_data_small.csv';
 
 function chart(csvpath) {
-  var strokecolor = colorrange[0];
-  
   var format = d3.time.format('%Y');
   
   var tooltip = d3.select('body')
@@ -75,8 +73,8 @@ function chart(csvpath) {
     
     // Associate each stream with a specific color
     // (We don't want colors to change as we add/remove streams)
-    layers.forEach((layer, index) => {
-      layer['color'] = colorrange[index];
+    layers.forEach((layer) => {
+      layer['color'] = colorrange[layer.key];
     });
 
     x.domain(d3.extent(data, function(d) { return d.year; }));
@@ -136,7 +134,7 @@ function chart(csvpath) {
         
         d3.select(this)
         .classed('hover', true)
-        .attr('stroke', strokecolor)
+        .attr('stroke', 'black')
         .attr('stroke-width', '0.5px'), 
         tooltip.html( '<p>' + d.key + '<br>' + pro + '</p>' ).style('visibility', 'visible');
         
@@ -264,23 +262,22 @@ function findAllCauses(csvpath) {
     var deathCheckboxContainer = d3.select('#death-checkbox-container');
 
     d3.csv(csvpath, function(data) {
-      let colorIndex = 0;
-
       data.forEach(function(d) {
         // Parsing a a new cause
         if (d.cause_of_death && !deathCauses.includes(d.cause_of_death)) {
           deathCauses.push(d.cause_of_death);
-
-          // Assign each of the 21 causes of death to a unique color
-          // TODO assign the colors in alphabetical order too
-          let newColor = d3.interpolateRainbow(1.0 * colorIndex / NUM_CAUSES);
-          colorrange[toKebabCase(d.cause_of_death)] = newColor;
-          colorIndex++;
         }
       });
 
       // Add cause-of-death checkboxes in alphabetical order
       deathCauses.sort();
+
+      // Assign each of the 21 causes of death to a unique color
+      for (let causeIndex = 0; causeIndex < deathCauses.length; causeIndex++) {
+        debugger;
+        let newColor = d3.interpolateRainbow(1.0 * causeIndex / NUM_CAUSES);
+        colorrange[toKebabCase(deathCauses[causeIndex])] = newColor;
+      }
       
       // TODO add colored boxes to act as a legend for stream colors
       deathCauses.forEach((d) => {
