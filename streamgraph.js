@@ -266,36 +266,37 @@ function findAllCauses(csvpath) {
     d3.csv(csvpath, function(data) {
       let colorIndex = 0;
 
-      // TODO ensure cause-checkboxes are alphabetized
-      // Right now they're ordered by increasing cause_id
       data.forEach(function(d) {
-        if (d.cause_of_death) {
-          // Create controls
-          let causeOfDeath = toKebabCase(d.cause_of_death);
-    
-          // Parsing a a new cause
-          if (!deathCauses.includes(causeOfDeath)) {
-            let inputGroup = deathCheckboxContainer.append('div')
-            .attr('class', 'death-cause-control');
-    
-            inputGroup.append('input')
-            .attr('type', 'checkbox')
-            .attr('value', causeOfDeath)
-            .attr('id', 'select-' + causeOfDeath)
-            .attr('class', 'death-checkbox');
-    
-            inputGroup.append('label')
-            .attr('for', 'select-' +  causeOfDeath)
-            .text(d.cause_of_death);
-    
-            deathCauses.push(causeOfDeath);
+        // Parsing a a new cause
+        if (d.cause_of_death && !deathCauses.includes(d.cause_of_death)) {
+          deathCauses.push(d.cause_of_death);
 
-            // Assign each of the 21 causes of death to a unique color
-            let newColor = d3.interpolateRainbow(1.0 * colorIndex / NUM_CAUSES);
-            colorrange[causeOfDeath] = newColor;
-            colorIndex++;
-          }
+          // Assign each of the 21 causes of death to a unique color
+          // TODO assign the colors in alphabetical order too
+          let newColor = d3.interpolateRainbow(1.0 * colorIndex / NUM_CAUSES);
+          colorrange[toKebabCase(d.cause_of_death)] = newColor;
+          colorIndex++;
         }
+      });
+
+      // Add cause-of-death checkboxes in alphabetical order
+      deathCauses.sort();
+      
+      // TODO add colored boxes to act as a legend for stream colors
+      deathCauses.forEach((d) => {
+        let inputGroup = deathCheckboxContainer.append('div')
+        .attr('class', 'death-cause-control');
+        let causeOfDeath = toKebabCase(d);
+
+        inputGroup.append('input')
+        .attr('type', 'checkbox')
+        .attr('value', causeOfDeath)
+        .attr('id', 'select-' + causeOfDeath)
+        .attr('class', 'death-checkbox');
+
+        inputGroup.append('label')
+        .attr('for', 'select-' +  causeOfDeath)
+        .text(d);
       });
 
       resolve(deathCauses);
@@ -305,12 +306,12 @@ function findAllCauses(csvpath) {
 
 function selectAllCauses() {
   deathCauses.forEach((cause) => {
-    document.getElementById('select-' + cause).checked = true;
+    document.getElementById('select-' + toKebabCase(cause)).checked = true;
   });
 }
 
 function clearAllCauses() {
   deathCauses.forEach((cause) => {
-    document.getElementById('select-' + cause).checked = false;
+    document.getElementById('select-' + toKebabCase(cause)).checked = false;
   });
 }
