@@ -24,13 +24,15 @@
     height: 50vh;
   }
   
-  #deathgraph-container > div {
-    width: 50%;
+  #deathgraph { 
+    background: #fff;
+    width: 66%;
     float: left;
   }
   
-  #deathgraph { 
-    background: #fff;
+  #deathgraph-controls {
+    width: 33%;
+    float: left;
   }
   
   p {
@@ -42,6 +44,11 @@
     stroke: #000;
     stroke-width: 2px;
     shape-rendering: crispEdges;
+  }
+
+  .axis-label {
+    font-weight: bold;
+    font-size: 1.2em;
   }
   
   .death-cause-control {
@@ -94,7 +101,7 @@
   <script>
     // Define global variables
     var margin = {top: 20, right: 40, bottom: 30, left: 40};
-    var width = document.body.clientWidth / 2 - margin.left - margin.right;
+    var width = document.body.clientWidth * 2 / 3 - margin.left - margin.right;
     var height = window.innerHeight / 2 - margin.top - margin.bottom;
     var colorrange = {}; // mapping of causes of death to fill-colors
     const NUM_CAUSES = 21;

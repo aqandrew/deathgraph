@@ -41,6 +41,7 @@ function chart(data) {
   data = averageMortalityData(data);
   
   // Filter drawn layers based on checked boxes
+  // TODO do this without making a pass through the entire dataset
   let deathCheckboxes = document.getElementsByClassName('death-checkbox');
   let selectedDeathCauses = [];
   
@@ -107,6 +108,19 @@ function chart(data) {
   svg.append('g')
   .attr('class', 'y axis')
   .call(yAxis.orient('left'));
+
+  // Write axis labels
+  svg.append('text')
+  .attr('class', 'axis-label')
+  .attr('text-anchor', 'middle')  // this makes it easy to center the text as the transform is applied to the anchor
+  .attr('transform', 'translate(' + (- 3 * margin.left / 4) + ',' + (height / 2) + ') rotate(-90)')  // text is drawn off the screen top left, move down and out and rotate
+  .text('Deaths per 100,000 people');
+
+  svg.append('text')
+  .attr('class', 'axis-label')
+  .attr('text-anchor', 'middle')  // this makes it easy to centre the text as the transform is applied to the anchor
+  .attr('transform', 'translate(' + (width / 2) + ',' + (height + margin.bottom) + ')')  // center below axis
+  .text('Year');
   
   svg.selectAll('.layer')
   .attr('opacity', 1)
@@ -195,7 +209,7 @@ function chart(data) {
           }
           // To assign them to trimmed rows
           else {
-            Object.defineProperties(data[i], {
+            Object.defineProperties(data[i], { // TODO fix bug: "Uncaught TypeError: Object.defineProperties called on non-object" when unchecking some COD
               location_name: { value: lastSeenRow.location_name },
               FIPS: { value: lastSeenRow.FIPS },
               cause_id: { value: lastSeenRow.cause_id },
@@ -260,6 +274,7 @@ function chart(data) {
           var deathCheckboxContainer = d3.select('#death-checkbox-container');
           
           d3.csv(csvpath, function(data) {
+            // TODO do this without making a pass through the entire dataset
             data.forEach(function(d) {
               // Parsing a a new cause
               if (d.cause_of_death && !deathCauses.includes(d.cause_of_death)) {
