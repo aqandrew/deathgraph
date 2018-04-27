@@ -186,8 +186,8 @@ function chart(data) {
           element = data[i];
           
           // Keep track of trimmed column values...
-          if (element.location_name) {
-            if (element.location_name != lastSeenRow.location_name) {
+          if (element.FIPS) {
+            if (element.FIPS != lastSeenRow.FIPS) {
               numCounties++;
             }
             
@@ -272,7 +272,6 @@ function chart(data) {
             
             // Assign each of the 21 causes of death to a unique color
             for (let causeIndex = 0; causeIndex < deathCauses.length; causeIndex++) {
-              debugger;
               let newColor = d3.interpolateRainbow(1.0 * causeIndex / NUM_CAUSES);
               colorrange[toKebabCase(deathCauses[causeIndex])] = newColor;
             }
