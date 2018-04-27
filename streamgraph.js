@@ -291,9 +291,14 @@ function findAllCauses(csvpath) {
         .attr('id', 'select-' + causeOfDeath)
         .attr('class', 'death-checkbox');
 
-        inputGroup.append('label')
+        let label = inputGroup.append('label')
         .attr('for', 'select-' +  causeOfDeath)
-        .text(d);
+
+        label.insert('div')
+        .attr('class', 'legend-box')
+        .style('background', colorrange[causeOfDeath]);
+
+        label.append('p').text(d);
       });
 
       resolve(deathCauses);
