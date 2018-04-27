@@ -7,23 +7,23 @@
   body {
     font: 10px sans-serif;
   }
-
+  
   h1 {
     text-align: center;
   }
-
+  
   h2 {
     display: inline;
   }
-
+  
   #deathgraph-controls-header {
     margin-bottom: 1em;
   }
-
+  
   #deathgraph-container {
     height: 50vh;
   }
-
+  
   #deathgraph-container > div {
     width: 50%;
     float: left;
@@ -43,17 +43,17 @@
     stroke-width: 2px;
     shape-rendering: crispEdges;
   }
-
+  
   .death-cause-control {
     height: 2.15vh;
     font-size: 1.6vh;
   }
-
+  
   .death-cause-control p {
     margin: 0;
     display: inline;
   }
-
+  
   .legend-box {
     display: inline-block;
     width: 10px;
@@ -67,7 +67,7 @@
   <script src="https://d3js.org/d3-color.v1.min.js"></script>
   <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-
+  
   <h1>U.S. Mortality Rates by Cause, 1980 - 2014</h1>
   
   <div id="deathgraph-container">
@@ -90,7 +90,7 @@
       </div>
     </div>
   </div>
-
+  
   <script>
     // Define global variables
     var margin = {top: 20, right: 40, bottom: 30, left: 40};
@@ -99,30 +99,30 @@
     var colorrange = {}; // mapping of causes of death to fill-colors
     const NUM_CAUSES = 21;
     const NUM_YEARS = 35;
-
+    
     var svg = d3.select('#deathgraph').append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
     .append('g')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
-
+    
     var x = d3.time.scale()
     .range([0, width]);
-
+    
     var y = d3.scale.linear()
     .range([height-10, 0]);
-
+    
     var area = d3.svg.area()
     .interpolate('cardinal')
     .x(function(d) { return x(d.year); })
     .y0(function(d) { return y(d.y0); })
     .y1(function(d) { return y(d.y0 + d.y); });
-
+    
     function clearSvg() {
       svg.selectAll('*').remove();
       d3.select('.remove').remove();
     }
-
+    
     // Add event listeners
     document.getElementById('deathgraph-controls').addEventListener('click', (event) => {
       if (event.target.tagName == 'INPUT' || event.target.innerText == 'Select all') {
@@ -134,9 +134,9 @@
   <script>
     // Initialize streamgraph
     findAllCauses(inputFilename)
-    .then(selectAllCauses)
-    .then(() => {
-      chart(inputFilename);
+    .then((data) => {
+      selectAllCauses();
+      chart(data);
     });
   </script>
 </body>
