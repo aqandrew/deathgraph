@@ -134,7 +134,7 @@ function chart(data) {
   
   svgStreamgraph.append('g')
   .attr('class', 'x axis')
-  .attr('transform', 'translate(0,' + (height - 82) + ')')
+  .attr('transform', 'translate(0,' + (height - 10) + ')')
   .call(xAxis)
   // Rotate axis labels
   .selectAll("text")	
@@ -147,7 +147,7 @@ function chart(data) {
   
   svgStreamgraph.append('g')
   .attr('class', 'y axis')
-  .attr('transform', 'translate(' + (width - 80) + ', 0)')
+  .attr('transform', 'translate(' + width + ', 0)')
   .call(yAxis.orient('right'));
   
   svgStreamgraph.append('g')
