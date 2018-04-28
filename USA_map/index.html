@@ -50,6 +50,7 @@ path {
 h4 {
   margin: 0.5em auto;
   clear: left;
+  font-size: 0.8em;
 }
 
 #demo-button-box {
@@ -64,6 +65,11 @@ h4 {
   clear: left;
 }
 
+#demo-button-box3 {
+  clear: left;
+  padding-top: 0.5em;
+}
+
 </style>
 <body>
   <div id="us-map">
@@ -75,11 +81,10 @@ h4 {
     <h4>Clear State</h4>
     <div id="clear-state-button-box" class="state-button-box"></div>
     <h4>Demographic Minimum:</h4>
-    <div id="demo-button-box">
-    </div>
+    <div id="demo-button-box"></div>
     <h4>Demographic Maximum:</h4>
-    <div id="demo-button-box2">
-    </div>
+    <div id="demo-button-box2"></div>
+    <div id="demo-button-box3"></div>
   </div>
 
 <script src="//d3js.org/d3.v3.min.js"></script>
@@ -404,9 +409,9 @@ d3.select("#demo-button-box2").append("label")
         .attr("max", 70);
 
 
-d3.select("#demo-button-box2").append("input")
+d3.select("#demo-button-box3").append("input")
     .attr("type", "button")
-    .attr("value", "Apply")
+    .attr("value", "Apply Demographic Ranges")
     .on("click", function(){demo();});
 
 
