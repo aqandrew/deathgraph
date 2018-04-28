@@ -1,0 +1,60 @@
+body {
+  font: 10px sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  display: inline;
+}
+
+#deathgraph-container {
+  height: 50vh;
+}
+
+#deathgraph { 
+  background: #fff;
+  width: 66%;
+  float: left;
+}
+
+#deathgraph-controls {
+  width: 33%;
+  float: left;
+  padding-left: 10px;
+}
+
+p {
+  font: 12px helvetica;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+.axis-label {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.death-cause-control {
+  height: 16px;
+}
+
+.death-cause-control p {
+  margin: 0;
+  display: inline;
+}
+
+.legend-box {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+}

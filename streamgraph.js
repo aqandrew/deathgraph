@@ -1,8 +1,53 @@
 // <!-- http://bl.ocks.org/WillTurman/4631136 -->
 
+
+// Define global variables
 var datearray = [];
 var deathCauses = [];
-var inputFilename = 'data/death_data.csv';
+var inputFilename = 'data/death_data_small.csv';
+var margin = {top: 20, right: 40, bottom: 30, left: 40};
+var width = document.body.clientWidth * 2 / 3 - margin.left - margin.right;
+var height = window.innerHeight / 2 - margin.top - margin.bottom - document.getElementById('title').clientHeight;
+var colorrange = {}; // mapping of causes of death to fill-colors
+const NUM_CAUSES = 21;
+const NUM_YEARS = 35;
+
+var svgStreamgraph = d3.select('#deathgraph').append('svg')
+.attr('width', width + margin.left + margin.right)
+.attr('height', height + margin.top + margin.bottom)
+.append('g')
+.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+var x = d3.time.scale()
+.range([0, width]);
+
+var y = d3.scale.linear()
+.range([height-10, 0]);
+
+var area = d3.svg.area()
+.interpolate('cardinal')
+.x(function(d) { return x(d.year); })
+.y0(function(d) { return y(d.y0); })
+.y1(function(d) { return y(d.y0 + d.y); });
+
+function clearSvg() {
+  svgStreamgraph.selectAll('*').remove();
+  d3.select('.remove').remove();
+}
+
+// Add event listeners
+document.getElementById('deathgraph-controls').addEventListener('click', (event) => {
+  if (event.target.tagName == 'INPUT' || event.target.innerText == 'Select all') {
+    document.getElementById('update-streamgraph-button').disabled = false;
+  }
+});
+
+// Initialize streamgraph
+findAllCauses(inputFilename)
+.then((data) => {
+  selectAllCauses();
+  chart(data);
+});
 
 function chart(data) {
   var format = d3.time.format('%Y');
@@ -89,7 +134,7 @@ function chart(data) {
   
   svgStreamgraph.append('g')
   .attr('class', 'x axis')
-  .attr('transform', 'translate(0,' + (height - 10) + ')')
+  .attr('transform', 'translate(0,' + (height - 82) + ')')
   .call(xAxis)
   // Rotate axis labels
   .selectAll("text")	
@@ -102,7 +147,7 @@ function chart(data) {
   
   svgStreamgraph.append('g')
   .attr('class', 'y axis')
-  .attr('transform', 'translate(' + width + ', 0)')
+  .attr('transform', 'translate(' + (width - 80) + ', 0)')
   .call(yAxis.orient('right'));
   
   svgStreamgraph.append('g')

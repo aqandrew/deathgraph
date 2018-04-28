@@ -1,0 +1,67 @@
+#us-map {
+  width: 66%;
+  float: left;
+}
+
+path {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.background {
+  fill: none;
+  stroke: #ddd;
+}
+
+.foreground {
+  fill: none;
+  pointer-events: all;
+}
+
+.state-button {
+  width: 38px;
+  height: 20px;
+  color: black;
+  float: left;
+}
+
+.state-button:nth-child(10n + 1) {
+  clear: left;
+}
+
+.state-button-box{
+  width: 960px;
+  height: 60px;
+}
+
+#map-controls {
+  float: left;
+  width: 33%;
+}
+
+#map-controls *:not(h4) {
+  font-size: 10px;
+}
+
+h4 {
+  margin: 0.5em auto;
+  clear: left;
+  font-size: 0.8em;
+}
+
+#demo-button-box {
+  clear: left;
+}
+
+#demo-button-box > label, #demo-button-box2 > label {
+  float: left;
+}
+
+#demo-button-box > label:nth-child(3n + 1), #demo-button-box2 > label:nth-child(3n + 1) {
+  clear: left;
+}
+
+#demo-button-box3 {
+  clear: left;
+  padding-top: 0.5em;
+}
