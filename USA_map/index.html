@@ -28,12 +28,27 @@ path {
   height: 60px;
 }
 
-.state-text{
-  height: 20px;
+h4 {
+  margin: 0.5em auto;
 }
 
 </style>
 <body>
+  <div id="all-button-box">
+    <input type="button" value="Select All" onclick="select_all()">
+    <input type="button" value="Clear All" onclick="clear_all()">
+  </div>
+  <h4>Select State</h4>
+  <div id="select-state-button-box" class="state-button-box"></div>
+  <h4>Clear State</h4>
+  <div id="clear-state-button-box" class="state-button-box"></div>
+  <div id="demo-button-box">
+    <label>Minimum:</label>
+  </div>
+  <div id="demo-button-box2">
+    <label>Maximum:</label>
+  </div>
+
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script src="//d3js.org/topojson.v1.min.js"></script>
 
@@ -103,28 +118,10 @@ var color = d3.scale.ordinal().domain(d3.range(1)).range(["#d53e4f"]),
 
 var components = color.domain().map(function() { return []; });
 
-/////////////////////////////////////////////////////////////
-
-var svg = d3.select("body").append("svg")
+var svg = d3.select("body").insert("svg", "#all-button-box")
     .attr("width", width)
     .attr("height", height);
 
-var buttonBox0 = d3.select('body').append('div')
-    .attr('id', 'all-button-box')
-
-var buttonBox1 = d3.select('body').append('div')
-    .attr('id', 'select-state-button-box')
-    .attr('class', 'state-button-box');
-
-var buttonBox2 = d3.select('body').append('div')
-    .attr('id', 'clear-state-button-box')
-    .attr('class', 'state-button-box');
-
-var buttonBox3 = d3.select('body').append('div')
-    .attr('id', 'demo-button-box');
-
-var buttonBox4 = d3.select('body').append('div')
-    .attr('id', 'demo-button-box2');
 //////////////////////////////////////////////////////////
 
 d3.json("us.json", function(error, us) {
@@ -161,20 +158,7 @@ d3.json("us.json", function(error, us) {
         .on("dragstart", dragstart));
 
 ////////////////////////////////////////////////////////
-
-  d3.select("#all-button-box").append("input")
-    .attr("type", "button")
-    .attr("value", "Select All")
-    .on("click", function(){select_all();});
-
-  d3.select("#all-button-box").append("input")
-    .attr("type", "button")
-    .attr("value", "Clear All")
-    .on("click", function(){clear_all();});
-
-  d3.select("#select-state-button-box").append("div")
-      .attr("class", "state-text")
-      .text("Select State");
+// Create select/clear buttons for each state
 
   stateIds.forEach(function(d){
     d3.select("#select-state-button-box").append("input")
@@ -183,10 +167,6 @@ d3.json("us.json", function(error, us) {
         .attr('class', 'state-button')
         .on("click", function(){select_state(d.id);});
   })
-
-  d3.select("#clear-state-button-box").append("div")
-      .attr("class", "state-text")
-      .text("Clear State");
 
   stateIds.forEach(function(d){
     d3.select("#clear-state-button-box").append("input")
@@ -197,9 +177,6 @@ d3.json("us.json", function(error, us) {
   })
 
 ///////////////////////////////////////////////////////////
-
-d3.select("#demo-button-box").append("label")
-        .text("Minimum: ")
 
 d3.select("#demo-button-box").append("label")
         .text("Black")
@@ -292,9 +269,6 @@ d3.select("#demo-button-box").append("label")
         .attr("max", 50000);
 
 //////////////////////////////////////////////////////
-
-d3.select("#demo-button-box2").append("label")
-        .text("Maximum: ")
 
 d3.select("#demo-button-box2").append("label")
         .text("Black")
