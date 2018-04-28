@@ -2,6 +2,11 @@
 <meta charset="utf-8">
 <style>
 
+#us-map {
+  width: 66%;
+  float: left;
+}
+
 path {
   stroke-linejoin: round;
   stroke-linecap: round;
@@ -21,6 +26,11 @@ path {
   width: 38px;
   height: 20px;
   color: black;
+  float: left;
+}
+
+.state-button:nth-child(10n + 1) {
+  clear: left;
 }
 
 .state-button-box{
@@ -28,22 +38,48 @@ path {
   height: 60px;
 }
 
+#map-controls {
+  float: left;
+  width: 33%;
+}
+
+#map-controls *:not(h4) {
+  font-size: 10px;
+}
+
 h4 {
   margin: 0.5em auto;
+  clear: left;
+}
+
+#demo-button-box {
+  clear: left;
+}
+
+#demo-button-box > label, #demo-button-box2 > label {
+  float: left;
+}
+
+#demo-button-box > label:nth-child(3n + 1), #demo-button-box2 > label:nth-child(3n + 1) {
+  clear: left;
 }
 
 </style>
 <body>
-  <div id="all-button-box"></div>
-  <h4>Select State</h4>
-  <div id="select-state-button-box" class="state-button-box"></div>
-  <h4>Clear State</h4>
-  <div id="clear-state-button-box" class="state-button-box"></div>
-  <div id="demo-button-box">
-    <label>Minimum:</label>
+  <div id="us-map">
   </div>
-  <div id="demo-button-box2">
-    <label>Maximum:</label>
+  <div id="map-controls">
+    <div id="all-button-box"></div>
+    <h4>Select State</h4>
+    <div id="select-state-button-box" class="state-button-box"></div>
+    <h4>Clear State</h4>
+    <div id="clear-state-button-box" class="state-button-box"></div>
+    <h4>Demographic Minimum:</h4>
+    <div id="demo-button-box">
+    </div>
+    <h4>Demographic Maximum:</h4>
+    <div id="demo-button-box2">
+    </div>
   </div>
 
 <script src="//d3js.org/d3.v3.min.js"></script>
@@ -115,7 +151,7 @@ var color = d3.scale.ordinal().domain(d3.range(1)).range(["#d53e4f"]),
 
 var components = color.domain().map(function() { return []; });
 
-var svg = d3.select("body").insert("svg", "#all-button-box")
+var svg = d3.select("#us-map").append("svg")
     .attr("width", width)
     .attr("height", height);
 
