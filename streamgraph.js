@@ -80,14 +80,14 @@ function chart(data) {
   x.domain(d3.extent(data, function(d) { return d.year; }));
   y.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
   
-  svg.selectAll('.layer')
+  svgStreamgraph.selectAll('.layer')
   .data(layers)
   .enter().append('path')
   .attr('class', 'layer')
   .attr('d', function(d) { return area(d.values); })
   .style('fill', function(d) { return colorrange[toKebabCase(d.key)]; });
   
-  svg.append('g')
+  svgStreamgraph.append('g')
   .attr('class', 'x axis')
   .attr('transform', 'translate(0,' + (height - 10) + ')')
   .call(xAxis)
@@ -100,32 +100,32 @@ function chart(data) {
     return "rotate(-55)";
   });
   
-  svg.append('g')
+  svgStreamgraph.append('g')
   .attr('class', 'y axis')
   .attr('transform', 'translate(' + width + ', 0)')
   .call(yAxis.orient('right'));
   
-  svg.append('g')
+  svgStreamgraph.append('g')
   .attr('class', 'y axis')
   .call(yAxis.orient('left'));
 
   // Write axis labels
-  svg.append('text')
+  svgStreamgraph.append('text')
   .attr('class', 'axis-label')
   .attr('text-anchor', 'middle')  // this makes it easy to center the text as the transform is applied to the anchor
   .attr('transform', 'translate(' + (- 3 * margin.left / 4) + ',' + (height / 2) + ') rotate(-90)')  // text is drawn off the screen top left, move down and out and rotate
   .text('Deaths per 100,000 people');
 
-  svg.append('text')
+  svgStreamgraph.append('text')
   .attr('class', 'axis-label')
   .attr('text-anchor', 'middle')  // this makes it easy to centre the text as the transform is applied to the anchor
   .attr('transform', 'translate(' + (width / 2) + ',' + (height + margin.bottom) + ')')  // center below axis
   .text('Year');
   
-  svg.selectAll('.layer')
+  svgStreamgraph.selectAll('.layer')
   .attr('opacity', 1)
   .on('mouseover', function(d, i) {
-    svg.selectAll('.layer').transition()
+    svgStreamgraph.selectAll('.layer').transition()
     .duration(250)
     .attr('opacity', function(d, j) {
       return j != i ? 0.6 : 1;
@@ -153,7 +153,7 @@ function chart(data) {
       
     })
     .on('mouseout', function(d, i) {
-      svg.selectAll('.layer')
+      svgStreamgraph.selectAll('.layer')
       .transition()
       .duration(250)
       .attr('opacity', '1');
