@@ -10,14 +10,11 @@
   
   h1 {
     text-align: center;
+    margin: 0;
   }
   
   h2 {
     display: inline;
-  }
-  
-  #deathgraph-controls-header {
-    margin-bottom: 1em;
   }
   
   #deathgraph-container {
@@ -33,6 +30,7 @@
   #deathgraph-controls {
     width: 33%;
     float: left;
+    padding-left: 10px;
   }
   
   p {
@@ -52,8 +50,7 @@
   }
   
   .death-cause-control {
-    height: 2.15vh;
-    font-size: 1.6vh;
+    height: 16px;
   }
   
   .death-cause-control p {
@@ -75,7 +72,7 @@
   <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
   
-  <h1>U.S. Mortality Rates by Cause, 1980 - 2014</h1>
+  <h1 id="title">U.S. Mortality Rates by Cause, 1980 - 2014</h1>
   
   <div id="deathgraph-container">
     <div id="deathgraph">
@@ -102,7 +99,7 @@
     // Define global variables
     var margin = {top: 20, right: 40, bottom: 30, left: 40};
     var width = document.body.clientWidth * 2 / 3 - margin.left - margin.right;
-    var height = window.innerHeight / 2 - margin.top - margin.bottom;
+    var height = window.innerHeight / 2 - margin.top - margin.bottom - document.getElementById('title').clientHeight;
     var colorrange = {}; // mapping of causes of death to fill-colors
     const NUM_CAUSES = 21;
     const NUM_YEARS = 35;
