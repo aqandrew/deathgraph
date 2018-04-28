@@ -34,10 +34,7 @@ h4 {
 
 </style>
 <body>
-  <div id="all-button-box">
-    <input type="button" value="Select All" onclick="select_all()">
-    <input type="button" value="Clear All" onclick="clear_all()">
-  </div>
+  <div id="all-button-box"></div>
   <h4>Select State</h4>
   <div id="select-state-button-box" class="state-button-box"></div>
   <h4>Clear State</h4>
@@ -96,13 +93,13 @@ poop().then(function (value) {
 ////////////////////////////////////////////////////////
 
 //maps width and height
-var width = 960,
-    height = 600,
-    extra = 800;
+var margin = {top: 0, right: 0, bottom: 0, left: 0};
+var width = document.body.clientWidth * 2 / 3 - margin.left - margin.right,
+    height = window.innerHeight / 2 - margin.top - margin.bottom;
 
 //creates map of usa
 var projection = d3.geo.albersUsa()
-    .scale(1280)
+    .scale(width * 0.85)
     .translate([width / 2, height / 2]);
 
 //creates path generator for map
@@ -159,6 +156,16 @@ d3.json("us.json", function(error, us) {
 
 ////////////////////////////////////////////////////////
 // Create select/clear buttons for each state
+
+  d3.select("#all-button-box").append("input")
+    .attr("type", "button")
+    .attr("value", "Select All")
+    .on("click", select_all);
+
+  d3.select("#all-button-box").append("input")
+    .attr("type", "button")
+    .attr("value", "Clear All")
+    .on("click", clear_all);
 
   stateIds.forEach(function(d){
     d3.select("#select-state-button-box").append("input")
