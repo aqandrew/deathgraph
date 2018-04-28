@@ -46,8 +46,8 @@ height = window.innerHeight / 2 - mapMargin.top - mapMargin.bottom;
 
 //creates map of usa
 var projection = d3.geo.albersUsa()
-.scale(width * 0.85)
-.translate([width / 2, height / 2]);
+.scale(width * 0.8)
+.translate([width / 2, height * 4 / 9]);
 
 //creates path generator for map
 var path = d3.geo.path()

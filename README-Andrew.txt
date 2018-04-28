@@ -14,7 +14,7 @@ TOTAL time spent this semester:
  5.0 hrs   Data Collection 
  8.0 hrs   Visualization Execution
  5.0 hrs   Analysis & Validation
- 6.0 hrs   Visualization Revision
+ 12.0 hrs   Visualization Revision
  4.0 hrs   Presentation
 ------------------------------------------------
- 32.0 hrs   Total time spent
+ 38.0 hrs   Total time spent
