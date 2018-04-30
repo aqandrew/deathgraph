@@ -116,23 +116,26 @@ function chart(data) {
     d.mortality_rate = +d.mortality_rate;
   });
   
-  var layers = stack(nest.entries(data));
-  
-  // Associate each stream with a specific color
-  // (We don't want colors to change as we add/remove streams)
-  layers.forEach((layer) => {
-    layer['color'] = colorrange[layer.key];
-  });
-  
-  x.domain(d3.extent(data, function(d) { return d.year; }));
-  y.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
-  
-  svgStreamgraph.selectAll('.layer')
-  .data(layers)
-  .enter().append('path')
-  .attr('class', 'layer')
-  .attr('d', function(d) { return area(d.values); })
-  .style('fill', function(d) { return colorrange[toKebabCase(d.key)]; });
+  if(counties.size!=0){
+    var layers = stack(nest.entries(data));
+
+    
+    // Associate each stream with a specific color
+    // (We don't want colors to change as we add/remove streams)
+    layers.forEach((layer) => {
+      layer['color'] = colorrange[layer.key];
+    });
+    
+    x.domain(d3.extent(data, function(d) { return d.year; }));
+    y.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
+    
+    svgStreamgraph.selectAll('.layer')
+    .data(layers)
+    .enter().append('path')
+    .attr('class', 'layer')
+    .attr('d', function(d) { return area(d.values); })
+    .style('fill', function(d) { return colorrange[toKebabCase(d.key)]; });
+  }
   
   svgStreamgraph.append('g')
   .attr('class', 'x axis')
