@@ -54,7 +54,7 @@ var path = d3.geo.path()
 .projection(projection);
 
 
-var counties = d3.map();
+var counties = new Map();
 
 var color = d3.scale.ordinal().domain(d3.range(1)).range(["#d53e4f"]),
 selectedColor = 0,
@@ -337,7 +337,7 @@ d3.json("USA_map/us.json", function(us, error) {
       var component = components[feature.color];
       component.splice(bisectId(component, feature.id), 1);
       feature.color = null;
-      counties.remove(feature.id)
+      counties.delete(parseInt(feature.id));
     }
     if (color !== null) {
       var component = components[color];
@@ -345,7 +345,7 @@ d3.json("USA_map/us.json", function(us, error) {
       feature.color = color;
       info.forEach(function(e){
         if(feature.id == e.id){
-          counties.set(feature.id, e.pop);
+          counties.set(parseInt(feature.id), parseInt(e.pop));
         }
       });
     }

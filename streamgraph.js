@@ -12,6 +12,7 @@ var height = window.innerHeight / 2 - margin.top - margin.bottom - document.getE
 var colorrange = {}; // mapping of causes of death to fill-colors
 const NUM_CAUSES = 21;
 const NUM_YEARS = 35;
+const FIRST_YEAR = '1980';
 
 var svgStreamgraph = d3.select('#deathgraph').append('svg')
 .attr('width', width + margin.left + margin.right)
@@ -240,20 +241,48 @@ function chart(data) {
         let yearString = '';
         let numCounties = 0;
         var element;
+        var total_pop = 0;
+        var total_deaths = []; // used for keeping track of counties' respective populations
+        var current_cause = NUM_CAUSES-1;
+        var current_year = 0;
+        for(let i=0; i<NUM_CAUSES; ++i){
+          total_deaths.push([]);
+        }
+        for(let i = 0; i<NUM_CAUSES; ++i){
+          for(let j = 0; j<NUM_YEARS; j++){
+            total_deaths[i][j]=0;
+          }
+        }
         
         // Build up annualData with averaged mortality rates
         for (let i = 0; i < data.length; i++) {
           element = data[i];
           
           // Keep track of trimmed column values...
-          if (element.FIPS) {
+          if (element.year == FIRST_YEAR) { // just found data for a new county
             if (element.FIPS != lastSeenRow.FIPS) {
-              numCounties++;
+              if(counties.has(parseInt(element.FIPS))){
+                total_pop += counties.get(parseInt(element.FIPS));
+                numCounties++;
+              }
+              // Don't read data for any unchecked counties
+              else{
+                 i+=734;
+                 continue;
+              }
+            }
+
+            // total_deaths' data is accessed with numerical indices, not strings
+            if(current_cause==NUM_CAUSES-1){
+              current_cause=0;
+            }
+            else{
+              current_cause++;
             }
             
             lastSeenRow = element;
           }
-          // To assign them to trimmed rows
+          // ...To assign them to trimmed rows
           else {
             Object.defineProperties(data[i], {
               location_name: { value: lastSeenRow.location_name },
@@ -264,25 +293,23 @@ function chart(data) {
           }
           
           deathCause = lastSeenRow.cause_of_death;
-          yearString = data[i].year.toString();
+          yearString = element.year.toString();
           
           // Store the averages in annualData
           if (!annualData.hasOwnProperty(deathCause)) {
             annualData[deathCause] = {};
           }
+
+          total_deaths[current_cause][current_year] += parseFloat(data[i].mortality_rate) * counties.get(parseInt(element.FIPS));
           
-          // Initialize a new sum for this cause and year
-          if (!annualData[deathCause].hasOwnProperty(yearString)) {
-            annualData[deathCause][yearString] = parseFloat(data[i].mortality_rate);
+          // Ensure mortality rate is weighted based on respective county populations
+          annualData[deathCause][yearString] = total_deaths[current_cause][current_year] / total_pop;
+
+          if(current_year==NUM_YEARS-1){
+            current_year=0;
           }
-          // Add to the sum
-          else {
-            annualData[deathCause][yearString] += parseFloat(data[i].mortality_rate);
-          }
-          
-          // If this is the last county in the dataset, divide each sum by the number of counties
-          if (numCounties == data.length / (NUM_YEARS * NUM_CAUSES)) {
-            annualData[deathCause][yearString] /= numCounties;
+          else{
+            current_year++;
           }
         }
         
