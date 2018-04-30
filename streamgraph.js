@@ -254,7 +254,7 @@ function chart(data) {
           }
           // To assign them to trimmed rows
           else {
-            Object.defineProperties(data[i], { // TODO fix bug: "Uncaught TypeError: Object.defineProperties called on non-object" when unchecking some COD
+            Object.defineProperties(data[i], {
               location_name: { value: lastSeenRow.location_name },
               FIPS: { value: lastSeenRow.FIPS },
               cause_id: { value: lastSeenRow.cause_id },
@@ -336,7 +336,6 @@ function chart(data) {
               colorrange[toKebabCase(deathCauses[causeIndex])] = newColor;
             }
             
-            // TODO add colored boxes to act as a legend for stream colors
             deathCauses.forEach((d) => {
               let inputGroup = deathCheckboxContainer.append('div')
               .attr('class', 'death-cause-control');
