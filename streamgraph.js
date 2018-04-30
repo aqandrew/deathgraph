@@ -5,7 +5,7 @@
 var data = [];
 var datearray = [];
 var deathCauses = [];
-var inputFilename = 'data/death_data_small.csv';
+var inputFilename = 'data/death_data.csv';
 var margin = {top: 20, right: 40, bottom: 30, left: 40};
 var width = document.body.clientWidth * 2 / 3 - margin.left - margin.right;
 var height = window.innerHeight / 2 - margin.top - margin.bottom - document.getElementById('title').clientHeight;
@@ -37,12 +37,7 @@ function clearSvg() {
   d3.select('.remove').remove();
 }
 
-// Add event listeners
-document.getElementById('deathgraph-controls').addEventListener('click', (event) => {
-  if (event.target.tagName == 'INPUT' || event.target.innerText == 'Select all') {
-    document.getElementById('update-streamgraph-button').disabled = false;
-  }
-});
+// TODO disable "Update streamgraph button" when no causes/counties have changed / have been selected
 
 // Initialize streamgraph
 findAllCauses(inputFilename)
@@ -85,7 +80,6 @@ function chart(data) {
   .key(function(d) { return d.cause_of_death; });
   
   // Draw the graph
-  // TODO take into account which counties' checkboxes are checked
   data = averageMortalityData(data);
   
   // Filter drawn layers based on checked boxes
