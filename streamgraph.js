@@ -5,7 +5,7 @@
 var data = [];
 var datearray = [];
 var deathCauses = [];
-var inputFilename = 'data/death_data_small.csv';
+var inputFilename = 'data/death_data.csv';
 var margin = {top: 20, right: 40, bottom: 30, left: 40};
 var width = document.body.clientWidth * 2 / 3 - margin.left - margin.right;
 var height = window.innerHeight / 2 - margin.top - margin.bottom - document.getElementById('title').clientHeight;
@@ -264,10 +264,10 @@ function chart(data) {
             if (element.FIPS != lastSeenRow.FIPS) {
               if(counties.has(element.FIPS)){
                 numCounties++;
-                total_pop += counties.get(elements.FIPS);
+                total_pop += counties.get(element.FIPS);
               }
               else{
-                i+=735;
+                i+=734;
                 continue;
               }
             }
@@ -280,17 +280,17 @@ function chart(data) {
             lastSeenRow = element;
           }
           // To assign them to trimmed rows
-          // else {
-          //   Object.defineProperties(data[i], {
-          //     location_name: { value: lastSeenRow.location_name },
-          //     FIPS: { value: lastSeenRow.FIPS },
-          //     cause_id: { value: lastSeenRow.cause_id },
-          //     cause_of_death: { value: lastSeenRow.cause_of_death }
-          //   });
-          // }
+          else {
+            Object.defineProperties(data[i], {
+              location_name: { value: lastSeenRow.location_name },
+              FIPS: { value: lastSeenRow.FIPS },
+              cause_id: { value: lastSeenRow.cause_id },
+              cause_of_death: { value: lastSeenRow.cause_of_death }
+            });
+          }
           
           deathCause = lastSeenRow.cause_of_death;
-          yearString = lastSeenRow.year.toString();
+          yearString = element.year.toString();
           
           // Store the averages in annualData
           if (!annualData.hasOwnProperty(deathCause)) {
@@ -301,7 +301,7 @@ function chart(data) {
 
           
           // If this is the last county in the dataset, divide each sum by the number of counties
-          if (numCounties == counties.size) {
+          if (numCounties == counties.length) {
             annualData[deathCause][yearString] = total_deaths[current_cause][current_year] / total_pop;
           }
 
