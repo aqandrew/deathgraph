@@ -56,7 +56,7 @@ function chart(data) {
   .style('position', 'absolute')
   .style('z-index', '20')
   .style('visibility', 'hidden')
-  .style('top', '30px')
+  .style('top', '0px')
   .style('left', '55px');
   
   var xAxis = d3.svg.axis()
