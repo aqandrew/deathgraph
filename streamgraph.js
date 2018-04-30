@@ -240,6 +240,20 @@ function chart(data) {
         let yearString = '';
         let numCounties = 0;
         var element;
+        var total_pop = 0;
+        var total_deaths = [];
+        var current_cause = NUM_CAUSES-1;
+        var current_year = 0;
+
+        for(let i=0; i<NUM_CAUSES; ++i){
+          total_deaths.push([]);
+        }
+
+        for(let i = 0; i<NUM_CAUSES; ++i){
+          for(let j = 0; j<NUM_YEARS; j++){
+            total_deaths[i][j]=0;
+          }
+        }
         
         // Build up annualData with averaged mortality rates
         for (let i = 0; i < data.length; i++) {
@@ -248,41 +262,54 @@ function chart(data) {
           // Keep track of trimmed column values...
           if (element.FIPS) {
             if (element.FIPS != lastSeenRow.FIPS) {
-              numCounties++;
+              if(counties.has(element.FIPS)){
+                numCounties++;
+                total_pop += counties.get(elements.FIPS);
+              }
+              else{
+                i+=735;
+                continue;
+              }
             }
-            
+            if(current_cause==NUM_CAUSES-1){
+              current_cause=0;
+            }
+            else{
+              current_cause++;
+            }
             lastSeenRow = element;
           }
           // To assign them to trimmed rows
-          else {
-            Object.defineProperties(data[i], {
-              location_name: { value: lastSeenRow.location_name },
-              FIPS: { value: lastSeenRow.FIPS },
-              cause_id: { value: lastSeenRow.cause_id },
-              cause_of_death: { value: lastSeenRow.cause_of_death }
-            });
-          }
+          // else {
+          //   Object.defineProperties(data[i], {
+          //     location_name: { value: lastSeenRow.location_name },
+          //     FIPS: { value: lastSeenRow.FIPS },
+          //     cause_id: { value: lastSeenRow.cause_id },
+          //     cause_of_death: { value: lastSeenRow.cause_of_death }
+          //   });
+          // }
           
           deathCause = lastSeenRow.cause_of_death;
-          yearString = data[i].year.toString();
+          yearString = lastSeenRow.year.toString();
           
           // Store the averages in annualData
           if (!annualData.hasOwnProperty(deathCause)) {
             annualData[deathCause] = {};
           }
           
-          // Initialize a new sum for this cause and year
-          if (!annualData[deathCause].hasOwnProperty(yearString)) {
-            annualData[deathCause][yearString] = parseFloat(data[i].mortality_rate);
-          }
-          // Add to the sum
-          else {
-            annualData[deathCause][yearString] += parseFloat(data[i].mortality_rate);
-          }
+          total_deaths[current_cause][current_year] += parseFloat(data[i].mortality_rate)*counties.get(lastSeenRow.FIPS);
+
           
           // If this is the last county in the dataset, divide each sum by the number of counties
-          if (numCounties == data.length / (NUM_YEARS * NUM_CAUSES)) {
-            annualData[deathCause][yearString] /= numCounties;
+          if (numCounties == counties.size) {
+            annualData[deathCause][yearString] = total_deaths[current_cause][current_year] / total_pop;
+          }
+
+          if(current_year==NUM_YEARS-1){
+            current_year=0;
+          }
+          else{
+            current_year++;
           }
         }
         
