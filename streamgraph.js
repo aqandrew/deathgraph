@@ -2,6 +2,7 @@
 
 
 // Define global variables
+var data = [];
 var datearray = [];
 var deathCauses = [];
 var inputFilename = 'data/death_data_small.csv';
@@ -44,7 +45,8 @@ document.getElementById('deathgraph-controls').addEventListener('click', (event)
 
 // Initialize streamgraph
 findAllCauses(inputFilename)
-.then((data) => {
+.then((inputData) => {
+  data = inputData;
   selectAllCauses();
   chart(data);
 });
@@ -86,7 +88,6 @@ function chart(data) {
   data = averageMortalityData(data);
   
   // Filter drawn layers based on checked boxes
-  // TODO do this without making a pass through the entire dataset
   let deathCheckboxes = document.getElementsByClassName('death-checkbox');
   let selectedDeathCauses = [];
   
@@ -319,13 +320,21 @@ function chart(data) {
           var deathCheckboxContainer = d3.select('#death-checkbox-container');
           
           d3.csv(csvpath, function(data) {
-            // TODO do this without making a pass through the entire dataset
-            data.forEach(function(d) {
-              // Parsing a a new cause
-              if (d.cause_of_death && !deathCauses.includes(d.cause_of_death)) {
-                deathCauses.push(d.cause_of_death);
+            let firstCountyFIPS = data[0].FIPS;
+
+            for (let i = 0; i < data.length; i++) {
+              const row = data[i];
+
+              // Once we see the second county, we've seen every cause of death
+              if (row.FIPS && row.FIPS != firstCountyFIPS) {
+                break;
               }
-            });
+              
+              // Parsing a a new cause
+              if (row.cause_of_death && !deathCauses.includes(row.cause_of_death)) {
+                deathCauses.push(row.cause_of_death);
+              }
+            }
             
             // Add cause-of-death checkboxes in alphabetical order
             deathCauses.sort();
@@ -356,7 +365,7 @@ function chart(data) {
               
               label.append('p').text(d);
             });
-            
+
             resolve(data);
           });
         });
