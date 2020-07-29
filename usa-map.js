@@ -18,24 +18,6 @@ var stateIds = [
   { name: 'WI', id: 55 }, { name: 'WY', id: 56 }
 ]
 
-var info = [];
-
-function poop(){
-  return new Promise(function (resolve, reject) {
-    d3.tsv("USA_map/info.tsv", function(data){
-      // do shit
-      
-      info = data;
-      resolve(info);
-    });
-  });
-}
-
-poop().then(function (value) {
-  if (value == 'poop')
-  console.log('Promise was resolved');
-});
-
 
 ////////////////////////////////////////////////////////
 
